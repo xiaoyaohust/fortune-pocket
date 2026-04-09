@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "spreads": [
+    {
+      "id": "single_card",
+      "name_zh": "单牌占",
+      "name_en": "Single Card",
+      "description_zh": "抽一张牌，感受今日最核心的能量指引。",
+      "description_en": "Draw one card to receive the core energy guidance of the day.",
+      "card_count": 1,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "今日指引",
+          "label_en": "Today's Guidance",
+          "aspect": "guidance"
+        }
+      ]
+    },
+    {
+      "id": "three_card",
+      "name_zh": "路径三牌阵",
+      "name_en": "Path Spread",
+      "description_zh": "从过去、现在与下一步三个位置，梳理当下的处境与温柔方向。",
+      "description_en": "Trace your situation through the past, the present, and the next gentle step.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "过去",
+          "label_en": "Past",
+          "aspect": "past"
+        },
+        {
+          "index": 1,
+          "label_zh": "现在",
+          "label_en": "Present",
+          "aspect": "present"
+        },
+        {
+          "index": 2,
+          "label_zh": "下一步",
+          "label_en": "Next Step",
+          "aspect": "next_step"
+        }
+      ]
+    },
+    {
+      "id": "love_three_card",
+      "name_zh": "爱情镜像阵",
+      "name_en": "Love Mirror Spread",
+      "description_zh": "围绕你的情感状态、关系流动与温柔建议来理解眼前的连接。",
+      "description_en": "Look at your emotional stance, the relationship dynamic, and the gentlest way forward.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "我在关系里",
+          "label_en": "My Place in Love",
+          "aspect": "self_in_love"
+        },
+        {
+          "index": 1,
+          "label_zh": "关系流动",
+          "label_en": "Connection Energy",
+          "aspect": "connection"
+        },
+        {
+          "index": 2,
+          "label_zh": "温柔建议",
+          "label_en": "Gentle Advice",
+          "aspect": "gentle_advice"
+        }
+      ]
+    },
+    {
+      "id": "career_three_card",
+      "name_zh": "事业路径阵",
+      "name_en": "Career Path Spread",
+      "description_zh": "从当前路径、隐藏阻力与机会入口三个角度，审视你的事业与学业。",
+      "description_en": "Examine your work or study path through the current direction, hidden friction, and emerging opportunity.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "当前路径",
+          "label_en": "Current Path",
+          "aspect": "current_path"
+        },
+        {
+          "index": 1,
+          "label_zh": "隐藏阻力",
+          "label_en": "Hidden Block",
+          "aspect": "hidden_block"
+        },
+        {
+          "index": 2,
+          "label_zh": "机会入口",
+          "label_en": "Opportunity",
+          "aspect": "opportunity"
+        }
+      ]
+    },
+    {
+      "id": "wealth_three_card",
+      "name_zh": "财富流动阵",
+      "name_en": "Wealth Flow Spread",
+      "description_zh": "观察眼下的金钱流动、资源模式与更稳妥的下一步。",
+      "description_en": "Look at current money flow, resource patterns, and the steadier next move.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "当前流动",
+          "label_en": "Current Flow",
+          "aspect": "current_flow"
+        },
+        {
+          "index": 1,
+          "label_zh": "资源模式",
+          "label_en": "Resource Pattern",
+          "aspect": "resource_pattern"
+        },
+        {
+          "index": 2,
+          "label_zh": "下一步动作",
+          "label_en": "Next Move",
+          "aspect": "next_move"
+        }
+      ]
+    },
+    {
+      "id": "mind_body_spirit",
+      "name_zh": "身心灵三牌",
+      "name_en": "Mind, Body & Spirit",
+      "description_zh": "从思想、身体与灵魂三个层面审视当下的自己。",
+      "description_en": "Examine yourself through the lenses of mind, body, and spirit.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "思维",
+          "label_en": "Mind",
+          "aspect": "mind"
+        },
+        {
+          "index": 1,
+          "label_zh": "身体",
+          "label_en": "Body",
+          "aspect": "body"
+        },
+        {
+          "index": 2,
+          "label_zh": "灵魂",
+          "label_en": "Spirit",
+          "aspect": "spirit"
+        }
+      ]
+    }
+  ]
+}

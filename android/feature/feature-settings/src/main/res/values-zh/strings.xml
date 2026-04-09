@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_reminder">每日提醒</string>
+    <string name="settings_reminder_time">提醒时间</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_follow_system">跟随系统</string>
+    <string name="settings_birthday">保存生日</string>
+    <string name="settings_birthday_choose">选择生日</string>
+    <string name="settings_birthday_helper">保存后的生日会作为本命盘和八字模块的默认输入。</string>
+    <string name="settings_about">关于口袋占卜屋</string>
+    <string name="settings_about_body">本 App 内容仅供娱乐、放松和自我探索参考，不构成任何形式的专业建议。</string>
+    <string name="settings_clear_history">清空历史记录</string>
+    <string name="settings_clear_confirm">清空所有占卜记录？此操作不可撤销。</string>
+    <string name="settings_notification_permission_required">请先在系统设置中允许通知权限。</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+</resources>

@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "overall_light_zh": [
+    "此次牌阵带来了明朗的能量，宇宙正温柔地支持着你。",
+    "三张牌散发出积极流动的气息，这是顺势而为的好时机。",
+    "光亮的能量围绕此刻的你，拥有推动事物向前的力量。"
+  ],
+  "overall_shadow_zh": [
+    "此次能量深沉而复杂，宇宙邀请你进行更深入的内在审视。",
+    "挑战性的能量浮现，但它是成长的邀请，而非惩罚。",
+    "能量较为内敛，此刻更适合停下来倾听，而非急于行动。"
+  ],
+  "overall_mixed_zh": [
+    "光与影在此次牌阵中共存，这正是生命真实而完整的样子。",
+    "复杂的能量组合映照出你内心的丰富，接纳每一面的自己。",
+    "此次指引充满层次，带着耐心去细细感受每一张牌的声音。"
+  ],
+  "overall_light_en": [
+    "The cards bring luminous energy—the universe is gently supporting you.",
+    "An open and flowing spread—this is a good time to move forward with confidence.",
+    "Bright energy surrounds you right now. You have the power to make things happen."
+  ],
+  "overall_shadow_en": [
+    "Deep and complex energy invites you to look inward with honesty and patience.",
+    "Challenging energy emerges—but remember, this is an invitation to grow, not a punishment.",
+    "The energy calls for stillness and inner listening rather than rushing forward."
+  ],
+  "overall_mixed_en": [
+    "Light and shadow coexist in this spread, reflecting life in its truest, fullest form.",
+    "A layered combination of energies mirrors your inner richness—embrace every facet.",
+    "This reading holds depth. Take your time to feel what each card is saying to you."
+  ],
+  "love_prefix_zh": [
+    "在爱与感情的维度，",
+    "关于心之所向，牌阵告诉你：",
+    "感情的能量显示："
+  ],
+  "love_prefix_en": [
+    "In the realm of love and connection, ",
+    "Regarding matters of the heart, the cards say: ",
+    "The energy around your relationships suggests: "
+  ],
+  "career_prefix_zh": [
+    "在事业与学业方面，",
+    "关于你的目标与职场，",
+    "工作能量提示你："
+  ],
+  "career_prefix_en": [
+    "In your career and studies, ",
+    "Regarding your goals and professional path, ",
+    "The energy around your work suggests: "
+  ],
+  "wealth_prefix_zh": [
+    "财运方面，",
+    "关于金钱与物质丰盛，",
+    "财富的能量为你带来："
+  ],
+  "wealth_prefix_en": [
+    "In matters of wealth and abundance, ",
+    "Regarding money and material resources, ",
+    "The energy of prosperity indicates: "
+  ],
+  "advice_zh": [
+    "今日塔罗给你的建议是：带着「{kw1}」与「{kw2}」的意识前行，让直觉成为你今天的罗盘。",
+    "宇宙通过{card_name}提醒你：{kw1}，是此刻最值得珍藏的能量。",
+    "今天，请允许自己以「{kw1}」的姿态面对一切，{card_name}在为你引路。"
+  ],
+  "advice_en": [
+    "Today's guidance: carry the energy of '{kw1}' and '{kw2}' with you, and let your intuition be your compass.",
+    "The universe speaks through {card_name}: '{kw1}' is the most valuable energy to hold onto right now.",
+    "Today, allow yourself to embody '{kw1}'—{card_name} is lighting your way."
+  ],
+  "lucky_prefix_zh": "今日幸运提示",
+  "lucky_prefix_en": "Today's Lucky Hints",
+  "lucky_item_zh": "幸运物",
+  "lucky_item_en": "Lucky Charm",
+  "lucky_color_zh": "幸运色",
+  "lucky_color_en": "Lucky Color",
+  "lucky_number_zh": "幸运数字",
+  "lucky_number_en": "Lucky Number"
+}

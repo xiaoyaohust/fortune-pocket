@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bazi_title">八字能量解读</string>
+    <string name="bazi_intro_body">这是偏娱乐与自我探索的轻量版本，不会伪装成严肃专业命理系统。</string>
+    <string name="bazi_enter_date">输入出生日期</string>
+    <string name="bazi_optional_hour">出生时辰（可选）</string>
+    <string name="bazi_analyze">揭示我的能量</string>
+    <string name="bazi_day_master_portrait">你的轻量日主画像</string>
+    <string name="bazi_day_master_suffix">%1$s日主</string>
+    <string name="bazi_personality">性格倾向</string>
+    <string name="bazi_element_vibe">五行气质</string>
+    <string name="bazi_love">感情倾向</string>
+    <string name="bazi_career">事业倾向</string>
+    <string name="bazi_wealth">财运倾向</string>
+    <string name="bazi_phase">当前阶段建议</string>
+    <string name="bazi_share_button">分享结果</string>
+    <string name="bazi_share_chooser">分享占卜结果</string>
+    <string name="bazi_saved">已保存到历史</string>
+    <string name="bazi_save">保存到历史</string>
+</resources>

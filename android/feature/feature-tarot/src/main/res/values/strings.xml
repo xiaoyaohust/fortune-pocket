@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tarot_title">Tarot Reading</string>
+    <string name="tarot_spread_name">Three Card Spread</string>
+    <string name="tarot_spread_subtitle">Past · Present · Future</string>
+    <string name="tarot_instruction">Take a moment to center yourself,\nthen tap to begin your reading.</string>
+    <string name="tarot_begin_btn">Begin Reading</string>
+    <string name="tarot_section_overall">Overall Energy</string>
+    <string name="tarot_section_love">Love</string>
+    <string name="tarot_section_career">Career</string>
+    <string name="tarot_section_wealth">Wealth</string>
+    <string name="tarot_section_advice">Today\'s Guidance</string>
+    <string name="tarot_lucky_title">Today\'s Lucky Hints</string>
+    <string name="tarot_lucky_charm">Lucky Charm</string>
+    <string name="tarot_lucky_color">Lucky Color</string>
+    <string name="tarot_lucky_number">Lucky Number</string>
+    <string name="tarot_done_btn">Save &amp; Done</string>
+    <string name="tarot_upright">Upright</string>
+    <string name="tarot_reversed">Reversed</string>
+</resources>

@@ -1,0 +1,88 @@
+/* Home section */
+"today_section_title" = "Today's Guidance";
+
+/* Navigation */
+"nav_home" = "Home";
+"nav_history" = "History";
+"nav_settings" = "Settings";
+
+/* Home */
+"home_tagline" = "Your pocket oracle, always with you.";
+"home_tarot_title" = "Tarot Reading";
+"home_tarot_desc" = "Draw cards, receive guidance";
+"home_astrology_title" = "Natal Chart";
+"home_astrology_desc" = "Reveal your chart signature";
+"home_bazi_title" = "Bazi Analysis";
+"home_bazi_desc" = "Explore your energy blueprint";
+
+/* Tarot */
+"tarot_draw_button" = "Draw Cards";
+"tarot_upright" = "Upright";
+"tarot_reversed" = "Reversed";
+"tarot_orientation_prompt" = "Any card can appear upright or reversed. The orientation changes how the reading is interpreted.";
+"tarot_orientation_result" = "Any position can appear upright or reversed. Reversed is intentional, not a rendering bug, and usually points to a more inward, delayed, or adjustment-focused expression of the card.";
+"tarot_overall_energy" = "Overall Energy";
+"tarot_love" = "Love";
+"tarot_career" = "Career";
+"tarot_wealth" = "Wealth";
+"tarot_advice" = "Today's Guidance";
+"tarot_lucky" = "Lucky Tip";
+
+/* Astrology */
+"astrology_select_sign" = "Select Your Sign";
+"astrology_enter_birthday" = "Enter Birthday";
+"astrology_overall" = "Overall Fortune";
+"astrology_love" = "Love";
+"astrology_career" = "Career";
+"astrology_wealth" = "Wealth";
+"astrology_social" = "Social";
+"astrology_advice" = "Daily Advice";
+"astrology_lucky_color" = "Lucky Color";
+"astrology_lucky_number" = "Lucky Number";
+
+/* Bazi */
+"bazi_title" = "Bazi Energy Reading";
+"bazi_subtitle" = "Entertainment · Self-Exploration";
+"bazi_enter_date" = "Enter Birth Date";
+"bazi_optional_hour" = "Birth Hour (Optional)";
+"bazi_analyze" = "Reveal My Energy";
+"bazi_personality" = "Personality";
+"bazi_love" = "Love Tendencies";
+"bazi_career" = "Career Tendencies";
+"bazi_wealth" = "Wealth Tendencies";
+"bazi_phase" = "Current Phase";
+"bazi_disclaimer" = "For entertainment and self-exploration only. Not professional fortune-telling.";
+
+/* History */
+"history_empty" = "No readings yet.\nYour journey begins with the first draw.";
+"history_delete" = "Delete";
+"history_delete_confirm" = "Delete this reading?";
+
+/* Settings */
+"settings_reminder" = "Daily Reminder";
+"settings_reminder_time" = "Reminder Time";
+"settings_clear_history" = "Clear All History";
+"settings_clear_confirm" = "Clear all reading history? This cannot be undone.";
+"settings_about" = "About Fortune Pocket";
+"settings_disclaimer" = "Disclaimer";
+"settings_version" = "Version";
+"settings_language" = "Language";
+"settings_birthday" = "Saved Birthday";
+"settings_birthday_helper" = "Your saved birthday becomes the default input for Natal Chart and Bazi.";
+"settings_follow_system" = "System";
+"disclaimer_full" = "Fortune Pocket is for entertainment, relaxation, and self-exploration only. The content does not constitute professional advice of any kind — medical, psychological, legal, financial, or otherwise. Please use with a light heart.";
+
+/* Notifications */
+"notification_title" = "Your daily oracle awaits ✨";
+"notification_body" = "Take a moment to draw a card, open your natal chart, or explore your energy today.";
+
+/* Common */
+"cancel" = "Cancel";
+"confirm" = "Confirm";
+"back" = "Back";
+"share" = "Share";
+"save" = "Save";
+"done" = "Done";
+"reading_type_tarot" = "Tarot";
+"reading_type_astrology" = "Natal Chart";
+"reading_type_bazi" = "Bazi";

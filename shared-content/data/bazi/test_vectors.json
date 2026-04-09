@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "note": "Test vectors for BaziEngine validation. All times are local time at birth location. Pillars follow 子平命理 standard. Use these to verify engine correctness.",
+  "day_pillar_reference": {
+    "note": "Reference for day pillar JDN offset. 2000-01-07 (Gregorian) = 甲子日. JDN(noon) = 2451551. Formula: dayJiaziIndex = (JDN - 2451551) % 60; stemIdx = dayJiaziIndex % 10; branchIdx = dayJiaziIndex % 12",
+    "anchor_date": "2000-01-07",
+    "anchor_day_zh": "甲子",
+    "anchor_jdn": 2451551
+  },
+  "cases": [
+    {
+      "id": "tv_001",
+      "description": "Mao Zedong (毛泽东) — publicly available birth data",
+      "birth_date": "1893-12-26",
+      "birth_time": "07:30",
+      "birth_city_id": "changsha",
+      "gender": "male",
+      "use_true_solar_time": true,
+      "expected": {
+        "year_pillar": "癸巳",
+        "month_pillar": "甲子",
+        "day_pillar": "丁酉",
+        "hour_pillar": "甲辰",
+        "year_before_lichun": false
+      }
+    },
+    {
+      "id": "tv_002",
+      "description": "Known test: 1984-02-04 23:30 (after 立春 of 甲子年) — year boundary test",
+      "birth_date": "1984-02-04",
+      "birth_time": "23:30",
+      "birth_city_id": "beijing",
+      "gender": "male",
+      "use_true_solar_time": false,
+      "expected": {
+        "year_pillar": "甲子",
+        "note": "Born after the exact 立春 transition → 甲子年"
+      }
+    },
+    {
+      "id": "tv_003",
+      "description": "Known test: 1984-02-03 (day before 立春 of 甲子年) — year boundary test",
+      "birth_date": "1984-02-03",
+      "birth_time": "12:00",
+      "birth_city_id": "beijing",
+      "gender": "male",
+      "use_true_solar_time": false,
+      "expected": {
+        "year_pillar": "癸亥",
+        "note": "Born before 立春 → still 癸亥年 (previous year pillar)"
+      }
+    },
+    {
+      "id": "tv_004",
+      "description": "Known test: 2000-01-07 — day pillar anchor verification",
+      "birth_date": "2000-01-07",
+      "birth_time": "12:00",
+      "birth_city_id": "beijing",
+      "gender": "female",
+      "use_true_solar_time": false,
+      "expected": {
+        "day_pillar": "甲子",
+        "note": "This date is the JDN reference anchor — must be 甲子日"
+      }
+    },
+    {
+      "id": "tv_005",
+      "description": "Zi hour boundary test — late Zi vs early Zi",
+      "birth_date": "2000-01-07",
+      "birth_time": "23:30",
+      "birth_city_id": "beijing",
+      "gender": "male",
+      "use_true_solar_time": false,
+      "expected": {
+        "day_pillar": "甲子",
+        "hour_pillar": "甲子",
+        "note": "23:30 = 晚子时. If distinguish_late_zi=false → 甲子日 + 子时(甲子). If distinguish_late_zi=true → day advances at 23:00 → day becomes 乙丑, hour becomes 丙子."
+      }
+    }
+  ]
+}

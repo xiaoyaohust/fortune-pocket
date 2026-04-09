@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="astrology_intro_title">Generate your fully offline natal chart</string>
+    <string name="astrology_intro_body">Use your birth date, time, and city to calculate the Sun, Moon, Rising sign, planetary placements, houses, and major aspects on-device.</string>
+    <string name="astrology_enter_birthday">Enter Birthday</string>
+    <string name="astrology_inferred_badge">Inferred from birthday</string>
+    <string name="astrology_select_sign">Select Your Sign</string>
+    <string name="astrology_mode_birthday">Birthday</string>
+    <string name="astrology_current_reading_sign">Current reading sign</string>
+    <string name="astrology_current_selected">Currently selected</string>
+    <string name="astrology_generate">Generate Natal Chart Reading</string>
+    <string name="astrology_overall">Overall Profile</string>
+    <string name="astrology_love">Love</string>
+    <string name="astrology_career">Career</string>
+    <string name="astrology_wealth">Wealth</string>
+    <string name="astrology_social">Social</string>
+    <string name="astrology_advice">Guidance</string>
+    <string name="astrology_lucky_color">Lucky Color</string>
+    <string name="astrology_lucky_number">Lucky Number</string>
+    <string name="astrology_share_button">Share</string>
+    <string name="astrology_share_chooser">Share Reading</string>
+    <string name="astrology_saved">Saved to History</string>
+    <string name="astrology_save">Save to History</string>
+</resources>

@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "spreads": [
+    {
+      "id": "single_card",
+      "name_zh": "单牌占",
+      "name_en": "Single Card",
+      "description_zh": "抽一张牌，感受今日最核心的能量指引。",
+      "description_en": "Draw one card to receive the core energy guidance of the day.",
+      "card_count": 1,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "今日指引",
+          "label_en": "Today's Guidance",
+          "aspect": "guidance"
+        }
+      ]
+    },
+    {
+      "id": "three_card",
+      "name_zh": "三牌阵",
+      "name_en": "Three Card Spread",
+      "description_zh": "以过去、现在、未来三个维度解读当下的处境与可能性。",
+      "description_en": "Explore your situation through the dimensions of past, present, and future.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "过去",
+          "label_en": "Past",
+          "aspect": "past"
+        },
+        {
+          "index": 1,
+          "label_zh": "现在",
+          "label_en": "Present",
+          "aspect": "present"
+        },
+        {
+          "index": 2,
+          "label_zh": "未来",
+          "label_en": "Future",
+          "aspect": "future"
+        }
+      ]
+    },
+    {
+      "id": "mind_body_spirit",
+      "name_zh": "身心灵三牌",
+      "name_en": "Mind, Body & Spirit",
+      "description_zh": "从思想、身体与灵魂三个层面审视当下的自己。",
+      "description_en": "Examine yourself through the lenses of mind, body, and spirit.",
+      "card_count": 3,
+      "positions": [
+        {
+          "index": 0,
+          "label_zh": "思维",
+          "label_en": "Mind",
+          "aspect": "mind"
+        },
+        {
+          "index": 1,
+          "label_zh": "身体",
+          "label_en": "Body",
+          "aspect": "body"
+        },
+        {
+          "index": 2,
+          "label_zh": "灵魂",
+          "label_en": "Spirit",
+          "aspect": "spirit"
+        }
+      ]
+    }
+  ]
+}

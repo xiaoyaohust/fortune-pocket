@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="astrology_intro_title">生成真正离线的本命盘</string>
+    <string name="astrology_intro_body">输入出生日期、出生时间和城市后，App 会在本地计算太阳、月亮、上升、主要行星、宫位和相位，再生成解读。</string>
+    <string name="astrology_enter_birthday">输入生日</string>
+    <string name="astrology_inferred_badge">生日识别结果</string>
+    <string name="astrology_select_sign">选择星座</string>
+    <string name="astrology_mode_birthday">按生日</string>
+    <string name="astrology_current_reading_sign">当前将使用</string>
+    <string name="astrology_current_selected">当前使用</string>
+    <string name="astrology_generate">生成本命盘解读</string>
+    <string name="astrology_overall">整体画像</string>
+    <string name="astrology_love">感情运势</string>
+    <string name="astrology_career">工作学业</string>
+    <string name="astrology_wealth">财运</string>
+    <string name="astrology_social">社交运势</string>
+    <string name="astrology_advice">给你的建议</string>
+    <string name="astrology_lucky_color">幸运色</string>
+    <string name="astrology_lucky_number">幸运数字</string>
+    <string name="astrology_share_button">分享结果</string>
+    <string name="astrology_share_chooser">分享占卜结果</string>
+    <string name="astrology_saved">已保存到历史</string>
+    <string name="astrology_save">保存到历史</string>
+</resources>

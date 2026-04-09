@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Used only for window background before Compose takes over -->
+    <color name="background_deep">#0E0A1F</color>
+</resources>

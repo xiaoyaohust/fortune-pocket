@@ -1,0 +1,23 @@
+{
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Preferences/AppPreferences.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.dia",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.swiftdeps"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Theme/AppColors.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.dia",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.swiftdeps"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Theme/AppFonts.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.dia",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.swiftdeps"
+  }
+}

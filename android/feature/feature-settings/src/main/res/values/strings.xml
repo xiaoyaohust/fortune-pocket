@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_reminder">Daily Reminder</string>
+    <string name="settings_reminder_time">Reminder Time</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_follow_system">System</string>
+    <string name="settings_birthday">Saved Birthday</string>
+    <string name="settings_birthday_choose">Choose Birthday</string>
+    <string name="settings_birthday_helper">Your saved birthday becomes the default input for Natal Chart and Bazi.</string>
+    <string name="settings_about">About Fortune Pocket</string>
+    <string name="settings_about_body">This app is for entertainment, relaxation, and self-exploration only. It does not provide professional advice.</string>
+    <string name="settings_clear_history">Clear All History</string>
+    <string name="settings_clear_confirm">Clear all reading history? This cannot be undone.</string>
+    <string name="settings_notification_permission_required">Please allow notification permission in system settings first.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+</resources>

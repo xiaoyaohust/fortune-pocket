@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "pools": {
+    "single": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "double": [11, 22, 33, 14, 18, 21, 27, 36, 42],
+    "triple": [111, 222, 333, 444, 555, 777, 888]
+  },
+  "meanings_zh": {
+    "1": "新开始，独立，领导力",
+    "2": "合作，直觉，平衡",
+    "3": "创意，表达，喜悦",
+    "4": "稳定，踏实，建构",
+    "5": "自由，变化，冒险",
+    "6": "爱，和谐，责任",
+    "7": "智慧，灵性，内省",
+    "8": "丰盛，力量，实现",
+    "9": "圆满，智慧，慷慨"
+  },
+  "meanings_en": {
+    "1": "New beginnings, independence, leadership",
+    "2": "Cooperation, intuition, balance",
+    "3": "Creativity, expression, joy",
+    "4": "Stability, groundedness, building",
+    "5": "Freedom, change, adventure",
+    "6": "Love, harmony, responsibility",
+    "7": "Wisdom, spirituality, introspection",
+    "8": "Abundance, power, manifestation",
+    "9": "Completion, wisdom, generosity"
+  }
+}

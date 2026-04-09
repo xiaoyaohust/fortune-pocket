@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_title">今日的占卜在等你 ✨</string>
+    <string name="notification_body">花一点时间翻一张牌、看看本命盘，或整理今天的能量感受。</string>
+</resources>

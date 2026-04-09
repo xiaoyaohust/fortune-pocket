@@ -1,0 +1,3243 @@
+{
+  "version": "2.0",
+  "total": 78,
+  "arcana_included": [
+    "major",
+    "minor"
+  ],
+  "notes": "Full 78-card deck for tarot MVP. Major Arcana remain hand-authored; Minor Arcana are productized card meanings generated from suit and rank semantics.",
+  "cards": [
+    {
+      "id": "major_00",
+      "number": 0,
+      "arcana": "major",
+      "name_zh": "愚者",
+      "name_en": "The Fool",
+      "symbol": "◦",
+      "color_primary": "#2D6A4F",
+      "color_accent": "#F5D76E",
+      "keywords_upright_zh": [
+        "新开始",
+        "自由",
+        "冒险",
+        "无限可能"
+      ],
+      "keywords_upright_en": [
+        "new beginnings",
+        "freedom",
+        "adventure",
+        "potential"
+      ],
+      "keywords_reversed_zh": [
+        "鲁莽",
+        "混乱",
+        "逃避",
+        "不成熟"
+      ],
+      "keywords_reversed_en": [
+        "recklessness",
+        "chaos",
+        "naivety",
+        "impulsiveness"
+      ],
+      "meaning_upright_zh": "带着一颗赤子之心，你站在人生新旅程的起点。这是充满无限可能的时刻——放下顾虑，勇敢迈步。命运对信任它的人总是慷慨的。",
+      "meaning_upright_en": "With an open heart, you stand at the threshold of a new journey. This is a moment full of infinite possibility—let go of your worries and step forward bravely. Fate is generous to those who trust in it.",
+      "meaning_reversed_zh": "冲动与莽撞可能带来不必要的麻烦。在行动之前，请先停下来想一想：这一步，你真的准备好了吗？",
+      "meaning_reversed_en": "Impulsiveness may lead to unnecessary trouble. Before acting, pause and ask yourself: are you truly ready for this step?",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_01",
+      "number": 1,
+      "arcana": "major",
+      "name_zh": "魔术师",
+      "name_en": "The Magician",
+      "symbol": "∞",
+      "color_primary": "#922B21",
+      "color_accent": "#F5CBA7",
+      "keywords_upright_zh": [
+        "意志力",
+        "技巧",
+        "创造力",
+        "显化"
+      ],
+      "keywords_upright_en": [
+        "willpower",
+        "skill",
+        "creativity",
+        "manifestation"
+      ],
+      "keywords_reversed_zh": [
+        "操纵",
+        "欺骗",
+        "才能浪费",
+        "优柔寡断"
+      ],
+      "keywords_reversed_en": [
+        "manipulation",
+        "deception",
+        "wasted potential",
+        "indecision"
+      ],
+      "meaning_upright_zh": "你拥有实现目标所需的一切资源与能力。此刻是行动的时候了——意志、技巧、创意全都在你手中。专注，并将它们发挥出来。",
+      "meaning_upright_en": "You possess all the resources and abilities needed to achieve your goals. Now is the time to act—willpower, skill, and creativity are all at your fingertips. Focus and let them shine.",
+      "meaning_reversed_zh": "才能没有被充分发挥，或者有些事情并不像表面那样真实。审视内心，确保你的动机真实而纯粹。",
+      "meaning_reversed_en": "Your talents may not be fully utilized, or things may not be as they appear. Look inward and ensure your intentions are genuine and pure.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_02",
+      "number": 2,
+      "arcana": "major",
+      "name_zh": "女祭司",
+      "name_en": "The High Priestess",
+      "symbol": "☽",
+      "color_primary": "#1A3A5C",
+      "color_accent": "#AED6F1",
+      "keywords_upright_zh": [
+        "直觉",
+        "神秘",
+        "内在智慧",
+        "潜意识"
+      ],
+      "keywords_upright_en": [
+        "intuition",
+        "mystery",
+        "inner wisdom",
+        "subconscious"
+      ],
+      "keywords_reversed_zh": [
+        "隐藏的秘密",
+        "压抑感受",
+        "脱节",
+        "表面化"
+      ],
+      "keywords_reversed_en": [
+        "hidden secrets",
+        "repressed feelings",
+        "disconnection",
+        "superficiality"
+      ],
+      "meaning_upright_zh": "沉静下来，倾听内心的声音。你的直觉比你想象的更可靠。此刻不是急于求成的时候，而是向内探索、等待时机显现的时刻。",
+      "meaning_upright_en": "Quiet yourself and listen to your inner voice. Your intuition is more reliable than you think. This is not the time to rush—it is a time to look inward and let the right moment reveal itself.",
+      "meaning_reversed_zh": "你可能压制了自己的直觉，或者有些事情没有被揭示出来。给自己一些空间，让真相自然浮现。",
+      "meaning_reversed_en": "You may be suppressing your intuition, or something important has yet to be revealed. Give yourself space for the truth to surface naturally.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_03",
+      "number": 3,
+      "arcana": "major",
+      "name_zh": "皇后",
+      "name_en": "The Empress",
+      "symbol": "♀",
+      "color_primary": "#1E8449",
+      "color_accent": "#F7CA18",
+      "keywords_upright_zh": [
+        "丰盛",
+        "创造力",
+        "滋养",
+        "自然"
+      ],
+      "keywords_upright_en": [
+        "abundance",
+        "creativity",
+        "nurturing",
+        "nature"
+      ],
+      "keywords_reversed_zh": [
+        "依赖",
+        "创意受阻",
+        "过度保护",
+        "自我忽视"
+      ],
+      "keywords_reversed_en": [
+        "dependence",
+        "creative block",
+        "smothering",
+        "self-neglect"
+      ],
+      "meaning_upright_zh": "丰盛正向你涌来。这是一个充满创造力、滋养与美好的时期。照顾好自己和你爱的人，享受生命馈赠的丰饶与温柔。",
+      "meaning_upright_en": "Abundance flows toward you. This is a period of creativity, nurturing, and beauty. Care for yourself and those you love, and embrace the richness and tenderness that life offers.",
+      "meaning_reversed_zh": "过度依赖他人，或者压抑了自己的创造力。是时候重新连接内在的丰盛感，好好地照顾自己了。",
+      "meaning_reversed_en": "You may be relying too heavily on others or suppressing your creativity. It's time to reconnect with your inner abundance and give yourself the care you deserve.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_04",
+      "number": 4,
+      "arcana": "major",
+      "name_zh": "皇帝",
+      "name_en": "The Emperor",
+      "symbol": "△",
+      "color_primary": "#7B241C",
+      "color_accent": "#F5B041",
+      "keywords_upright_zh": [
+        "权威",
+        "结构",
+        "稳定",
+        "领导力"
+      ],
+      "keywords_upright_en": [
+        "authority",
+        "structure",
+        "stability",
+        "leadership"
+      ],
+      "keywords_reversed_zh": [
+        "固执",
+        "过度控制",
+        "独裁",
+        "缺乏弹性"
+      ],
+      "keywords_reversed_en": [
+        "rigidity",
+        "over-control",
+        "tyranny",
+        "inflexibility"
+      ],
+      "meaning_upright_zh": "以坚定的结构与清晰的方向前进。你有能力建立秩序，掌控局面。稳健的基础是一切成就的根基。",
+      "meaning_upright_en": "Move forward with firm structure and clear direction. You have the ability to establish order and take charge. A solid foundation is the basis of all achievement.",
+      "meaning_reversed_zh": "过度控制或固执己见可能阻碍进展。试着放松一些，聆听他人的声音，弹性也是力量。",
+      "meaning_reversed_en": "Over-control or stubbornness may be hindering progress. Try to relax and listen to others—flexibility is also a form of strength.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_05",
+      "number": 5,
+      "arcana": "major",
+      "name_zh": "教皇",
+      "name_en": "The Hierophant",
+      "symbol": "✦",
+      "color_primary": "#4A235A",
+      "color_accent": "#F0B27A",
+      "keywords_upright_zh": [
+        "传统",
+        "信仰",
+        "智慧",
+        "指引"
+      ],
+      "keywords_upright_en": [
+        "tradition",
+        "faith",
+        "wisdom",
+        "guidance"
+      ],
+      "keywords_reversed_zh": [
+        "叛逆",
+        "突破常规",
+        "固守教条",
+        "虚伪"
+      ],
+      "keywords_reversed_en": [
+        "rebellion",
+        "breaking convention",
+        "dogmatism",
+        "hypocrisy"
+      ],
+      "meaning_upright_zh": "传统与智慧为你提供指引。寻求来自导师、信仰或内心价值观的支持，它们在此时是宝贵的资源。",
+      "meaning_upright_en": "Tradition and wisdom offer you guidance. Seek support from mentors, beliefs, or your core values—they are precious resources at this time.",
+      "meaning_reversed_zh": "你可能感到被传统束缚，渴望打破常规。在颠覆之前，思考一下什么是真正值得保留的。",
+      "meaning_reversed_en": "You may feel constrained by tradition and long to break free. Before overturning everything, reflect on what is truly worth preserving.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_06",
+      "number": 6,
+      "arcana": "major",
+      "name_zh": "恋人",
+      "name_en": "The Lovers",
+      "symbol": "♡",
+      "color_primary": "#C0392B",
+      "color_accent": "#FADBD8",
+      "keywords_upright_zh": [
+        "爱",
+        "和谐",
+        "选择",
+        "联结"
+      ],
+      "keywords_upright_en": [
+        "love",
+        "harmony",
+        "choices",
+        "connection"
+      ],
+      "keywords_reversed_zh": [
+        "失和",
+        "失衡",
+        "错误选择",
+        "逃避关系"
+      ],
+      "keywords_reversed_en": [
+        "disharmony",
+        "imbalance",
+        "wrong choices",
+        "avoidance"
+      ],
+      "meaning_upright_zh": "爱与和谐的能量环绕着你。不仅是感情，更是内心深处对自我价值观的一次重要选择。做出真实于内心的决定。",
+      "meaning_upright_en": "The energy of love and harmony surrounds you. This goes beyond romance—it represents a significant choice aligned with your deepest values. Make the decision that is true to your heart.",
+      "meaning_reversed_zh": "关系中出现失衡，或者你在面临一个艰难的抉择。倾听内心真正的渴望，而不是外部压力。",
+      "meaning_reversed_en": "There may be imbalance in a relationship, or you face a difficult choice. Listen to your heart's true longing rather than external pressures.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_07",
+      "number": 7,
+      "arcana": "major",
+      "name_zh": "战车",
+      "name_en": "The Chariot",
+      "symbol": "◈",
+      "color_primary": "#154360",
+      "color_accent": "#85C1E9",
+      "keywords_upright_zh": [
+        "意志力",
+        "胜利",
+        "掌控",
+        "决心"
+      ],
+      "keywords_upright_en": [
+        "willpower",
+        "victory",
+        "control",
+        "determination"
+      ],
+      "keywords_reversed_zh": [
+        "失控",
+        "方向迷失",
+        "内心冲突",
+        "攻击性"
+      ],
+      "keywords_reversed_en": [
+        "lack of control",
+        "directionless",
+        "inner conflict",
+        "aggression"
+      ],
+      "meaning_upright_zh": "以坚定的意志和明确的方向前进。胜利属于那些能在矛盾中保持平衡的人。驾驭你内心的力量，向目标奔驰。",
+      "meaning_upright_en": "Move forward with firm will and clear direction. Victory belongs to those who maintain balance amid contradiction. Harness your inner power and charge toward your goal.",
+      "meaning_reversed_zh": "方向感模糊，或者内心的两股力量在拉扯。先找回你的核心，再决定下一步。",
+      "meaning_reversed_en": "Direction may feel unclear, or two inner forces are pulling you apart. Rediscover your center before deciding on your next step.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_08",
+      "number": 8,
+      "arcana": "major",
+      "name_zh": "力量",
+      "name_en": "Strength",
+      "symbol": "∞",
+      "color_primary": "#7D6608",
+      "color_accent": "#F9E79F",
+      "keywords_upright_zh": [
+        "内在力量",
+        "勇气",
+        "耐心",
+        "慈悲"
+      ],
+      "keywords_upright_en": [
+        "inner strength",
+        "courage",
+        "patience",
+        "compassion"
+      ],
+      "keywords_reversed_zh": [
+        "自我怀疑",
+        "软弱",
+        "不安全感",
+        "失控"
+      ],
+      "keywords_reversed_en": [
+        "self-doubt",
+        "weakness",
+        "insecurity",
+        "loss of control"
+      ],
+      "meaning_upright_zh": "真正的力量来自温柔而非强硬。你拥有内心的勇气与耐心，足以应对眼前的挑战。以爱和平静面对一切。",
+      "meaning_upright_en": "True strength comes from gentleness, not force. You possess the inner courage and patience to face the challenges ahead. Meet everything with love and calm.",
+      "meaning_reversed_zh": "你可能在怀疑自己的能力。记住，力量不是没有恐惧，而是带着恐惧仍然前行。",
+      "meaning_reversed_en": "You may be doubting your abilities. Remember, strength is not the absence of fear—it is moving forward despite it.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_09",
+      "number": 9,
+      "arcana": "major",
+      "name_zh": "隐者",
+      "name_en": "The Hermit",
+      "symbol": "⌘",
+      "color_primary": "#424949",
+      "color_accent": "#D5D8DC",
+      "keywords_upright_zh": [
+        "内省",
+        "孤独",
+        "寻找自我",
+        "智慧"
+      ],
+      "keywords_upright_en": [
+        "introspection",
+        "solitude",
+        "soul-searching",
+        "wisdom"
+      ],
+      "keywords_reversed_zh": [
+        "孤立",
+        "孤独感",
+        "封闭自我",
+        "迷失"
+      ],
+      "keywords_reversed_en": [
+        "isolation",
+        "loneliness",
+        "withdrawal",
+        "lostness"
+      ],
+      "meaning_upright_zh": "是时候独处、沉思与寻找内在指引了。退后一步，远离喧嚣，你会在静默中发现自己最需要的答案。",
+      "meaning_upright_en": "It is time to be alone, to reflect and seek inner guidance. Step back from the noise, and in the silence you will find the answers you most need.",
+      "meaning_reversed_zh": "过度孤立可能让你与世界脱节。适当的独处是智慧，但也需要在时机成熟时走出来与他人连接。",
+      "meaning_reversed_en": "Excessive isolation may be disconnecting you from the world. Solitude is wise in moderation, but the right time to step out and connect with others will also come.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_10",
+      "number": 10,
+      "arcana": "major",
+      "name_zh": "命运之轮",
+      "name_en": "Wheel of Fortune",
+      "symbol": "⊗",
+      "color_primary": "#512E5F",
+      "color_accent": "#F8C471",
+      "keywords_upright_zh": [
+        "命运",
+        "转机",
+        "循环",
+        "好运"
+      ],
+      "keywords_upright_en": [
+        "destiny",
+        "turning point",
+        "cycles",
+        "good luck"
+      ],
+      "keywords_reversed_zh": [
+        "坏运气",
+        "抗拒改变",
+        "恶性循环",
+        "外力冲击"
+      ],
+      "keywords_reversed_en": [
+        "bad luck",
+        "resistance to change",
+        "vicious cycles",
+        "external forces"
+      ],
+      "meaning_upright_zh": "命运的轮盘正在转动，新的循环即将开始。变化是生命的常态，此刻的转机将为你带来新的可能性。",
+      "meaning_upright_en": "The wheel of fate is turning and a new cycle is about to begin. Change is the natural order of life, and this turning point brings new possibilities.",
+      "meaning_reversed_zh": "感觉被命运的波折所困。记住，轮子始终在转，低谷只是另一个高峰的前奏。",
+      "meaning_reversed_en": "You may feel trapped by fate's ups and downs. Remember, the wheel is always turning—a low point is simply the prelude to the next peak.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_11",
+      "number": 11,
+      "arcana": "major",
+      "name_zh": "正义",
+      "name_en": "Justice",
+      "symbol": "⚖",
+      "color_primary": "#1E8449",
+      "color_accent": "#E74C3C",
+      "keywords_upright_zh": [
+        "公正",
+        "真相",
+        "因果",
+        "平衡"
+      ],
+      "keywords_upright_en": [
+        "justice",
+        "truth",
+        "cause and effect",
+        "balance"
+      ],
+      "keywords_reversed_zh": [
+        "不公平",
+        "不诚实",
+        "逃避责任",
+        "偏见"
+      ],
+      "keywords_reversed_en": [
+        "unfairness",
+        "dishonesty",
+        "avoiding accountability",
+        "bias"
+      ],
+      "meaning_upright_zh": "事情将会得到公正的裁决。你的行动与后果始终相连。诚实地面对自己和他人，结果将是公平的。",
+      "meaning_upright_en": "Matters will be resolved fairly. Your actions and their consequences are always connected. Be honest with yourself and others, and the outcome will be just.",
+      "meaning_reversed_zh": "感到不公平或承担了不属于你的责任。审视一下，哪些地方需要更多的诚实与担当。",
+      "meaning_reversed_en": "You may feel treated unfairly or carrying responsibility that isn't yours. Examine where more honesty and accountability are needed.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_12",
+      "number": 12,
+      "arcana": "major",
+      "name_zh": "倒吊人",
+      "name_en": "The Hanged Man",
+      "symbol": "⊥",
+      "color_primary": "#1A5276",
+      "color_accent": "#A2D9CE",
+      "keywords_upright_zh": [
+        "暂停",
+        "放手",
+        "新视角",
+        "等待"
+      ],
+      "keywords_upright_en": [
+        "suspension",
+        "letting go",
+        "new perspective",
+        "waiting"
+      ],
+      "keywords_reversed_zh": [
+        "拖延",
+        "犹豫不决",
+        "抗拒",
+        "无谓牺牲"
+      ],
+      "keywords_reversed_en": [
+        "stalling",
+        "indecision",
+        "resistance",
+        "needless sacrifice"
+      ],
+      "meaning_upright_zh": "暂停，让自己悬在空中一会儿。从不同角度看问题，主动的等待有时比急于行动更有力量。放下，才能看见。",
+      "meaning_upright_en": "Pause and allow yourself to hang in suspension for a while. Seeing things from a different angle can be powerful. Active waiting is sometimes stronger than rushing forward. Let go to gain sight.",
+      "meaning_reversed_zh": "你在拖延或逃避一个必要的决定。也许是时候接受现实，做出那个一直回避的选择了。",
+      "meaning_reversed_en": "You may be stalling or avoiding a necessary decision. Perhaps it's time to accept reality and make the choice you've been putting off.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_13",
+      "number": 13,
+      "arcana": "major",
+      "name_zh": "死神",
+      "name_en": "Death",
+      "symbol": "⌛",
+      "color_primary": "#17202A",
+      "color_accent": "#BDC3C7",
+      "keywords_upright_zh": [
+        "蜕变",
+        "结束",
+        "过渡",
+        "释放"
+      ],
+      "keywords_upright_en": [
+        "transformation",
+        "endings",
+        "transition",
+        "release"
+      ],
+      "keywords_reversed_zh": [
+        "抗拒改变",
+        "停滞",
+        "腐朽",
+        "拖延结束"
+      ],
+      "keywords_reversed_en": [
+        "resistance to change",
+        "stagnation",
+        "decay",
+        "delaying the inevitable"
+      ],
+      "meaning_upright_zh": "结束是为了新的开始。放下不再服务于你的旧有模式与关系，这是蜕变的时刻。变化虽然不易，却是成长最深刻的礼物。",
+      "meaning_upright_en": "Endings exist to make way for new beginnings. Release the old patterns and relationships that no longer serve you—this is a moment of transformation. Change is never easy, yet it is growth's most profound gift.",
+      "meaning_reversed_zh": "抗拒改变让你停滞不前。是时候承认，某些事情确实需要画上句号，才能继续前行。",
+      "meaning_reversed_en": "Resistance to change is keeping you stagnant. It's time to acknowledge that some things truly need to end before you can move forward.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_14",
+      "number": 14,
+      "arcana": "major",
+      "name_zh": "节制",
+      "name_en": "Temperance",
+      "symbol": "◇",
+      "color_primary": "#117A65",
+      "color_accent": "#F39C12",
+      "keywords_upright_zh": [
+        "平衡",
+        "节制",
+        "耐心",
+        "融合"
+      ],
+      "keywords_upright_en": [
+        "balance",
+        "moderation",
+        "patience",
+        "integration"
+      ],
+      "keywords_reversed_zh": [
+        "失衡",
+        "过度",
+        "急躁",
+        "冲突"
+      ],
+      "keywords_reversed_en": [
+        "imbalance",
+        "excess",
+        "impatience",
+        "conflict"
+      ],
+      "meaning_upright_zh": "寻找平衡与和谐。将不同的元素融合在一起，找到中间的道路。耐心与流动，正是此刻所需的能量。",
+      "meaning_upright_en": "Seek balance and harmony. Blend different elements together and find the middle path. Patience and flow are the energies needed right now.",
+      "meaning_reversed_zh": "生活中某些方面过于极端。过度放纵或过度压抑都会打破平衡。找到你的中心。",
+      "meaning_reversed_en": "Some aspects of life have become too extreme. Both overindulgence and excessive restriction break balance. Find your center.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_15",
+      "number": 15,
+      "arcana": "major",
+      "name_zh": "恶魔",
+      "name_en": "The Devil",
+      "symbol": "◆",
+      "color_primary": "#4A235A",
+      "color_accent": "#922B21",
+      "keywords_upright_zh": [
+        "束缚",
+        "执念",
+        "阴影自我",
+        "物质依赖"
+      ],
+      "keywords_upright_en": [
+        "bondage",
+        "obsession",
+        "shadow self",
+        "materialism"
+      ],
+      "keywords_reversed_zh": [
+        "解放",
+        "挣脱束缚",
+        "重获自由",
+        "觉察"
+      ],
+      "keywords_reversed_en": [
+        "release",
+        "breaking free",
+        "reclaiming power",
+        "awareness"
+      ],
+      "meaning_upright_zh": "注意那些束缚你的执念与恐惧。你比你想象的更自由——那些锁链，也许并没有想象中那么牢固。",
+      "meaning_upright_en": "Notice the obsessions and fears that bind you. You are freer than you believe—those chains may not be as strong as they appear.",
+      "meaning_reversed_zh": "你开始意识到那些让你受困的模式，并准备挣脱。这是解放的开始，勇敢地走出来。",
+      "meaning_reversed_en": "You are becoming aware of the patterns that have kept you trapped and are ready to break free. This is the beginning of liberation—step out bravely.",
+      "energy_upright": "shadow",
+      "energy_reversed": "light"
+    },
+    {
+      "id": "major_16",
+      "number": 16,
+      "arcana": "major",
+      "name_zh": "塔",
+      "name_en": "The Tower",
+      "symbol": "⚡",
+      "color_primary": "#784212",
+      "color_accent": "#7F8C8D",
+      "keywords_upright_zh": [
+        "突变",
+        "觉醒",
+        "崩塌",
+        "启示"
+      ],
+      "keywords_upright_en": [
+        "sudden change",
+        "awakening",
+        "upheaval",
+        "revelation"
+      ],
+      "keywords_reversed_zh": [
+        "回避崩塌",
+        "延迟的动荡",
+        "内心恐惧",
+        "逃避现实"
+      ],
+      "keywords_reversed_en": [
+        "avoiding disaster",
+        "delayed upheaval",
+        "inner fear",
+        "denial"
+      ],
+      "meaning_upright_zh": "突如其来的变化打破了旧有的结构。虽然震动令人不安，但清除腐朽的基础，才能为真正稳固的未来铺路。",
+      "meaning_upright_en": "Sudden change shatters old structures. Though the upheaval is unsettling, clearing away the decayed foundation is what makes room for a truly solid future.",
+      "meaning_reversed_zh": "你在回避一个不可避免的崩塌。也许现在就接受它，比等到它自己倒塌要好得多。",
+      "meaning_reversed_en": "You may be avoiding an inevitable collapse. Perhaps accepting it now is far better than waiting for it to fall on its own.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_17",
+      "number": 17,
+      "arcana": "major",
+      "name_zh": "星星",
+      "name_en": "The Star",
+      "symbol": "★",
+      "color_primary": "#1A5276",
+      "color_accent": "#85C1E9",
+      "keywords_upright_zh": [
+        "希望",
+        "灵感",
+        "宁静",
+        "更新"
+      ],
+      "keywords_upright_en": [
+        "hope",
+        "inspiration",
+        "serenity",
+        "renewal"
+      ],
+      "keywords_reversed_zh": [
+        "失望",
+        "信念动摇",
+        "不安全感",
+        "绝望"
+      ],
+      "keywords_reversed_en": [
+        "disappointment",
+        "loss of faith",
+        "insecurity",
+        "despair"
+      ],
+      "meaning_upright_zh": "经历风雨之后，希望之星照亮前路。你被宇宙温柔地托举着。相信自己，相信未来，一切都会越来越好。",
+      "meaning_upright_en": "After the storm, the star of hope lights your path. You are gently held by the universe. Trust in yourself and in the future—things will keep getting better.",
+      "meaning_reversed_zh": "你暂时失去了对未来的信心。让自己休息一下，希望的光芒不会永远消失，它只是暂时被云遮住了。",
+      "meaning_reversed_en": "You have temporarily lost faith in the future. Allow yourself to rest—the light of hope never disappears for good; it is simply hidden by clouds for now.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_18",
+      "number": 18,
+      "arcana": "major",
+      "name_zh": "月亮",
+      "name_en": "The Moon",
+      "symbol": "☽",
+      "color_primary": "#1A252F",
+      "color_accent": "#5DADE2",
+      "keywords_upright_zh": [
+        "幻象",
+        "恐惧",
+        "潜意识",
+        "迷雾"
+      ],
+      "keywords_upright_en": [
+        "illusion",
+        "fear",
+        "subconscious",
+        "confusion"
+      ],
+      "keywords_reversed_zh": [
+        "释放恐惧",
+        "压抑情绪",
+        "迷失",
+        "表象清晰"
+      ],
+      "keywords_reversed_en": [
+        "releasing fear",
+        "repressed emotions",
+        "disorientation",
+        "clarity emerging"
+      ],
+      "meaning_upright_zh": "在迷雾与幻象中，你的直觉是最可靠的向导。不要被表象所迷惑，深入内心去感知真实发生的事情。",
+      "meaning_upright_en": "In mist and illusion, your intuition is the most reliable guide. Don't be fooled by appearances—look inward to sense what is truly happening.",
+      "meaning_reversed_zh": "恐惧与焦虑可能正在扭曲你的判断。把那些压抑的情绪带到意识层面，让光照进去。",
+      "meaning_reversed_en": "Fear and anxiety may be distorting your judgment. Bring those suppressed emotions into conscious awareness and let the light in.",
+      "energy_upright": "shadow",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "major_19",
+      "number": 19,
+      "arcana": "major",
+      "name_zh": "太阳",
+      "name_en": "The Sun",
+      "symbol": "☀",
+      "color_primary": "#B7950B",
+      "color_accent": "#FDFEFE",
+      "keywords_upright_zh": [
+        "喜悦",
+        "成功",
+        "活力",
+        "光明"
+      ],
+      "keywords_upright_en": [
+        "joy",
+        "success",
+        "vitality",
+        "light"
+      ],
+      "keywords_reversed_zh": [
+        "悲观",
+        "压抑喜悦",
+        "自信不足",
+        "能量低落"
+      ],
+      "keywords_reversed_en": [
+        "pessimism",
+        "suppressed joy",
+        "lack of confidence",
+        "low energy"
+      ],
+      "meaning_upright_zh": "光明、喜悦与成功向你涌来。这是一个充满活力与自信的时期。尽情绽放你的光芒，与他人共享这份幸福。",
+      "meaning_upright_en": "Light, joy, and success flow toward you. This is a period of vitality and confidence. Let your light shine fully and share this happiness with others.",
+      "meaning_reversed_zh": "也许你在刻意压制自己的喜悦，或者对前景过于悲观。阳光仍在，只需放开遮挡它的手。",
+      "meaning_reversed_en": "Perhaps you are suppressing your joy or being too pessimistic about the future. The sunshine is still there—just open your hands and stop blocking it.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_20",
+      "number": 20,
+      "arcana": "major",
+      "name_zh": "审判",
+      "name_en": "Judgement",
+      "symbol": "⊿",
+      "color_primary": "#C0392B",
+      "color_accent": "#F5EEF8",
+      "keywords_upright_zh": [
+        "觉醒",
+        "重生",
+        "内心召唤",
+        "宽恕"
+      ],
+      "keywords_upright_en": [
+        "awakening",
+        "rebirth",
+        "inner calling",
+        "absolution"
+      ],
+      "keywords_reversed_zh": [
+        "自我怀疑",
+        "拒绝审视",
+        "内心评判",
+        "自我批判"
+      ],
+      "keywords_reversed_en": [
+        "self-doubt",
+        "refusal of self-examination",
+        "inner critic",
+        "harsh judgment"
+      ],
+      "meaning_upright_zh": "你听到了内心深处的召唤。这是一次蜕变与觉醒的时刻，过去的一切经历都是为此刻做准备。勇敢回应你的使命。",
+      "meaning_upright_en": "You hear a calling from deep within. This is a moment of transformation and awakening—every past experience has been preparing you for this. Bravely answer your calling.",
+      "meaning_reversed_zh": "你在评判自己过于严苛，或者在回避一个重要的人生抉择。放下自我批判，以宽容面对自己的旅程。",
+      "meaning_reversed_en": "You may be judging yourself too harshly or avoiding a significant life choice. Release self-judgment and approach your journey with compassion.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "major_21",
+      "number": 21,
+      "arcana": "major",
+      "name_zh": "世界",
+      "name_en": "The World",
+      "symbol": "○",
+      "color_primary": "#4A235A",
+      "color_accent": "#F8C471",
+      "keywords_upright_zh": [
+        "圆满",
+        "整合",
+        "成就",
+        "完成"
+      ],
+      "keywords_upright_en": [
+        "completion",
+        "integration",
+        "accomplishment",
+        "wholeness"
+      ],
+      "keywords_reversed_zh": [
+        "未竟之事",
+        "短视",
+        "停滞不前",
+        "差一步"
+      ],
+      "keywords_reversed_en": [
+        "incompleteness",
+        "shortcuts",
+        "stagnation",
+        "so close yet so far"
+      ],
+      "meaning_upright_zh": "你完成了一个重要的循环，值得为此庆祝。整合所有的经历与智慧，你准备好迈向下一个更宽广的篇章。",
+      "meaning_upright_en": "You have completed an important cycle and it deserves to be celebrated. With all your experiences and wisdom integrated, you are ready to step into the next, wider chapter.",
+      "meaning_reversed_zh": "某件事还没有完全完成。再坚持一下，真正的圆满近在眼前。不要在终点前放弃。",
+      "meaning_reversed_en": "Something has not yet been fully completed. Hold on a little longer—true fulfillment is just around the corner. Don't give up at the finish line.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_wands_ace",
+      "number": 1,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "ace",
+      "name_zh": "权杖王牌",
+      "name_en": "Ace of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "启动",
+        "行动",
+        "热情",
+        "火花"
+      ],
+      "keywords_upright_en": [
+        "beginning",
+        "action",
+        "passion",
+        "spark"
+      ],
+      "keywords_reversed_zh": [
+        "迟滞",
+        "躁进",
+        "耗散",
+        "犹疑"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "rush",
+        "burnout",
+        "hesitation"
+      ],
+      "meaning_upright_zh": "权杖王牌带来「新的开端与最初火花」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ace of Wands points to a fresh beginning and the first spark within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖王牌提醒你留意「起点迟滞或能量分散」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ace of Wands highlights a stalled beginning or diffused momentum in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_two",
+      "number": 2,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "two",
+      "name_zh": "权杖二",
+      "name_en": "Two of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "平衡",
+        "行动",
+        "热情",
+        "选择"
+      ],
+      "keywords_upright_en": [
+        "balance",
+        "action",
+        "passion",
+        "choice"
+      ],
+      "keywords_reversed_zh": [
+        "拉扯",
+        "躁进",
+        "耗散",
+        "失衡"
+      ],
+      "keywords_reversed_en": [
+        "tension",
+        "rush",
+        "burnout",
+        "imbalance"
+      ],
+      "meaning_upright_zh": "权杖二带来「平衡、协商与双向选择」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Two of Wands points to balance, negotiation, and dual choice within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖二提醒你留意「拉扯、摇摆与难以定夺」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Two of Wands highlights tension, wavering, and difficulty deciding in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_three",
+      "number": 3,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "three",
+      "name_zh": "权杖三",
+      "name_en": "Three of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "扩展",
+        "行动",
+        "热情",
+        "协作"
+      ],
+      "keywords_upright_en": [
+        "growth",
+        "action",
+        "passion",
+        "collaboration"
+      ],
+      "keywords_reversed_zh": [
+        "阻滞",
+        "躁进",
+        "耗散",
+        "失配"
+      ],
+      "keywords_reversed_en": [
+        "friction",
+        "rush",
+        "burnout",
+        "misalignment"
+      ],
+      "meaning_upright_zh": "权杖三带来「扩展、协作与初步成果」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Three of Wands points to expansion, collaboration, and early results within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖三提醒你留意「配合失序或成长节奏被打断」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Three of Wands highlights poor coordination or interrupted growth in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_four",
+      "number": 4,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "four",
+      "name_zh": "权杖四",
+      "name_en": "Four of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "稳定",
+        "行动",
+        "热情",
+        "边界"
+      ],
+      "keywords_upright_en": [
+        "stability",
+        "action",
+        "passion",
+        "boundary"
+      ],
+      "keywords_reversed_zh": [
+        "僵化",
+        "躁进",
+        "耗散",
+        "紧绷"
+      ],
+      "keywords_reversed_en": [
+        "rigidity",
+        "rush",
+        "burnout",
+        "tension"
+      ],
+      "meaning_upright_zh": "权杖四带来「稳固、停驻与建立边界」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Four of Wands points to stability, pause, and reinforcing structure within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖四提醒你留意「僵住、不安或抓得过紧」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Four of Wands highlights stagnation, unease, or holding too tightly in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_five",
+      "number": 5,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "five",
+      "name_zh": "权杖五",
+      "name_en": "Five of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "冲突",
+        "行动",
+        "热情",
+        "考验"
+      ],
+      "keywords_upright_en": [
+        "conflict",
+        "action",
+        "passion",
+        "challenge"
+      ],
+      "keywords_reversed_zh": [
+        "内耗",
+        "躁进",
+        "耗散",
+        "回避"
+      ],
+      "keywords_reversed_en": [
+        "drain",
+        "rush",
+        "burnout",
+        "avoidance"
+      ],
+      "meaning_upright_zh": "权杖五带来「冲突、挑战与不得不面对的不适」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Five of Wands points to conflict, challenge, and necessary discomfort within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖五提醒你留意「内耗延长或回避真正的问题」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Five of Wands highlights prolonged strain or avoidance of the real issue in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_six",
+      "number": 6,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "six",
+      "name_zh": "权杖六",
+      "name_en": "Six of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "流动",
+        "行动",
+        "热情",
+        "支援"
+      ],
+      "keywords_upright_en": [
+        "transition",
+        "action",
+        "passion",
+        "support"
+      ],
+      "keywords_reversed_zh": [
+        "停滞",
+        "躁进",
+        "耗散",
+        "旧习"
+      ],
+      "keywords_reversed_en": [
+        "stagnation",
+        "rush",
+        "burnout",
+        "old patterns"
+      ],
+      "meaning_upright_zh": "权杖六带来「过渡、支援与重新找到流动」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Six of Wands points to transition, support, and restored movement within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖六提醒你留意「卡在旧模式里，迟迟没有完成过渡」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Six of Wands highlights getting stuck in old patterns and failing to complete the transition in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_wands_seven",
+      "number": 7,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "seven",
+      "name_zh": "权杖七",
+      "name_en": "Seven of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "评估",
+        "行动",
+        "热情",
+        "试探"
+      ],
+      "keywords_upright_en": [
+        "assessment",
+        "action",
+        "passion",
+        "testing"
+      ],
+      "keywords_reversed_zh": [
+        "迟疑",
+        "躁进",
+        "耗散",
+        "失焦"
+      ],
+      "keywords_reversed_en": [
+        "doubt",
+        "rush",
+        "burnout",
+        "blur"
+      ],
+      "meaning_upright_zh": "权杖七带来「评估、试探与看见隐性变量」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Seven of Wands points to assessment, testing, and seeing hidden variables within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖七提醒你留意「怀疑过度、策略失焦或看不清真实优先级」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Seven of Wands highlights over-doubt, unfocused strategy, or blurred priorities in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_eight",
+      "number": 8,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "eight",
+      "name_zh": "权杖八",
+      "name_en": "Eight of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "推进",
+        "行动",
+        "热情",
+        "熟练"
+      ],
+      "keywords_upright_en": [
+        "momentum",
+        "action",
+        "passion",
+        "mastery"
+      ],
+      "keywords_reversed_zh": [
+        "卡顿",
+        "躁进",
+        "耗散",
+        "重复"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "rush",
+        "burnout",
+        "repetition"
+      ],
+      "meaning_upright_zh": "权杖八带来「推进、熟练与节奏加快」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Eight of Wands points to momentum, refinement, and accelerating rhythm within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖八提醒你留意「节奏失控、重复劳作或行动受阻」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Eight of Wands highlights loss of rhythm, repetitive strain, or blocked action in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_nine",
+      "number": 9,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "nine",
+      "name_zh": "权杖九",
+      "name_en": "Nine of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "收成",
+        "行动",
+        "热情",
+        "独立"
+      ],
+      "keywords_upright_en": [
+        "harvest",
+        "action",
+        "passion",
+        "independence"
+      ],
+      "keywords_reversed_zh": [
+        "疲惫",
+        "躁进",
+        "耗散",
+        "焦虑"
+      ],
+      "keywords_reversed_en": [
+        "fatigue",
+        "rush",
+        "burnout",
+        "anxiety"
+      ],
+      "meaning_upright_zh": "权杖九带来「临近完成、独立与阶段性收成」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Nine of Wands points to near completion, independence, and earned results within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖九提醒你留意「疲惫、焦虑或过度单打独斗」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Nine of Wands highlights fatigue, anxiety, or carrying too much alone in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_ten",
+      "number": 10,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "ten",
+      "name_zh": "权杖十",
+      "name_en": "Ten of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "完成",
+        "行动",
+        "热情",
+        "负荷"
+      ],
+      "keywords_upright_en": [
+        "completion",
+        "action",
+        "passion",
+        "burden"
+      ],
+      "keywords_reversed_zh": [
+        "过载",
+        "躁进",
+        "耗散",
+        "放下"
+      ],
+      "keywords_reversed_en": [
+        "overload",
+        "rush",
+        "burnout",
+        "release"
+      ],
+      "meaning_upright_zh": "权杖十带来「完成、极点与该被重新分配的负荷」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ten of Wands points to completion, culmination, and burdens that need redistribution within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖十提醒你留意「压力过载，或旧循环到了必须放下的时候」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ten of Wands highlights overload, or an old cycle reaching the point where it must be released in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_page",
+      "number": 11,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "page",
+      "name_zh": "权杖侍者",
+      "name_en": "Page of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "消息",
+        "行动",
+        "热情",
+        "好奇"
+      ],
+      "keywords_upright_en": [
+        "message",
+        "action",
+        "passion",
+        "curiosity"
+      ],
+      "keywords_reversed_zh": [
+        "稚嫩",
+        "躁进",
+        "耗散",
+        "分散"
+      ],
+      "keywords_reversed_en": [
+        "immature",
+        "rush",
+        "burnout",
+        "scattered"
+      ],
+      "meaning_upright_zh": "权杖侍者带来「消息、好奇与新的学习姿态」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Page of Wands points to messages, curiosity, and a fresh learning posture within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖侍者提醒你留意「信息零散、经验不足或热情还不够稳定」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Page of Wands highlights scattered signals, inexperience, or enthusiasm that has not stabilized in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_wands_knight",
+      "number": 12,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "knight",
+      "name_zh": "权杖骑士",
+      "name_en": "Knight of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "追逐",
+        "行动",
+        "热情",
+        "推进"
+      ],
+      "keywords_upright_en": [
+        "pursuit",
+        "action",
+        "passion",
+        "motion"
+      ],
+      "keywords_reversed_zh": [
+        "偏航",
+        "躁进",
+        "耗散",
+        "躁进"
+      ],
+      "keywords_reversed_en": [
+        "misdirection",
+        "rush",
+        "burnout",
+        "recklessness"
+      ],
+      "meaning_upright_zh": "权杖骑士带来「追逐、推进与把能量带上路」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Knight of Wands points to pursuit, movement, and taking energy on the road within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖骑士提醒你留意「冲得太快、太慢，或方向还没有校准」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Knight of Wands highlights moving too fast, too slow, or without a calibrated direction in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_queen",
+      "number": 13,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "queen",
+      "name_zh": "权杖皇后",
+      "name_en": "Queen of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "成熟",
+        "行动",
+        "热情",
+        "照料"
+      ],
+      "keywords_upright_en": [
+        "maturity",
+        "action",
+        "passion",
+        "nurture"
+      ],
+      "keywords_reversed_zh": [
+        "失衡",
+        "躁进",
+        "耗散",
+        "过度"
+      ],
+      "keywords_reversed_en": [
+        "imbalance",
+        "rush",
+        "burnout",
+        "overreach"
+      ],
+      "meaning_upright_zh": "权杖皇后带来「成熟照料、稳定掌握与有温度的掌控」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Queen of Wands points to mature care, steady mastery, and warm command within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖皇后提醒你留意「照顾失衡、过度代偿，或把温柔变成控制」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Queen of Wands highlights care out of balance, overcompensation, or turning warmth into control in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_wands_king",
+      "number": 14,
+      "arcana": "minor",
+      "suit": "wands",
+      "rank": "king",
+      "name_zh": "权杖国王",
+      "name_en": "King of Wands",
+      "symbol": "🜂",
+      "color_primary": "#A1472D",
+      "color_accent": "#F3C17A",
+      "keywords_upright_zh": [
+        "统筹",
+        "行动",
+        "热情",
+        "领导"
+      ],
+      "keywords_upright_en": [
+        "leadership",
+        "action",
+        "passion",
+        "command"
+      ],
+      "keywords_reversed_zh": [
+        "控制",
+        "躁进",
+        "耗散",
+        "固执"
+      ],
+      "keywords_reversed_en": [
+        "control",
+        "rush",
+        "burnout",
+        "rigidity"
+      ],
+      "meaning_upright_zh": "权杖国王带来「统筹、决断与成熟的领导力」的讯号。关于行动、热情与创造，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把灵感落成一步具体行动，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "King of Wands points to coordination, decision, and mature leadership within action, drive, and creative fire. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to turn inspiration into one concrete move so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "权杖国王提醒你留意「控制欲过强、固执，或权威感不够稳定」。关于行动、热情与创造，问题并不一定来自运气，而更可能来自急躁、分心或把热情烧得太快。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "King of Wands highlights over-control, rigidity, or unstable authority in the area of action, drive, and creative fire. The challenge here is less about fate and more about rushing, scattered focus, or burning through your energy too fast. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_ace",
+      "number": 1,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "ace",
+      "name_zh": "圣杯王牌",
+      "name_en": "Ace of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "启动",
+        "感受",
+        "联结",
+        "火花"
+      ],
+      "keywords_upright_en": [
+        "beginning",
+        "feeling",
+        "connection",
+        "spark"
+      ],
+      "keywords_reversed_zh": [
+        "迟滞",
+        "失衡",
+        "回避",
+        "犹疑"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "imbalance",
+        "avoidance",
+        "hesitation"
+      ],
+      "meaning_upright_zh": "圣杯王牌带来「新的开端与最初火花」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ace of Cups points to a fresh beginning and the first spark within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯王牌提醒你留意「起点迟滞或能量分散」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ace of Cups highlights a stalled beginning or diffused momentum in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_two",
+      "number": 2,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "two",
+      "name_zh": "圣杯二",
+      "name_en": "Two of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "平衡",
+        "感受",
+        "联结",
+        "选择"
+      ],
+      "keywords_upright_en": [
+        "balance",
+        "feeling",
+        "connection",
+        "choice"
+      ],
+      "keywords_reversed_zh": [
+        "拉扯",
+        "失衡",
+        "回避",
+        "失衡"
+      ],
+      "keywords_reversed_en": [
+        "tension",
+        "imbalance",
+        "avoidance",
+        "imbalance"
+      ],
+      "meaning_upright_zh": "圣杯二带来「平衡、协商与双向选择」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Two of Cups points to balance, negotiation, and dual choice within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯二提醒你留意「拉扯、摇摆与难以定夺」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Two of Cups highlights tension, wavering, and difficulty deciding in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_three",
+      "number": 3,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "three",
+      "name_zh": "圣杯三",
+      "name_en": "Three of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "扩展",
+        "感受",
+        "联结",
+        "协作"
+      ],
+      "keywords_upright_en": [
+        "growth",
+        "feeling",
+        "connection",
+        "collaboration"
+      ],
+      "keywords_reversed_zh": [
+        "阻滞",
+        "失衡",
+        "回避",
+        "失配"
+      ],
+      "keywords_reversed_en": [
+        "friction",
+        "imbalance",
+        "avoidance",
+        "misalignment"
+      ],
+      "meaning_upright_zh": "圣杯三带来「扩展、协作与初步成果」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Three of Cups points to expansion, collaboration, and early results within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯三提醒你留意「配合失序或成长节奏被打断」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Three of Cups highlights poor coordination or interrupted growth in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_four",
+      "number": 4,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "four",
+      "name_zh": "圣杯四",
+      "name_en": "Four of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "稳定",
+        "感受",
+        "联结",
+        "边界"
+      ],
+      "keywords_upright_en": [
+        "stability",
+        "feeling",
+        "connection",
+        "boundary"
+      ],
+      "keywords_reversed_zh": [
+        "僵化",
+        "失衡",
+        "回避",
+        "紧绷"
+      ],
+      "keywords_reversed_en": [
+        "rigidity",
+        "imbalance",
+        "avoidance",
+        "tension"
+      ],
+      "meaning_upright_zh": "圣杯四带来「稳固、停驻与建立边界」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Four of Cups points to stability, pause, and reinforcing structure within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯四提醒你留意「僵住、不安或抓得过紧」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Four of Cups highlights stagnation, unease, or holding too tightly in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_five",
+      "number": 5,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "five",
+      "name_zh": "圣杯五",
+      "name_en": "Five of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "冲突",
+        "感受",
+        "联结",
+        "考验"
+      ],
+      "keywords_upright_en": [
+        "conflict",
+        "feeling",
+        "connection",
+        "challenge"
+      ],
+      "keywords_reversed_zh": [
+        "内耗",
+        "失衡",
+        "回避",
+        "回避"
+      ],
+      "keywords_reversed_en": [
+        "drain",
+        "imbalance",
+        "avoidance",
+        "avoidance"
+      ],
+      "meaning_upright_zh": "圣杯五带来「冲突、挑战与不得不面对的不适」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Five of Cups points to conflict, challenge, and necessary discomfort within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯五提醒你留意「内耗延长或回避真正的问题」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Five of Cups highlights prolonged strain or avoidance of the real issue in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_six",
+      "number": 6,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "six",
+      "name_zh": "圣杯六",
+      "name_en": "Six of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "流动",
+        "感受",
+        "联结",
+        "支援"
+      ],
+      "keywords_upright_en": [
+        "transition",
+        "feeling",
+        "connection",
+        "support"
+      ],
+      "keywords_reversed_zh": [
+        "停滞",
+        "失衡",
+        "回避",
+        "旧习"
+      ],
+      "keywords_reversed_en": [
+        "stagnation",
+        "imbalance",
+        "avoidance",
+        "old patterns"
+      ],
+      "meaning_upright_zh": "圣杯六带来「过渡、支援与重新找到流动」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Six of Cups points to transition, support, and restored movement within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯六提醒你留意「卡在旧模式里，迟迟没有完成过渡」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Six of Cups highlights getting stuck in old patterns and failing to complete the transition in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_cups_seven",
+      "number": 7,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "seven",
+      "name_zh": "圣杯七",
+      "name_en": "Seven of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "评估",
+        "感受",
+        "联结",
+        "试探"
+      ],
+      "keywords_upright_en": [
+        "assessment",
+        "feeling",
+        "connection",
+        "testing"
+      ],
+      "keywords_reversed_zh": [
+        "迟疑",
+        "失衡",
+        "回避",
+        "失焦"
+      ],
+      "keywords_reversed_en": [
+        "doubt",
+        "imbalance",
+        "avoidance",
+        "blur"
+      ],
+      "meaning_upright_zh": "圣杯七带来「评估、试探与看见隐性变量」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Seven of Cups points to assessment, testing, and seeing hidden variables within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯七提醒你留意「怀疑过度、策略失焦或看不清真实优先级」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Seven of Cups highlights over-doubt, unfocused strategy, or blurred priorities in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_eight",
+      "number": 8,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "eight",
+      "name_zh": "圣杯八",
+      "name_en": "Eight of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "推进",
+        "感受",
+        "联结",
+        "熟练"
+      ],
+      "keywords_upright_en": [
+        "momentum",
+        "feeling",
+        "connection",
+        "mastery"
+      ],
+      "keywords_reversed_zh": [
+        "卡顿",
+        "失衡",
+        "回避",
+        "重复"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "imbalance",
+        "avoidance",
+        "repetition"
+      ],
+      "meaning_upright_zh": "圣杯八带来「推进、熟练与节奏加快」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Eight of Cups points to momentum, refinement, and accelerating rhythm within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯八提醒你留意「节奏失控、重复劳作或行动受阻」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Eight of Cups highlights loss of rhythm, repetitive strain, or blocked action in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_nine",
+      "number": 9,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "nine",
+      "name_zh": "圣杯九",
+      "name_en": "Nine of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "收成",
+        "感受",
+        "联结",
+        "独立"
+      ],
+      "keywords_upright_en": [
+        "harvest",
+        "feeling",
+        "connection",
+        "independence"
+      ],
+      "keywords_reversed_zh": [
+        "疲惫",
+        "失衡",
+        "回避",
+        "焦虑"
+      ],
+      "keywords_reversed_en": [
+        "fatigue",
+        "imbalance",
+        "avoidance",
+        "anxiety"
+      ],
+      "meaning_upright_zh": "圣杯九带来「临近完成、独立与阶段性收成」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Nine of Cups points to near completion, independence, and earned results within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯九提醒你留意「疲惫、焦虑或过度单打独斗」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Nine of Cups highlights fatigue, anxiety, or carrying too much alone in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_ten",
+      "number": 10,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "ten",
+      "name_zh": "圣杯十",
+      "name_en": "Ten of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "完成",
+        "感受",
+        "联结",
+        "负荷"
+      ],
+      "keywords_upright_en": [
+        "completion",
+        "feeling",
+        "connection",
+        "burden"
+      ],
+      "keywords_reversed_zh": [
+        "过载",
+        "失衡",
+        "回避",
+        "放下"
+      ],
+      "keywords_reversed_en": [
+        "overload",
+        "imbalance",
+        "avoidance",
+        "release"
+      ],
+      "meaning_upright_zh": "圣杯十带来「完成、极点与该被重新分配的负荷」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ten of Cups points to completion, culmination, and burdens that need redistribution within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯十提醒你留意「压力过载，或旧循环到了必须放下的时候」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ten of Cups highlights overload, or an old cycle reaching the point where it must be released in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_page",
+      "number": 11,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "page",
+      "name_zh": "圣杯侍者",
+      "name_en": "Page of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "消息",
+        "感受",
+        "联结",
+        "好奇"
+      ],
+      "keywords_upright_en": [
+        "message",
+        "feeling",
+        "connection",
+        "curiosity"
+      ],
+      "keywords_reversed_zh": [
+        "稚嫩",
+        "失衡",
+        "回避",
+        "分散"
+      ],
+      "keywords_reversed_en": [
+        "immature",
+        "imbalance",
+        "avoidance",
+        "scattered"
+      ],
+      "meaning_upright_zh": "圣杯侍者带来「消息、好奇与新的学习姿态」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Page of Cups points to messages, curiosity, and a fresh learning posture within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯侍者提醒你留意「信息零散、经验不足或热情还不够稳定」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Page of Cups highlights scattered signals, inexperience, or enthusiasm that has not stabilized in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_cups_knight",
+      "number": 12,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "knight",
+      "name_zh": "圣杯骑士",
+      "name_en": "Knight of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "追逐",
+        "感受",
+        "联结",
+        "推进"
+      ],
+      "keywords_upright_en": [
+        "pursuit",
+        "feeling",
+        "connection",
+        "motion"
+      ],
+      "keywords_reversed_zh": [
+        "偏航",
+        "失衡",
+        "回避",
+        "躁进"
+      ],
+      "keywords_reversed_en": [
+        "misdirection",
+        "imbalance",
+        "avoidance",
+        "recklessness"
+      ],
+      "meaning_upright_zh": "圣杯骑士带来「追逐、推进与把能量带上路」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Knight of Cups points to pursuit, movement, and taking energy on the road within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯骑士提醒你留意「冲得太快、太慢，或方向还没有校准」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Knight of Cups highlights moving too fast, too slow, or without a calibrated direction in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_queen",
+      "number": 13,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "queen",
+      "name_zh": "圣杯皇后",
+      "name_en": "Queen of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "成熟",
+        "感受",
+        "联结",
+        "照料"
+      ],
+      "keywords_upright_en": [
+        "maturity",
+        "feeling",
+        "connection",
+        "nurture"
+      ],
+      "keywords_reversed_zh": [
+        "失衡",
+        "失衡",
+        "回避",
+        "过度"
+      ],
+      "keywords_reversed_en": [
+        "imbalance",
+        "imbalance",
+        "avoidance",
+        "overreach"
+      ],
+      "meaning_upright_zh": "圣杯皇后带来「成熟照料、稳定掌握与有温度的掌控」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Queen of Cups points to mature care, steady mastery, and warm command within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯皇后提醒你留意「照顾失衡、过度代偿，或把温柔变成控制」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Queen of Cups highlights care out of balance, overcompensation, or turning warmth into control in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_cups_king",
+      "number": 14,
+      "arcana": "minor",
+      "suit": "cups",
+      "rank": "king",
+      "name_zh": "圣杯国王",
+      "name_en": "King of Cups",
+      "symbol": "☾",
+      "color_primary": "#2F6C8F",
+      "color_accent": "#A9D6E5",
+      "keywords_upright_zh": [
+        "统筹",
+        "感受",
+        "联结",
+        "领导"
+      ],
+      "keywords_upright_en": [
+        "leadership",
+        "feeling",
+        "connection",
+        "command"
+      ],
+      "keywords_reversed_zh": [
+        "控制",
+        "失衡",
+        "回避",
+        "固执"
+      ],
+      "keywords_reversed_en": [
+        "control",
+        "imbalance",
+        "avoidance",
+        "rigidity"
+      ],
+      "meaning_upright_zh": "圣杯国王带来「统筹、决断与成熟的领导力」的讯号。关于情感、关系与直觉，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你让感受被温柔地看见与表达，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "King of Cups points to coordination, decision, and mature leadership within emotion, connection, and intuition. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to let feelings be seen and expressed gently so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "圣杯国王提醒你留意「控制欲过强、固执，或权威感不够稳定」。关于情感、关系与直觉，问题并不一定来自运气，而更可能来自情绪回避、过度理想化或心意摇摆。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "King of Cups highlights over-control, rigidity, or unstable authority in the area of emotion, connection, and intuition. The challenge here is less about fate and more about emotional avoidance, over-idealizing, or wavering feelings. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_ace",
+      "number": 1,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "ace",
+      "name_zh": "宝剑王牌",
+      "name_en": "Ace of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "启动",
+        "清晰",
+        "判断",
+        "火花"
+      ],
+      "keywords_upright_en": [
+        "beginning",
+        "clarity",
+        "discernment",
+        "spark"
+      ],
+      "keywords_reversed_zh": [
+        "迟滞",
+        "混乱",
+        "拉扯",
+        "犹疑"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "confusion",
+        "friction",
+        "hesitation"
+      ],
+      "meaning_upright_zh": "宝剑王牌带来「新的开端与最初火花」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ace of Swords points to a fresh beginning and the first spark within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑王牌提醒你留意「起点迟滞或能量分散」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ace of Swords highlights a stalled beginning or diffused momentum in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_two",
+      "number": 2,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "two",
+      "name_zh": "宝剑二",
+      "name_en": "Two of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "平衡",
+        "清晰",
+        "判断",
+        "选择"
+      ],
+      "keywords_upright_en": [
+        "balance",
+        "clarity",
+        "discernment",
+        "choice"
+      ],
+      "keywords_reversed_zh": [
+        "拉扯",
+        "混乱",
+        "拉扯",
+        "失衡"
+      ],
+      "keywords_reversed_en": [
+        "tension",
+        "confusion",
+        "friction",
+        "imbalance"
+      ],
+      "meaning_upright_zh": "宝剑二带来「平衡、协商与双向选择」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Two of Swords points to balance, negotiation, and dual choice within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑二提醒你留意「拉扯、摇摆与难以定夺」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Two of Swords highlights tension, wavering, and difficulty deciding in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_three",
+      "number": 3,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "three",
+      "name_zh": "宝剑三",
+      "name_en": "Three of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "扩展",
+        "清晰",
+        "判断",
+        "协作"
+      ],
+      "keywords_upright_en": [
+        "growth",
+        "clarity",
+        "discernment",
+        "collaboration"
+      ],
+      "keywords_reversed_zh": [
+        "阻滞",
+        "混乱",
+        "拉扯",
+        "失配"
+      ],
+      "keywords_reversed_en": [
+        "friction",
+        "confusion",
+        "friction",
+        "misalignment"
+      ],
+      "meaning_upright_zh": "宝剑三带来「扩展、协作与初步成果」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Three of Swords points to expansion, collaboration, and early results within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑三提醒你留意「配合失序或成长节奏被打断」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Three of Swords highlights poor coordination or interrupted growth in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_four",
+      "number": 4,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "four",
+      "name_zh": "宝剑四",
+      "name_en": "Four of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "稳定",
+        "清晰",
+        "判断",
+        "边界"
+      ],
+      "keywords_upright_en": [
+        "stability",
+        "clarity",
+        "discernment",
+        "boundary"
+      ],
+      "keywords_reversed_zh": [
+        "僵化",
+        "混乱",
+        "拉扯",
+        "紧绷"
+      ],
+      "keywords_reversed_en": [
+        "rigidity",
+        "confusion",
+        "friction",
+        "tension"
+      ],
+      "meaning_upright_zh": "宝剑四带来「稳固、停驻与建立边界」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Four of Swords points to stability, pause, and reinforcing structure within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑四提醒你留意「僵住、不安或抓得过紧」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Four of Swords highlights stagnation, unease, or holding too tightly in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_five",
+      "number": 5,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "five",
+      "name_zh": "宝剑五",
+      "name_en": "Five of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "冲突",
+        "清晰",
+        "判断",
+        "考验"
+      ],
+      "keywords_upright_en": [
+        "conflict",
+        "clarity",
+        "discernment",
+        "challenge"
+      ],
+      "keywords_reversed_zh": [
+        "内耗",
+        "混乱",
+        "拉扯",
+        "回避"
+      ],
+      "keywords_reversed_en": [
+        "drain",
+        "confusion",
+        "friction",
+        "avoidance"
+      ],
+      "meaning_upright_zh": "宝剑五带来「冲突、挑战与不得不面对的不适」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Five of Swords points to conflict, challenge, and necessary discomfort within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑五提醒你留意「内耗延长或回避真正的问题」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Five of Swords highlights prolonged strain or avoidance of the real issue in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_six",
+      "number": 6,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "six",
+      "name_zh": "宝剑六",
+      "name_en": "Six of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "流动",
+        "清晰",
+        "判断",
+        "支援"
+      ],
+      "keywords_upright_en": [
+        "transition",
+        "clarity",
+        "discernment",
+        "support"
+      ],
+      "keywords_reversed_zh": [
+        "停滞",
+        "混乱",
+        "拉扯",
+        "旧习"
+      ],
+      "keywords_reversed_en": [
+        "stagnation",
+        "confusion",
+        "friction",
+        "old patterns"
+      ],
+      "meaning_upright_zh": "宝剑六带来「过渡、支援与重新找到流动」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Six of Swords points to transition, support, and restored movement within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑六提醒你留意「卡在旧模式里，迟迟没有完成过渡」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Six of Swords highlights getting stuck in old patterns and failing to complete the transition in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_swords_seven",
+      "number": 7,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "seven",
+      "name_zh": "宝剑七",
+      "name_en": "Seven of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "评估",
+        "清晰",
+        "判断",
+        "试探"
+      ],
+      "keywords_upright_en": [
+        "assessment",
+        "clarity",
+        "discernment",
+        "testing"
+      ],
+      "keywords_reversed_zh": [
+        "迟疑",
+        "混乱",
+        "拉扯",
+        "失焦"
+      ],
+      "keywords_reversed_en": [
+        "doubt",
+        "confusion",
+        "friction",
+        "blur"
+      ],
+      "meaning_upright_zh": "宝剑七带来「评估、试探与看见隐性变量」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Seven of Swords points to assessment, testing, and seeing hidden variables within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑七提醒你留意「怀疑过度、策略失焦或看不清真实优先级」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Seven of Swords highlights over-doubt, unfocused strategy, or blurred priorities in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_eight",
+      "number": 8,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "eight",
+      "name_zh": "宝剑八",
+      "name_en": "Eight of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "推进",
+        "清晰",
+        "判断",
+        "熟练"
+      ],
+      "keywords_upright_en": [
+        "momentum",
+        "clarity",
+        "discernment",
+        "mastery"
+      ],
+      "keywords_reversed_zh": [
+        "卡顿",
+        "混乱",
+        "拉扯",
+        "重复"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "confusion",
+        "friction",
+        "repetition"
+      ],
+      "meaning_upright_zh": "宝剑八带来「推进、熟练与节奏加快」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Eight of Swords points to momentum, refinement, and accelerating rhythm within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑八提醒你留意「节奏失控、重复劳作或行动受阻」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Eight of Swords highlights loss of rhythm, repetitive strain, or blocked action in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_nine",
+      "number": 9,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "nine",
+      "name_zh": "宝剑九",
+      "name_en": "Nine of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "收成",
+        "清晰",
+        "判断",
+        "独立"
+      ],
+      "keywords_upright_en": [
+        "harvest",
+        "clarity",
+        "discernment",
+        "independence"
+      ],
+      "keywords_reversed_zh": [
+        "疲惫",
+        "混乱",
+        "拉扯",
+        "焦虑"
+      ],
+      "keywords_reversed_en": [
+        "fatigue",
+        "confusion",
+        "friction",
+        "anxiety"
+      ],
+      "meaning_upright_zh": "宝剑九带来「临近完成、独立与阶段性收成」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Nine of Swords points to near completion, independence, and earned results within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑九提醒你留意「疲惫、焦虑或过度单打独斗」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Nine of Swords highlights fatigue, anxiety, or carrying too much alone in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_ten",
+      "number": 10,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "ten",
+      "name_zh": "宝剑十",
+      "name_en": "Ten of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "完成",
+        "清晰",
+        "判断",
+        "负荷"
+      ],
+      "keywords_upright_en": [
+        "completion",
+        "clarity",
+        "discernment",
+        "burden"
+      ],
+      "keywords_reversed_zh": [
+        "过载",
+        "混乱",
+        "拉扯",
+        "放下"
+      ],
+      "keywords_reversed_en": [
+        "overload",
+        "confusion",
+        "friction",
+        "release"
+      ],
+      "meaning_upright_zh": "宝剑十带来「完成、极点与该被重新分配的负荷」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ten of Swords points to completion, culmination, and burdens that need redistribution within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑十提醒你留意「压力过载，或旧循环到了必须放下的时候」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ten of Swords highlights overload, or an old cycle reaching the point where it must be released in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_page",
+      "number": 11,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "page",
+      "name_zh": "宝剑侍者",
+      "name_en": "Page of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "消息",
+        "清晰",
+        "判断",
+        "好奇"
+      ],
+      "keywords_upright_en": [
+        "message",
+        "clarity",
+        "discernment",
+        "curiosity"
+      ],
+      "keywords_reversed_zh": [
+        "稚嫩",
+        "混乱",
+        "拉扯",
+        "分散"
+      ],
+      "keywords_reversed_en": [
+        "immature",
+        "confusion",
+        "friction",
+        "scattered"
+      ],
+      "meaning_upright_zh": "宝剑侍者带来「消息、好奇与新的学习姿态」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Page of Swords points to messages, curiosity, and a fresh learning posture within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑侍者提醒你留意「信息零散、经验不足或热情还不够稳定」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Page of Swords highlights scattered signals, inexperience, or enthusiasm that has not stabilized in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_swords_knight",
+      "number": 12,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "knight",
+      "name_zh": "宝剑骑士",
+      "name_en": "Knight of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "追逐",
+        "清晰",
+        "判断",
+        "推进"
+      ],
+      "keywords_upright_en": [
+        "pursuit",
+        "clarity",
+        "discernment",
+        "motion"
+      ],
+      "keywords_reversed_zh": [
+        "偏航",
+        "混乱",
+        "拉扯",
+        "躁进"
+      ],
+      "keywords_reversed_en": [
+        "misdirection",
+        "confusion",
+        "friction",
+        "recklessness"
+      ],
+      "meaning_upright_zh": "宝剑骑士带来「追逐、推进与把能量带上路」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Knight of Swords points to pursuit, movement, and taking energy on the road within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑骑士提醒你留意「冲得太快、太慢，或方向还没有校准」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Knight of Swords highlights moving too fast, too slow, or without a calibrated direction in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_queen",
+      "number": 13,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "queen",
+      "name_zh": "宝剑皇后",
+      "name_en": "Queen of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "成熟",
+        "清晰",
+        "判断",
+        "照料"
+      ],
+      "keywords_upright_en": [
+        "maturity",
+        "clarity",
+        "discernment",
+        "nurture"
+      ],
+      "keywords_reversed_zh": [
+        "失衡",
+        "混乱",
+        "拉扯",
+        "过度"
+      ],
+      "keywords_reversed_en": [
+        "imbalance",
+        "confusion",
+        "friction",
+        "overreach"
+      ],
+      "meaning_upright_zh": "宝剑皇后带来「成熟照料、稳定掌握与有温度的掌控」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Queen of Swords points to mature care, steady mastery, and warm command within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑皇后提醒你留意「照顾失衡、过度代偿，或把温柔变成控制」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Queen of Swords highlights care out of balance, overcompensation, or turning warmth into control in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_swords_king",
+      "number": 14,
+      "arcana": "minor",
+      "suit": "swords",
+      "rank": "king",
+      "name_zh": "宝剑国王",
+      "name_en": "King of Swords",
+      "symbol": "✦",
+      "color_primary": "#5C6670",
+      "color_accent": "#C9D6DF",
+      "keywords_upright_zh": [
+        "统筹",
+        "清晰",
+        "判断",
+        "领导"
+      ],
+      "keywords_upright_en": [
+        "leadership",
+        "clarity",
+        "discernment",
+        "command"
+      ],
+      "keywords_reversed_zh": [
+        "控制",
+        "混乱",
+        "拉扯",
+        "固执"
+      ],
+      "keywords_reversed_en": [
+        "control",
+        "confusion",
+        "friction",
+        "rigidity"
+      ],
+      "meaning_upright_zh": "宝剑国王带来「统筹、决断与成熟的领导力」的讯号。关于思考、判断与沟通，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把事实与界限说清楚，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "King of Swords points to coordination, decision, and mature leadership within thought, truth, and decision-making. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to name the facts and communicate your boundaries clearly so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "宝剑国王提醒你留意「控制欲过强、固执，或权威感不够稳定」。关于思考、判断与沟通，问题并不一定来自运气，而更可能来自过度担心、争执升级或想得太多却迟迟不行动。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "King of Swords highlights over-control, rigidity, or unstable authority in the area of thought, truth, and decision-making. The challenge here is less about fate and more about overthinking, escalating conflict, or thinking so much that action stalls. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_ace",
+      "number": 1,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "ace",
+      "name_zh": "星币王牌",
+      "name_en": "Ace of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "启动",
+        "落实",
+        "稳定",
+        "火花"
+      ],
+      "keywords_upright_en": [
+        "beginning",
+        "grounding",
+        "stability",
+        "spark"
+      ],
+      "keywords_reversed_zh": [
+        "迟滞",
+        "拖延",
+        "失衡",
+        "犹疑"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "delay",
+        "instability",
+        "hesitation"
+      ],
+      "meaning_upright_zh": "星币王牌带来「新的开端与最初火花」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ace of Pentacles points to a fresh beginning and the first spark within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币王牌提醒你留意「起点迟滞或能量分散」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ace of Pentacles highlights a stalled beginning or diffused momentum in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_two",
+      "number": 2,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "two",
+      "name_zh": "星币二",
+      "name_en": "Two of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "平衡",
+        "落实",
+        "稳定",
+        "选择"
+      ],
+      "keywords_upright_en": [
+        "balance",
+        "grounding",
+        "stability",
+        "choice"
+      ],
+      "keywords_reversed_zh": [
+        "拉扯",
+        "拖延",
+        "失衡",
+        "失衡"
+      ],
+      "keywords_reversed_en": [
+        "tension",
+        "delay",
+        "instability",
+        "imbalance"
+      ],
+      "meaning_upright_zh": "星币二带来「平衡、协商与双向选择」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Two of Pentacles points to balance, negotiation, and dual choice within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币二提醒你留意「拉扯、摇摆与难以定夺」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Two of Pentacles highlights tension, wavering, and difficulty deciding in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_three",
+      "number": 3,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "three",
+      "name_zh": "星币三",
+      "name_en": "Three of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "扩展",
+        "落实",
+        "稳定",
+        "协作"
+      ],
+      "keywords_upright_en": [
+        "growth",
+        "grounding",
+        "stability",
+        "collaboration"
+      ],
+      "keywords_reversed_zh": [
+        "阻滞",
+        "拖延",
+        "失衡",
+        "失配"
+      ],
+      "keywords_reversed_en": [
+        "friction",
+        "delay",
+        "instability",
+        "misalignment"
+      ],
+      "meaning_upright_zh": "星币三带来「扩展、协作与初步成果」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Three of Pentacles points to expansion, collaboration, and early results within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币三提醒你留意「配合失序或成长节奏被打断」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Three of Pentacles highlights poor coordination or interrupted growth in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_four",
+      "number": 4,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "four",
+      "name_zh": "星币四",
+      "name_en": "Four of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "稳定",
+        "落实",
+        "稳定",
+        "边界"
+      ],
+      "keywords_upright_en": [
+        "stability",
+        "grounding",
+        "stability",
+        "boundary"
+      ],
+      "keywords_reversed_zh": [
+        "僵化",
+        "拖延",
+        "失衡",
+        "紧绷"
+      ],
+      "keywords_reversed_en": [
+        "rigidity",
+        "delay",
+        "instability",
+        "tension"
+      ],
+      "meaning_upright_zh": "星币四带来「稳固、停驻与建立边界」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Four of Pentacles points to stability, pause, and reinforcing structure within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币四提醒你留意「僵住、不安或抓得过紧」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Four of Pentacles highlights stagnation, unease, or holding too tightly in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_five",
+      "number": 5,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "five",
+      "name_zh": "星币五",
+      "name_en": "Five of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "冲突",
+        "落实",
+        "稳定",
+        "考验"
+      ],
+      "keywords_upright_en": [
+        "conflict",
+        "grounding",
+        "stability",
+        "challenge"
+      ],
+      "keywords_reversed_zh": [
+        "内耗",
+        "拖延",
+        "失衡",
+        "回避"
+      ],
+      "keywords_reversed_en": [
+        "drain",
+        "delay",
+        "instability",
+        "avoidance"
+      ],
+      "meaning_upright_zh": "星币五带来「冲突、挑战与不得不面对的不适」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Five of Pentacles points to conflict, challenge, and necessary discomfort within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币五提醒你留意「内耗延长或回避真正的问题」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Five of Pentacles highlights prolonged strain or avoidance of the real issue in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_six",
+      "number": 6,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "six",
+      "name_zh": "星币六",
+      "name_en": "Six of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "流动",
+        "落实",
+        "稳定",
+        "支援"
+      ],
+      "keywords_upright_en": [
+        "transition",
+        "grounding",
+        "stability",
+        "support"
+      ],
+      "keywords_reversed_zh": [
+        "停滞",
+        "拖延",
+        "失衡",
+        "旧习"
+      ],
+      "keywords_reversed_en": [
+        "stagnation",
+        "delay",
+        "instability",
+        "old patterns"
+      ],
+      "meaning_upright_zh": "星币六带来「过渡、支援与重新找到流动」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Six of Pentacles points to transition, support, and restored movement within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币六提醒你留意「卡在旧模式里，迟迟没有完成过渡」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Six of Pentacles highlights getting stuck in old patterns and failing to complete the transition in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_pentacles_seven",
+      "number": 7,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "seven",
+      "name_zh": "星币七",
+      "name_en": "Seven of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "评估",
+        "落实",
+        "稳定",
+        "试探"
+      ],
+      "keywords_upright_en": [
+        "assessment",
+        "grounding",
+        "stability",
+        "testing"
+      ],
+      "keywords_reversed_zh": [
+        "迟疑",
+        "拖延",
+        "失衡",
+        "失焦"
+      ],
+      "keywords_reversed_en": [
+        "doubt",
+        "delay",
+        "instability",
+        "blur"
+      ],
+      "meaning_upright_zh": "星币七带来「评估、试探与看见隐性变量」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Seven of Pentacles points to assessment, testing, and seeing hidden variables within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币七提醒你留意「怀疑过度、策略失焦或看不清真实优先级」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Seven of Pentacles highlights over-doubt, unfocused strategy, or blurred priorities in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_eight",
+      "number": 8,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "eight",
+      "name_zh": "星币八",
+      "name_en": "Eight of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "推进",
+        "落实",
+        "稳定",
+        "熟练"
+      ],
+      "keywords_upright_en": [
+        "momentum",
+        "grounding",
+        "stability",
+        "mastery"
+      ],
+      "keywords_reversed_zh": [
+        "卡顿",
+        "拖延",
+        "失衡",
+        "重复"
+      ],
+      "keywords_reversed_en": [
+        "delay",
+        "delay",
+        "instability",
+        "repetition"
+      ],
+      "meaning_upright_zh": "星币八带来「推进、熟练与节奏加快」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Eight of Pentacles points to momentum, refinement, and accelerating rhythm within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币八提醒你留意「节奏失控、重复劳作或行动受阻」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Eight of Pentacles highlights loss of rhythm, repetitive strain, or blocked action in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_nine",
+      "number": 9,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "nine",
+      "name_zh": "星币九",
+      "name_en": "Nine of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "收成",
+        "落实",
+        "稳定",
+        "独立"
+      ],
+      "keywords_upright_en": [
+        "harvest",
+        "grounding",
+        "stability",
+        "independence"
+      ],
+      "keywords_reversed_zh": [
+        "疲惫",
+        "拖延",
+        "失衡",
+        "焦虑"
+      ],
+      "keywords_reversed_en": [
+        "fatigue",
+        "delay",
+        "instability",
+        "anxiety"
+      ],
+      "meaning_upright_zh": "星币九带来「临近完成、独立与阶段性收成」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Nine of Pentacles points to near completion, independence, and earned results within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币九提醒你留意「疲惫、焦虑或过度单打独斗」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Nine of Pentacles highlights fatigue, anxiety, or carrying too much alone in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_ten",
+      "number": 10,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "ten",
+      "name_zh": "星币十",
+      "name_en": "Ten of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "完成",
+        "落实",
+        "稳定",
+        "负荷"
+      ],
+      "keywords_upright_en": [
+        "completion",
+        "grounding",
+        "stability",
+        "burden"
+      ],
+      "keywords_reversed_zh": [
+        "过载",
+        "拖延",
+        "失衡",
+        "放下"
+      ],
+      "keywords_reversed_en": [
+        "overload",
+        "delay",
+        "instability",
+        "release"
+      ],
+      "meaning_upright_zh": "星币十带来「完成、极点与该被重新分配的负荷」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Ten of Pentacles points to completion, culmination, and burdens that need redistribution within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币十提醒你留意「压力过载，或旧循环到了必须放下的时候」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Ten of Pentacles highlights overload, or an old cycle reaching the point where it must be released in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "shadow",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_page",
+      "number": 11,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "page",
+      "name_zh": "星币侍者",
+      "name_en": "Page of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "消息",
+        "落实",
+        "稳定",
+        "好奇"
+      ],
+      "keywords_upright_en": [
+        "message",
+        "grounding",
+        "stability",
+        "curiosity"
+      ],
+      "keywords_reversed_zh": [
+        "稚嫩",
+        "拖延",
+        "失衡",
+        "分散"
+      ],
+      "keywords_reversed_en": [
+        "immature",
+        "delay",
+        "instability",
+        "scattered"
+      ],
+      "meaning_upright_zh": "星币侍者带来「消息、好奇与新的学习姿态」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Page of Pentacles points to messages, curiosity, and a fresh learning posture within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币侍者提醒你留意「信息零散、经验不足或热情还不够稳定」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Page of Pentacles highlights scattered signals, inexperience, or enthusiasm that has not stabilized in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "neutral"
+    },
+    {
+      "id": "minor_pentacles_knight",
+      "number": 12,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "knight",
+      "name_zh": "星币骑士",
+      "name_en": "Knight of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "追逐",
+        "落实",
+        "稳定",
+        "推进"
+      ],
+      "keywords_upright_en": [
+        "pursuit",
+        "grounding",
+        "stability",
+        "motion"
+      ],
+      "keywords_reversed_zh": [
+        "偏航",
+        "拖延",
+        "失衡",
+        "躁进"
+      ],
+      "keywords_reversed_en": [
+        "misdirection",
+        "delay",
+        "instability",
+        "recklessness"
+      ],
+      "meaning_upright_zh": "星币骑士带来「追逐、推进与把能量带上路」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Knight of Pentacles points to pursuit, movement, and taking energy on the road within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币骑士提醒你留意「冲得太快、太慢，或方向还没有校准」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Knight of Pentacles highlights moving too fast, too slow, or without a calibrated direction in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_queen",
+      "number": 13,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "queen",
+      "name_zh": "星币皇后",
+      "name_en": "Queen of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "成熟",
+        "落实",
+        "稳定",
+        "照料"
+      ],
+      "keywords_upright_en": [
+        "maturity",
+        "grounding",
+        "stability",
+        "nurture"
+      ],
+      "keywords_reversed_zh": [
+        "失衡",
+        "拖延",
+        "失衡",
+        "过度"
+      ],
+      "keywords_reversed_en": [
+        "imbalance",
+        "delay",
+        "instability",
+        "overreach"
+      ],
+      "meaning_upright_zh": "星币皇后带来「成熟照料、稳定掌握与有温度的掌控」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "Queen of Pentacles points to mature care, steady mastery, and warm command within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币皇后提醒你留意「照顾失衡、过度代偿，或把温柔变成控制」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "Queen of Pentacles highlights care out of balance, overcompensation, or turning warmth into control in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "light",
+      "energy_reversed": "shadow"
+    },
+    {
+      "id": "minor_pentacles_king",
+      "number": 14,
+      "arcana": "minor",
+      "suit": "pentacles",
+      "rank": "king",
+      "name_zh": "星币国王",
+      "name_en": "King of Pentacles",
+      "symbol": "⬢",
+      "color_primary": "#4C6B3C",
+      "color_accent": "#D4C28A",
+      "keywords_upright_zh": [
+        "统筹",
+        "落实",
+        "稳定",
+        "领导"
+      ],
+      "keywords_upright_en": [
+        "leadership",
+        "grounding",
+        "stability",
+        "command"
+      ],
+      "keywords_reversed_zh": [
+        "控制",
+        "拖延",
+        "失衡",
+        "固执"
+      ],
+      "keywords_reversed_en": [
+        "control",
+        "delay",
+        "instability",
+        "rigidity"
+      ],
+      "meaning_upright_zh": "星币国王带来「统筹、决断与成熟的领导力」的讯号。关于金钱、身体与现实基础，你正走到一个适合整理节奏与重新定焦的位置。 这张牌鼓励你把节奏、资源与现实条件稳稳落地，让眼前的能量往更稳、更顺的方向展开。",
+      "meaning_upright_en": "King of Pentacles points to coordination, decision, and mature leadership within resources, the body, and practical foundations. You are at a moment where your rhythm can be gathered and directed with more intention. This card encourages you to ground your pace, resources, and practical conditions so the situation can unfold with steadier momentum.",
+      "meaning_reversed_zh": "星币国王提醒你留意「控制欲过强、固执，或权威感不够稳定」。关于金钱、身体与现实基础，问题并不一定来自运气，而更可能来自缺少耐心、现实压力堆积，或把安全感全压在结果上。 先把节奏收回来，再决定下一步，局面会比你想象中更容易松动。",
+      "meaning_reversed_en": "King of Pentacles highlights over-control, rigidity, or unstable authority in the area of resources, the body, and practical foundations. The challenge here is less about fate and more about impatience, mounting practical pressure, or tying all security to outcomes. Slow the pace, gather yourself, and the situation will likely soften more than it first appears.",
+      "energy_upright": "neutral",
+      "energy_reversed": "shadow"
+    }
+  ]
+}

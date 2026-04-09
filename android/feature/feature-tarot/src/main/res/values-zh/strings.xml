@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tarot_title">抽塔罗</string>
+    <string name="tarot_spread_name">三牌阵</string>
+    <string name="tarot_spread_subtitle">过去 · 现在 · 未来</string>
+    <string name="tarot_instruction">静心片刻，感受当下的能量\n然后点击开始占卜</string>
+    <string name="tarot_begin_btn">开始占卜</string>
+    <string name="tarot_section_overall">综合能量</string>
+    <string name="tarot_section_love">爱情</string>
+    <string name="tarot_section_career">事业</string>
+    <string name="tarot_section_wealth">财富</string>
+    <string name="tarot_section_advice">今日建议</string>
+    <string name="tarot_lucky_title">今日幸运提示</string>
+    <string name="tarot_lucky_charm">幸运物</string>
+    <string name="tarot_lucky_color">幸运色</string>
+    <string name="tarot_lucky_number">幸运数字</string>
+    <string name="tarot_done_btn">保存并完成</string>
+    <string name="tarot_upright">正位</string>
+    <string name="tarot_reversed">逆位</string>
+</resources>

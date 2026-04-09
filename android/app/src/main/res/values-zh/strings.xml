@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">口袋占卜屋</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_history">历史</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- Home -->
+    <string name="home_tagline">你的口袋占卜屋，随时在此。</string>
+    <string name="home_tarot_title">抽塔罗</string>
+    <string name="home_tarot_desc">翻牌，聆听内心的声音</string>
+    <string name="home_astrology_title">本命盘占星</string>
+    <string name="home_astrology_desc">查看你的星盘画像</string>
+    <string name="home_bazi_title">八字分析</string>
+    <string name="home_bazi_desc">探索你的能量蓝图</string>
+
+    <!-- Tarot -->
+    <string name="tarot_draw_button">一键抽牌</string>
+    <string name="tarot_upright">正位</string>
+    <string name="tarot_reversed">逆位</string>
+    <string name="tarot_overall_energy">整体能量</string>
+    <string name="tarot_love">感情解读</string>
+    <string name="tarot_career">事业解读</string>
+    <string name="tarot_wealth">财运解读</string>
+    <string name="tarot_advice">今日建议</string>
+    <string name="tarot_lucky">幸运提示</string>
+
+    <!-- Astrology -->
+    <string name="astrology_select_sign">选择星座</string>
+    <string name="astrology_enter_birthday">输入生日</string>
+    <string name="astrology_overall">今日总运</string>
+    <string name="astrology_love">感情运势</string>
+    <string name="astrology_career">工作学业</string>
+    <string name="astrology_wealth">财运</string>
+    <string name="astrology_social">社交运势</string>
+    <string name="astrology_advice">今日建议</string>
+    <string name="astrology_lucky_color">幸运色</string>
+    <string name="astrology_lucky_number">幸运数字</string>
+
+    <!-- Bazi -->
+    <string name="bazi_title">八字能量解读</string>
+    <string name="bazi_subtitle">娱乐 · 自我探索向</string>
+    <string name="bazi_enter_date">输入出生日期</string>
+    <string name="bazi_optional_hour">出生时辰（可选）</string>
+    <string name="bazi_analyze">揭示我的能量</string>
+    <string name="bazi_personality">性格倾向</string>
+    <string name="bazi_love">感情倾向</string>
+    <string name="bazi_career">事业倾向</string>
+    <string name="bazi_wealth">财运倾向</string>
+    <string name="bazi_phase">当前阶段建议</string>
+    <string name="bazi_disclaimer">本内容仅供娱乐与自我探索参考，不代表专业命理分析。</string>
+
+    <!-- History -->
+    <string name="history_empty">还没有记录。\n第一次占卜，从现在开始。</string>
+    <string name="history_delete">删除</string>
+    <string name="history_delete_confirm">删除这条记录？</string>
+
+    <!-- Settings -->
+    <string name="settings_reminder">每日提醒</string>
+    <string name="settings_reminder_time">提醒时间</string>
+    <string name="settings_clear_history">清空历史记录</string>
+    <string name="settings_clear_confirm">清空所有占卜记录？此操作不可撤销。</string>
+    <string name="settings_about">关于口袋占卜屋</string>
+    <string name="settings_disclaimer">免责声明</string>
+    <string name="settings_version">版本</string>
+    <string name="disclaimer_full">本 App 内容仅供娱乐、放松和自我探索参考，不构成任何形式的专业建议——包括但不限于医疗、心理、法律、投资等。请以轻松的心态使用。</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_reminder_name">每日占卜提醒</string>
+    <string name="notification_channel_reminder_desc">提醒你查看今日运势</string>
+    <string name="notification_title">今日的占卜在等你 ✨</string>
+    <string name="notification_body">花一点时间翻一张牌、看看本命盘，或整理今天的能量感受。</string>
+
+    <!-- Sharing -->
+    <string name="share_title">分享占卜结果</string>
+    <string name="share_via">通过…分享</string>
+    <string name="share_save_image">保存图片</string>
+
+    <!-- Common -->
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="back">返回</string>
+    <string name="share">分享</string>
+    <string name="save">保存</string>
+    <string name="done">完成</string>
+    <string name="reading_type_tarot">塔罗</string>
+    <string name="reading_type_astrology">星盘</string>
+    <string name="reading_type_bazi">八字</string>
+</resources>

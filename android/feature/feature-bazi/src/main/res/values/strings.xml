@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bazi_title">Bazi Energy Reading</string>
+    <string name="bazi_intro_body">This is a lightweight entertainment-oriented reading focused on self-exploration, not a serious professional destiny system.</string>
+    <string name="bazi_enter_date">Enter Birth Date</string>
+    <string name="bazi_optional_hour">Birth Hour (Optional)</string>
+    <string name="bazi_analyze">Reveal My Energy</string>
+    <string name="bazi_day_master_portrait">Your lightweight day-master portrait</string>
+    <string name="bazi_day_master_suffix">%1$s Day Master</string>
+    <string name="bazi_personality">Personality</string>
+    <string name="bazi_element_vibe">Element Vibe</string>
+    <string name="bazi_love">Love Tendencies</string>
+    <string name="bazi_career">Career Tendencies</string>
+    <string name="bazi_wealth">Wealth Tendencies</string>
+    <string name="bazi_phase">Current Phase</string>
+    <string name="bazi_share_button">Share</string>
+    <string name="bazi_share_chooser">Share Reading</string>
+    <string name="bazi_saved">Saved to History</string>
+    <string name="bazi_save">Save to History</string>
+</resources>

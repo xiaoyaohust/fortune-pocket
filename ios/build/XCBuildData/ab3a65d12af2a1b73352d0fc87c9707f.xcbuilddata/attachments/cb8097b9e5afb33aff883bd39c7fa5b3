@@ -1,0 +1,299 @@
+{
+  "" : {
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/PocketOracle-primary.dia",
+    "emit-module-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/PocketOracle-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/PocketOracle-primary-emit-module.dia",
+    "pch" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/PocketOracle-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/PocketOracle-primary.swiftdeps"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/App/ContentView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/App/FortunePocketApp.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/FortunePocketApp~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Extensions/Date+Utility.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/Date+Utility~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Extensions/View+Theme.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/View+Theme~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Notifications/LocalNotificationScheduler.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/LocalNotificationScheduler~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Preferences/AppPreferences.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppPreferences~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Services/BaziReadingGenerator.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziReadingGenerator~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Services/HoroscopeReadingGenerator.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HoroscopeReadingGenerator~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Services/ReadingPresentationBuilder.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingPresentationBuilder~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Services/TarotReadingGenerator.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotReadingGenerator~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Theme/AppColors.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppColors~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Core/Theme/AppFonts.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AppFonts~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Astrology/AstrologyView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Astrology/AstrologyViewModel.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/AstrologyViewModel~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Bazi/BaziView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Bazi/BaziViewModel.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziViewModel~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/History/HistoryView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HistoryView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Home/HomeView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Home/HomeViewModel.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/HomeViewModel~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Tarot/Components/TarotCardView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCardView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Tarot/TarotResultView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotResultView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Tarot/TarotView.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotView~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Features/Tarot/TarotViewModel.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotViewModel~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Models/BaziModels.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/BaziModels~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Models/ReadingRecord.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ReadingRecord~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Models/TarotCard.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/TarotCard~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/Models/ZodiacSign.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ZodiacSign~partial.swiftmodule"
+  },
+  "/Users/ariesxiao/projects/fortune-pocket/ios/PocketOracle/SharedContent/ContentLoader.swift" : {
+    "const-values" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.swiftconstvalues",
+    "dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.d",
+    "diagnostics" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.dia",
+    "index-unit-output-path" : "/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.o",
+    "llvm-bc" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.bc",
+    "object" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.o",
+    "swift-dependencies" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader.swiftdeps",
+    "swiftmodule" : "/Users/ariesxiao/projects/fortune-pocket/ios/build/PocketOracle.build/Debug-iphonesimulator/PocketOracle.build/Objects-normal/arm64/ContentLoader~partial.swiftmodule"
+  }
+}

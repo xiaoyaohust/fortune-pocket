@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "notes": "Templates use {variable} placeholders. Variables are resolved from the 'variables' section. Selection uses (dayOfYear + signIndex) mod templateCount for daily stability.",
+  "templates": {
+    "overall_zh": [
+      "今日的星光为你带来{quality_zh}的能量，适合{action_zh}。保持觉察，让直觉引领你前行。",
+      "宇宙今天为你准备了{quality_zh}的礼物，是{action_zh}的好时机。别忘了给自己一点温柔。",
+      "今日能量{quality_zh}，内心平静将是你最大的力量。试着{action_zh}，会有意想不到的收获。",
+      "星星今日轻声提醒你：{quality_zh}的时刻里，{action_zh}能让你更接近自己真正想要的生活。",
+      "今天是{quality_zh}的一天，适合{action_zh}。无论发生什么，记得照顾好自己的内心。"
+    ],
+    "overall_en": [
+      "Today's starlight brings you {quality_en} energy, perfect for {action_en}. Stay aware and let your intuition guide the way.",
+      "The universe has prepared a gift of {quality_en} energy for you today—a great time to {action_en}. Don't forget to be gentle with yourself.",
+      "Today's energy is {quality_en}. Inner peace will be your greatest strength. Try to {action_en} and unexpected rewards may follow.",
+      "The stars gently remind you today: in moments of {quality_en} energy, choosing to {action_en} can bring you closer to the life you truly want.",
+      "Today is a {quality_en} day, well-suited for {action_en}. Whatever happens, remember to tend to your inner world."
+    ],
+    "love_zh": [
+      "感情上，今日有{love_state_zh}的气息流动。{love_advice_zh}",
+      "爱的能量今天{love_energy_zh}，{love_single_zh}单身者而言，{love_paired_zh}对于已有伴侣的你。",
+      "今日星象提示：在亲密关系中，{love_advice_zh}。真实表达内心，往往比完美表现更动人。",
+      "感情方面，{love_state_zh}的氛围中，{love_advice_zh}"
+    ],
+    "love_en": [
+      "In love, there is a {love_state_en} quality flowing today. {love_advice_en}",
+      "Love energy today is {love_energy_en}. For singles: {love_single_en}. For those partnered: {love_paired_en}.",
+      "Today's stars suggest: in intimate relationships, {love_advice_en}. Genuine expression often moves hearts more than perfection.",
+      "In romance, within a {love_state_en} atmosphere, {love_advice_en}"
+    ],
+    "career_zh": [
+      "工作与学业上，今日{career_state_zh}。{career_advice_zh}",
+      "事业方面的能量今日{career_energy_zh}，{career_advice_zh}。抓住机会，但也注意劳逸结合。",
+      "今日职场星象：{career_state_zh}。{career_advice_zh}，稳步前进是最明智的选择。"
+    ],
+    "career_en": [
+      "In work and studies, today brings {career_state_en} energy. {career_advice_en}",
+      "Career energy today is {career_energy_en}. {career_advice_en}. Seize opportunities but remember to balance effort and rest.",
+      "Today's professional stars: {career_state_en}. {career_advice_en}—steady progress is the wisest choice."
+    ],
+    "wealth_zh": [
+      "财运方面，今日{wealth_state_zh}。{wealth_advice_zh}",
+      "金钱能量今天{wealth_energy_zh}，{wealth_advice_zh}。理性消费，量入为出。",
+      "今日财星提示：{wealth_state_zh}。{wealth_advice_zh}"
+    ],
+    "wealth_en": [
+      "In finances, today brings {wealth_state_en} energy. {wealth_advice_en}",
+      "Money energy today is {wealth_energy_en}. {wealth_advice_en}. Spend rationally and within your means.",
+      "Today's wealth stars indicate: {wealth_state_en}. {wealth_advice_en}"
+    ],
+    "social_zh": [
+      "社交方面，今日{social_state_zh}。{social_advice_zh}",
+      "人际关系的能量今天{social_energy_zh}，{social_advice_zh}。",
+      "今日人缘星：{social_state_zh}，{social_advice_zh}。"
+    ],
+    "social_en": [
+      "Socially, today brings {social_state_en} energy. {social_advice_en}",
+      "The energy in relationships today is {social_energy_en}. {social_advice_en}",
+      "Today's social stars: {social_state_en}. {social_advice_en}"
+    ],
+    "advice_zh": [
+      "今日小建议：{advice_zh}。",
+      "星星今天想提醒你：{advice_zh}。",
+      "给今天的你一句话：{advice_zh}。"
+    ],
+    "advice_en": [
+      "Today's tip: {advice_en}.",
+      "The stars want to remind you today: {advice_en}.",
+      "A word for you today: {advice_en}."
+    ]
+  },
+  "variables": {
+    "quality_zh": ["平稳流畅", "活力充盈", "灵感迸发", "沉静内敛", "温柔治愈", "清醒敏锐", "轻盈自由", "深邃内省"],
+    "quality_en": ["steady and smooth", "full of vitality", "brimming with inspiration", "calm and introspective", "gently healing", "clear and perceptive", "light and free", "deeply reflective"],
+    "action_zh": ["专注手头的工作", "与信任的朋友深谈", "整理内心的思路", "给自己一段安静的独处时光", "尝试一件之前一直想做的事", "放慢脚步观察周围", "整理你的生活空间"],
+    "action_en": ["focus on current tasks", "have a heart-to-heart with a trusted friend", "organize your inner thoughts", "give yourself quiet alone time", "try something you've always wanted to do", "slow down and observe your surroundings", "tidy your living space"],
+    "love_state_zh": ["温柔甜蜜", "平静安稳", "微妙复杂", "热烈真诚", "若即若离", "相互理解"],
+    "love_state_en": ["tender and sweet", "calm and steady", "subtly complex", "passionate and sincere", "somewhere between near and far", "mutually understanding"],
+    "love_energy_zh": ["升温", "平稳", "略显迷茫", "充满可能"],
+    "love_energy_en": ["warming", "stable", "slightly uncertain", "full of possibility"],
+    "love_advice_zh": ["主动表达关心往往比等待更有效。", "给彼此多一点耐心，关系自然会流动。", "今天适合说出那句一直放在心里的话。", "不必急着做决定，让感情自然发展。"],
+    "love_advice_en": ["Expressing care proactively is often more effective than waiting.", "Give each other a bit more patience—relationships naturally flow.", "Today is a good day to say what you've been holding in your heart.", "No need to rush a decision—let things develop naturally."],
+    "love_single_zh": ["保持开放的心态，美好的相遇往往在意想不到时", "今天适合独自享受当下，单身也是一种完整"],
+    "love_single_en": ["keep an open heart—beautiful encounters often come when least expected", "today is good for enjoying the present solo—being single is a kind of wholeness"],
+    "love_paired_zh": ["一个小小的惊喜能让关系更有温度", "深入倾听对方，比说话更重要"],
+    "love_paired_en": ["a small surprise can warm the relationship", "listening deeply to your partner matters more than speaking"],
+    "career_state_zh": ["思路清晰，执行力强", "需要耐心等待时机", "适合规划与梳理", "合作事项有推进"],
+    "career_state_en": ["clear-minded with strong execution", "needing patient timing", "good for planning and organizing", "collaborative matters moving forward"],
+    "career_energy_zh": ["上升", "平稳", "需要专注", "有突破可能"],
+    "career_energy_en": ["rising", "stable", "requiring focus", "potential for breakthroughs"],
+    "career_advice_zh": ["今天适合完成积压的任务，而不是开始新项目。", "在会议或沟通中，倾听比发言更有价值。", "把精力放在最重要的一件事上，而不是同时做很多。", "今天的努力会在未来某个时刻开花结果。"],
+    "career_advice_en": ["Today is better for finishing backlogged tasks than starting new projects.", "In meetings or conversations, listening is more valuable than speaking.", "Put your energy into the one most important thing, not many at once.", "Today's efforts will bear fruit at some point in the future."],
+    "wealth_state_zh": ["财气平稳，守成为上", "有小额进账的可能", "注意非计划性支出", "投资需谨慎"],
+    "wealth_state_en": ["finances stable—preservation is wise", "possibility of small income", "watch for unplanned spending", "investments require caution"],
+    "wealth_energy_zh": ["平稳", "略有波动", "上升趋势", "需要保守"],
+    "wealth_energy_en": ["stable", "slightly fluctuating", "upward trend", "conservative approach needed"],
+    "wealth_advice_zh": ["今天不是大手笔消费的好时机，把那笔钱留着。", "关注自己真正需要的，而不是一时的冲动购买。", "财运的积累在于日常的点滴，今天从小处做起。"],
+    "wealth_advice_en": ["Today isn't the best time for big spending—keep that money for later.", "Focus on what you truly need, not impulse purchases.", "Wealth accumulates in small daily steps—start with something small today."],
+    "social_state_zh": ["人缘顺畅，适合联络", "需要保持适度边界", "有贵人运", "适合深化已有关系"],
+    "social_state_en": ["smooth social energy—good for connecting", "maintaining healthy boundaries is important", "helpful people may appear", "good for deepening existing relationships"],
+    "social_energy_zh": ["活跃", "内敛", "温暖", "需要谨慎"],
+    "social_energy_en": ["active", "reserved", "warm", "proceed with care"],
+    "social_advice_zh": ["今天联系一位久未相见的朋友，也许会有意外的惊喜。", "在团队中，真诚比圆滑更能赢得信任。", "适当拒绝不适合自己的邀请，照顾好自己的能量。"],
+    "social_advice_en": ["Reach out to a friend you haven't seen in a while—there may be a pleasant surprise.", "In teams, sincerity builds more trust than cleverness.", "It's okay to decline invitations that don't suit you—protect your energy."],
+    "advice_zh": ["别忘了喝水，关心身体是关心灵魂的第一步", "今天适合比平时早一点休息", "给自己五分钟，什么都不做，只是呼吸", "写下今天让你感到感激的一件小事", "把手机放下，看看窗外的天空"],
+    "advice_en": ["Remember to drink water—caring for your body is the first step in caring for your soul", "Consider resting a little earlier than usual today", "Give yourself five minutes to do nothing but breathe", "Write down one small thing you are grateful for today", "Put down your phone and look at the sky outside your window"]
+  }
+}

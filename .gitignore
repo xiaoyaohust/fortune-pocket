@@ -1,0 +1,17 @@
+.DS_Store
+
+# Android
+android/.gradle/
+android/local.properties
+android/**/build/
+
+# iOS
+DerivedData/
+ios/**/*.xcuserdatad/
+ios/**/*.xcworkspace/xcuserdata/
+ios/**/*.xcodeproj/xcuserdata/
+ios/Configs/LocalSigning.xcconfig
+
+# Editor
+.idea/
+.vscode/

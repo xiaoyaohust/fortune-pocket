@@ -1,0 +1,88 @@
+/* Home section */
+"today_section_title" = "今日指引";
+
+/* Navigation */
+"nav_home" = "首页";
+"nav_history" = "历史";
+"nav_settings" = "设置";
+
+/* Home */
+"home_tagline" = "你的口袋占卜屋，随时在此。";
+"home_tarot_title" = "抽塔罗";
+"home_tarot_desc" = "翻牌，聆听内心的声音";
+"home_astrology_title" = "本命盘占星";
+"home_astrology_desc" = "查看你的星盘画像";
+"home_bazi_title" = "八字分析";
+"home_bazi_desc" = "探索你的能量蓝图";
+
+/* Tarot */
+"tarot_draw_button" = "一键抽牌";
+"tarot_upright" = "正位";
+"tarot_reversed" = "逆位";
+"tarot_orientation_prompt" = "任意一张牌都可能出现正位或逆位，这会影响解读方向。";
+"tarot_orientation_result" = "任意牌位都可能出现正位或逆位。逆位不是渲染错误，通常表示这张牌的力量更偏向内在、延迟，或提醒你先做调整。";
+"tarot_overall_energy" = "整体能量";
+"tarot_love" = "感情解读";
+"tarot_career" = "事业解读";
+"tarot_wealth" = "财运解读";
+"tarot_advice" = "今日建议";
+"tarot_lucky" = "幸运提示";
+
+/* Astrology */
+"astrology_select_sign" = "选择星座";
+"astrology_enter_birthday" = "输入生日";
+"astrology_overall" = "今日总运";
+"astrology_love" = "感情运势";
+"astrology_career" = "工作学业";
+"astrology_wealth" = "财运";
+"astrology_social" = "社交运势";
+"astrology_advice" = "今日建议";
+"astrology_lucky_color" = "幸运色";
+"astrology_lucky_number" = "幸运数字";
+
+/* Bazi */
+"bazi_title" = "八字能量解读";
+"bazi_subtitle" = "娱乐 · 自我探索向";
+"bazi_enter_date" = "输入出生日期";
+"bazi_optional_hour" = "出生时辰（可选）";
+"bazi_analyze" = "揭示我的能量";
+"bazi_personality" = "性格倾向";
+"bazi_love" = "感情倾向";
+"bazi_career" = "事业倾向";
+"bazi_wealth" = "财运倾向";
+"bazi_phase" = "当前阶段建议";
+"bazi_disclaimer" = "本内容仅供娱乐与自我探索参考，不代表专业命理分析。";
+
+/* History */
+"history_empty" = "还没有记录。\n第一次占卜，从现在开始。";
+"history_delete" = "删除";
+"history_delete_confirm" = "删除这条记录？";
+
+/* Settings */
+"settings_reminder" = "每日提醒";
+"settings_reminder_time" = "提醒时间";
+"settings_clear_history" = "清空历史记录";
+"settings_clear_confirm" = "清空所有占卜记录？此操作不可撤销。";
+"settings_about" = "关于口袋占卜屋";
+"settings_disclaimer" = "免责声明";
+"settings_version" = "版本";
+"settings_language" = "语言";
+"settings_birthday" = "保存生日";
+"settings_birthday_helper" = "保存后的生日会作为本命盘和八字模块的默认输入。";
+"settings_follow_system" = "跟随系统";
+"disclaimer_full" = "本 App 内容仅供娱乐、放松和自我探索参考，不构成任何形式的专业建议——包括但不限于医疗、心理、法律、投资等。请以轻松的心态使用。";
+
+/* Notifications */
+"notification_title" = "今日的占卜在等你 ✨";
+"notification_body" = "花一点时间翻一张牌、看看本命盘，或整理今天的能量感受。";
+
+/* Common */
+"cancel" = "取消";
+"confirm" = "确认";
+"back" = "返回";
+"share" = "分享";
+"save" = "保存";
+"done" = "完成";
+"reading_type_tarot" = "塔罗";
+"reading_type_astrology" = "星盘";
+"reading_type_bazi" = "八字";

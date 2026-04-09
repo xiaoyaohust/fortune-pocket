@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_zh">Fortune Pocket</string>
+    <string name="today_section_title">Today\'s Guidance</string>
+    <string name="home_tarot_title">Tarot Reading</string>
+    <string name="home_tarot_desc">Draw cards, receive guidance</string>
+    <string name="home_astrology_title">Natal Chart</string>
+    <string name="home_astrology_desc">Reveal your chart signature</string>
+    <string name="home_bazi_title">Bazi Analysis</string>
+    <string name="home_bazi_desc">Explore your energy blueprint</string>
+</resources>

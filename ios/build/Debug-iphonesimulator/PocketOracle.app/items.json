@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "items": [
+    { "id": "i01", "name_zh": "透明水晶球", "name_en": "Clear Quartz Crystal", "energy_zh": "净化与放大意图", "energy_en": "Purifies and amplifies intention" },
+    { "id": "i02", "name_zh": "紫水晶", "name_en": "Amethyst", "energy_zh": "灵性与直觉", "energy_en": "Spirituality and intuition" },
+    { "id": "i03", "name_zh": "月光石", "name_en": "Moonstone", "energy_zh": "直觉与情感流动", "energy_en": "Intuition and emotional flow" },
+    { "id": "i04", "name_zh": "玫瑰石英", "name_en": "Rose Quartz", "energy_zh": "爱与自我接纳", "energy_en": "Love and self-acceptance" },
+    { "id": "i05", "name_zh": "黑曜石", "name_en": "Black Obsidian", "energy_zh": "保护与净化", "energy_en": "Protection and purification" },
+    { "id": "i06", "name_zh": "黄水晶", "name_en": "Citrine", "energy_zh": "丰盛与喜悦", "energy_en": "Abundance and joy" },
+    { "id": "i07", "name_zh": "蜡烛", "name_en": "Candle", "energy_zh": "意图显化与仪式感", "energy_en": "Manifesting intention and ritual" },
+    { "id": "i08", "name_zh": "日记本", "name_en": "Journal", "energy_zh": "自我探索与记录", "energy_en": "Self-exploration and recording" },
+    { "id": "i09", "name_zh": "茉莉花茶", "name_en": "Jasmine Tea", "energy_zh": "安抚与清晰", "energy_en": "Soothing and clarity" },
+    { "id": "i10", "name_zh": "满月时的海水", "name_en": "Full Moon Water", "energy_zh": "情绪净化", "energy_en": "Emotional cleansing" },
+    { "id": "i11", "name_zh": "薰衣草精油", "name_en": "Lavender Essential Oil", "energy_zh": "放松与平衡", "energy_en": "Relaxation and balance" },
+    { "id": "i12", "name_zh": "星图明信片", "name_en": "Star Map Postcard", "energy_zh": "连结宇宙能量", "energy_en": "Connecting with cosmic energy" },
+    { "id": "i13", "name_zh": "小植物", "name_en": "Small Plant", "energy_zh": "生机与成长", "energy_en": "Vitality and growth" },
+    { "id": "i14", "name_zh": "一首歌", "name_en": "A Song", "energy_zh": "心灵的共鸣与抚慰", "energy_en": "Soul resonance and comfort" },
+    { "id": "i15", "name_zh": "今日一杯好咖啡", "name_en": "A Good Cup of Coffee", "energy_zh": "专注与当下感", "energy_en": "Focus and presence" }
+  ]
+}

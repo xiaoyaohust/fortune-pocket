@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "beijing_morning",
+      "birth_date": "1992-11-15",
+      "birth_time": "08:45",
+      "birth_city_id": "beijing",
+      "expected": {
+        "sun_sign_id": "taurus",
+        "moon_sign_id": "cancer",
+        "rising_sign_id": "sagittarius",
+        "house_focus": [6, 2, 3],
+        "placements": [
+          { "planet_id": "sun", "sign_id": "taurus", "house": 6, "retrograde": false },
+          { "planet_id": "moon", "sign_id": "cancer", "house": 8, "retrograde": false },
+          { "planet_id": "mercury", "sign_id": "taurus", "house": 6, "retrograde": false },
+          { "planet_id": "venus", "sign_id": "aries", "house": 5, "retrograde": false },
+          { "planet_id": "mars", "sign_id": "gemini", "house": 6, "retrograde": false },
+          { "planet_id": "jupiter", "sign_id": "virgo", "house": 10, "retrograde": true },
+          { "planet_id": "saturn", "sign_id": "aquarius", "house": 3, "retrograde": false },
+          { "planet_id": "uranus", "sign_id": "capricorn", "house": 2, "retrograde": true },
+          { "planet_id": "neptune", "sign_id": "capricorn", "house": 2, "retrograde": true },
+          { "planet_id": "pluto", "sign_id": "scorpio", "house": 12, "retrograde": false }
+        ],
+        "major_aspects": [
+          { "first_planet_id": "sun", "second_planet_id": "pluto", "type": "opposition" },
+          { "first_planet_id": "uranus", "second_planet_id": "neptune", "type": "conjunction" },
+          { "first_planet_id": "jupiter", "second_planet_id": "uranus", "type": "trine" },
+          { "first_planet_id": "jupiter", "second_planet_id": "neptune", "type": "trine" },
+          { "first_planet_id": "venus", "second_planet_id": "neptune", "type": "square" },
+          { "first_planet_id": "venus", "second_planet_id": "uranus", "type": "square" }
+        ]
+      }
+    },
+    {
+      "id": "newyork_evening",
+      "birth_date": "1988-04-26",
+      "birth_time": "19:30",
+      "birth_city_id": "new_york",
+      "expected": {
+        "sun_sign_id": "scorpio",
+        "moon_sign_id": "virgo",
+        "rising_sign_id": "scorpio",
+        "house_focus": [2, 1, 12],
+        "placements": [
+          { "planet_id": "sun", "sign_id": "scorpio", "house": 1, "retrograde": false },
+          { "planet_id": "moon", "sign_id": "virgo", "house": 11, "retrograde": false },
+          { "planet_id": "mercury", "sign_id": "libra", "house": 12, "retrograde": true },
+          { "planet_id": "venus", "sign_id": "libra", "house": 12, "retrograde": false },
+          { "planet_id": "mars", "sign_id": "sagittarius", "house": 2, "retrograde": false },
+          { "planet_id": "jupiter", "sign_id": "taurus", "house": 7, "retrograde": true },
+          { "planet_id": "saturn", "sign_id": "sagittarius", "house": 2, "retrograde": false },
+          { "planet_id": "uranus", "sign_id": "sagittarius", "house": 2, "retrograde": false },
+          { "planet_id": "neptune", "sign_id": "capricorn", "house": 3, "retrograde": false },
+          { "planet_id": "pluto", "sign_id": "scorpio", "house": 1, "retrograde": false }
+        ],
+        "major_aspects": [
+          { "first_planet_id": "mercury", "second_planet_id": "venus", "type": "conjunction" },
+          { "first_planet_id": "sun", "second_planet_id": "neptune", "type": "sextile" },
+          { "first_planet_id": "venus", "second_planet_id": "saturn", "type": "sextile" },
+          { "first_planet_id": "mercury", "second_planet_id": "saturn", "type": "sextile" },
+          { "first_planet_id": "moon", "second_planet_id": "pluto", "type": "sextile" },
+          { "first_planet_id": "moon", "second_planet_id": "mars", "type": "square" }
+        ]
+      }
+    },
+    {
+      "id": "sydney_night",
+      "birth_date": "2001-09-09",
+      "birth_time": "22:05",
+      "birth_city_id": "sydney",
+      "expected": {
+        "sun_sign_id": "pisces",
+        "moon_sign_id": "gemini",
+        "rising_sign_id": "taurus",
+        "house_focus": [10, 1, 2],
+        "placements": [
+          { "planet_id": "sun", "sign_id": "pisces", "house": 11, "retrograde": false },
+          { "planet_id": "moon", "sign_id": "gemini", "house": 1, "retrograde": false },
+          { "planet_id": "mercury", "sign_id": "aquarius", "house": 10, "retrograde": false },
+          { "planet_id": "venus", "sign_id": "aries", "house": 12, "retrograde": false },
+          { "planet_id": "mars", "sign_id": "aquarius", "house": 10, "retrograde": false },
+          { "planet_id": "jupiter", "sign_id": "gemini", "house": 2, "retrograde": false },
+          { "planet_id": "saturn", "sign_id": "gemini", "house": 1, "retrograde": false },
+          { "planet_id": "uranus", "sign_id": "aquarius", "house": 10, "retrograde": false },
+          { "planet_id": "neptune", "sign_id": "aquarius", "house": 9, "retrograde": false },
+          { "planet_id": "pluto", "sign_id": "sagittarius", "house": 8, "retrograde": false }
+        ],
+        "major_aspects": [
+          { "first_planet_id": "moon", "second_planet_id": "saturn", "type": "conjunction" },
+          { "first_planet_id": "venus", "second_planet_id": "mars", "type": "sextile" },
+          { "first_planet_id": "mercury", "second_planet_id": "uranus", "type": "conjunction" },
+          { "first_planet_id": "sun", "second_planet_id": "pluto", "type": "square" },
+          { "first_planet_id": "venus", "second_planet_id": "uranus", "type": "sextile" },
+          { "first_planet_id": "mercury", "second_planet_id": "jupiter", "type": "trine" }
+        ]
+      }
+    }
+  ]
+}

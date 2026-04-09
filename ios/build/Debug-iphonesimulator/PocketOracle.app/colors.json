@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "colors": [
+    { "id": "c01", "name_zh": "深紫罗兰", "name_en": "Deep Violet", "hex": "#6C3483" },
+    { "id": "c02", "name_zh": "玫瑰金", "name_en": "Rose Gold", "hex": "#C9748F" },
+    { "id": "c03", "name_zh": "月光白", "name_en": "Moonlight White", "hex": "#F0EBE3" },
+    { "id": "c04", "name_zh": "星空蓝", "name_en": "Starry Blue", "hex": "#1A3A6B" },
+    { "id": "c05", "name_zh": "金琥珀", "name_en": "Golden Amber", "hex": "#C9A84C" },
+    { "id": "c06", "name_zh": "翡翠绿", "name_en": "Jade Green", "hex": "#1ABC9C" },
+    { "id": "c07", "name_zh": "珊瑚橙", "name_en": "Coral Orange", "hex": "#E8956D" },
+    { "id": "c08", "name_zh": "银灰", "name_en": "Silver Gray", "hex": "#909497" },
+    { "id": "c09", "name_zh": "薰衣草紫", "name_en": "Lavender", "hex": "#9B59B6" },
+    { "id": "c10", "name_zh": "静谧蓝", "name_en": "Tranquil Blue", "hex": "#5DADE2" },
+    { "id": "c11", "name_zh": "绯红", "name_en": "Crimson", "hex": "#C0392B" },
+    { "id": "c12", "name_zh": "象牙白", "name_en": "Ivory", "hex": "#FAF3E0" }
+  ]
+}

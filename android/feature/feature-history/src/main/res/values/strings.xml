@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_empty">No readings yet.\nYour journey begins with the first draw.</string>
+    <string name="history_delete_record">Delete Record</string>
+    <string name="history_share_button">Share</string>
+    <string name="history_share_chooser">Share Reading</string>
+    <string name="history_delete_button">Delete</string>
+    <string name="history_delete_confirm">Delete this reading?</string>
+    <string name="history_delete_confirm_button">Delete</string>
+    <string name="history_cancel">Cancel</string>
+</resources>

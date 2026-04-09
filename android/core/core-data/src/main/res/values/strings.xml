@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_title">Your daily oracle awaits ✨</string>
+    <string name="notification_body">Take a moment to draw a card, open your natal chart, or explore your energy today.</string>
+</resources>

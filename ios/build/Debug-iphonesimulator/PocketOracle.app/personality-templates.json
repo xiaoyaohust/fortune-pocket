@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "notes": "Templates for generating entertainment-oriented Bazi reading results. Not a professional fortune-telling system.",
+  "disclaimer_zh": "以下内容仅为娱乐参考，不代表专业命理分析，请以轻松的心态看待。",
+  "disclaimer_en": "The following is for entertainment reference only and does not represent professional fortune analysis. Please approach with a light heart.",
+  "phase_advice_zh": [
+    "此阶段适合积累与沉淀，不宜急于求成。静水深流，厚积薄发，你的努力正在为未来的绽放做准备。",
+    "能量上升期到来，可以大胆推进那些一直在心中的计划。行动是最好的咒语，迈出这一步，世界会配合你。",
+    "这是一个适合深化关系与整合资源的阶段。与其开疆拓土，不如深耕已有。把现有的一切经营得更好。",
+    "转折阶段，旧的模式正在松动，新的可能正在浮现。保持开放，不要急着抓住什么，也不必害怕放手。",
+    "这是一个适合内观与休整的阶段。给自己充足的休息，补充能量。不必强迫前行，等待也是一种智慧。",
+    "人际关系的能量活跃，是扩展社交圈、与他人建立深度连接的好时机。真诚待人，自然能吸引同频的灵魂。"
+  ],
+  "phase_advice_en": [
+    "This phase is suited for accumulation and reflection, not for rushing results. Still waters run deep—your efforts are preparing the ground for future blossoming.",
+    "An upward energy period has arrived. Feel free to boldly advance the plans you have been holding in your heart. Action is the best spell—take this step and the world will cooperate.",
+    "This is a phase for deepening relationships and integrating resources. Rather than expanding new territory, cultivate what already exists. Make the most of what you have.",
+    "A turning point phase—old patterns are loosening and new possibilities are emerging. Stay open; there is no need to rush to grasp something, nor fear in letting go.",
+    "This is a phase suited for inner reflection and restoration. Give yourself ample rest and replenish your energy. There is no need to force forward movement—waiting is also a form of wisdom.",
+    "The energy of relationships is active, making this a good time to expand your social circle and build deeper connections with others. Be genuine and you will naturally attract kindred spirits."
+  ],
+  "overall_intro_zh": [
+    "根据你的出生信息，为你呈现一份轻盈的性格能量画像。这不是命运的判决，而是一面镜子，帮你看见自己本有的光芒。",
+    "透过八字的视角，我们来探索一下你天生携带的能量模式。记住，这只是一种有趣的自我探索方式，你永远是自己人生的主角。",
+    "每个人都是独特的能量组合。以下内容仅供参考，用轻松的心态去发现那些与你产生共鸣的部分吧。"
+  ],
+  "overall_intro_en": [
+    "Based on your birth information, here is a light portrait of your personality energy. This is not a verdict on fate, but a mirror to help you see the radiance you already carry.",
+    "Through the lens of Bazi, let's explore the energy patterns you were born with. Remember, this is simply a fun way of self-exploration—you are always the author of your own life.",
+    "Every person is a unique combination of energies. The following is for reference only—approach it with lightness and notice the parts that resonate with you."
+  ],
+  "element_personality": {
+    "wood_zh": "木性之人，如春日树木，生命力旺盛，有向上的进取心与创造力。你重情义，有责任感，渴望成长与突破。",
+    "wood_en": "A wood-natured person, like a spring tree—bursting with vitality, with an upward-striving ambition and creativity. You value relationships and responsibility, and long for growth and breakthroughs.",
+    "fire_zh": "火性之人，如燃烧的火焰，热情四射，充满活力与感染力。你直率、勇敢，善于表达，对生活充满热忱。",
+    "fire_en": "A fire-natured person, like burning flame—radiating passion, full of vitality and infectious energy. You are direct, brave, expressive, and enthusiastic about life.",
+    "earth_zh": "土性之人，如大地一般，沉稳包容，给人踏实可靠的感觉。你重承诺，守信用，是周围人最稳定的支柱。",
+    "earth_en": "An earth-natured person, like the earth itself—steady and inclusive, giving others a sense of dependable solidity. You honor commitments and keep your word, the most stable pillar for those around you.",
+    "metal_zh": "金性之人，如锻造的金属，刚毅果断，有着强烈的原则意识。你追求完美，重视效率，行事果决不拖泥带水。",
+    "metal_en": "A metal-natured person, like forged steel—strong-willed and decisive, with a strong sense of principle. You pursue perfection, value efficiency, and act decisively without hesitation.",
+    "water_zh": "水性之人，如流动的水，智慧灵活，善于适应变化。你有着深刻的洞察力和同理心，能感知他人感知不到的细微之处。",
+    "water_en": "A water-natured person, like flowing water—intelligent and flexible, skilled at adapting to change. You have deep insight and empathy, perceiving subtle things that others miss."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "note": "藏干 (Hidden Stems) for each earthly branch. Stem indices: 甲=0,乙=1,丙=2,丁=3,戊=4,己=5,庚=6,辛=7,壬=8,癸=9. Source: 子平命理 standard school.",
+  "hidden_stems": [
+    { "branch": 0,  "branch_name_zh": "子", "branch_name_en": "Zi",  "stems": [{ "stem": 9, "weight": "main" }] },
+    { "branch": 1,  "branch_name_zh": "丑", "branch_name_en": "Chou","stems": [{ "stem": 5, "weight": "main" }, { "stem": 9, "weight": "mid" }, { "stem": 7, "weight": "minor" }] },
+    { "branch": 2,  "branch_name_zh": "寅", "branch_name_en": "Yin", "stems": [{ "stem": 0, "weight": "main" }, { "stem": 2, "weight": "mid" }, { "stem": 4, "weight": "minor" }] },
+    { "branch": 3,  "branch_name_zh": "卯", "branch_name_en": "Mao", "stems": [{ "stem": 1, "weight": "main" }] },
+    { "branch": 4,  "branch_name_zh": "辰", "branch_name_en": "Chen","stems": [{ "stem": 4, "weight": "main" }, { "stem": 1, "weight": "mid" }, { "stem": 9, "weight": "minor" }] },
+    { "branch": 5,  "branch_name_zh": "巳", "branch_name_en": "Si",  "stems": [{ "stem": 2, "weight": "main" }, { "stem": 4, "weight": "mid" }, { "stem": 6, "weight": "minor" }] },
+    { "branch": 6,  "branch_name_zh": "午", "branch_name_en": "Wu",  "stems": [{ "stem": 3, "weight": "main" }, { "stem": 5, "weight": "minor" }] },
+    { "branch": 7,  "branch_name_zh": "未", "branch_name_en": "Wei", "stems": [{ "stem": 5, "weight": "main" }, { "stem": 3, "weight": "mid" }, { "stem": 1, "weight": "minor" }] },
+    { "branch": 8,  "branch_name_zh": "申", "branch_name_en": "Shen","stems": [{ "stem": 6, "weight": "main" }, { "stem": 8, "weight": "mid" }, { "stem": 4, "weight": "minor" }] },
+    { "branch": 9,  "branch_name_zh": "酉", "branch_name_en": "You", "stems": [{ "stem": 7, "weight": "main" }] },
+    { "branch": 10, "branch_name_zh": "戌", "branch_name_en": "Xu",  "stems": [{ "stem": 4, "weight": "main" }, { "stem": 7, "weight": "mid" }, { "stem": 3, "weight": "minor" }] },
+    { "branch": 11, "branch_name_zh": "亥", "branch_name_en": "Hai", "stems": [{ "stem": 8, "weight": "main" }, { "stem": 0, "weight": "minor" }] }
+  ]
+}
