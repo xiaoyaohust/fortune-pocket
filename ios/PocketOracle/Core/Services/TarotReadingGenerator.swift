@@ -36,6 +36,40 @@ enum TarotReadingGenerator {
         )
     }
 
+    /// User-picked overload: accepts 3 pre-chosen cards + upright states from the interactive deck.
+    static func generate(
+        pickedCards: [TarotCard],
+        uprightStates: [Bool],
+        theme: TarotQuestionTheme = .general
+    ) throws -> TarotReading {
+        let loader = ContentLoader.shared
+        let spreadsData = try loader.loadSpreads()
+        let templates = try JSONDecoder().decode(ReadingTemplates.self, from: try loadTemplatesData())
+        let itemsText = try parseLuckyItems(data: try loadLuckyItemsData())
+        let colorsText = try parseLuckyColors(data: try loadLuckyColorsData())
+        let isZh = Locale.isZh
+
+        let spread = spreadsData.spreads.first(where: { $0.id == theme.spreadID })
+            ?? spreadsData.spreads.first(where: { $0.id == "three_card" })
+            ?? spreadsData.spreads[0]
+
+        let positions = spread.positions.sorted { $0.index < $1.index }
+        let drawnCards: [DrawnCard] = positions.enumerated().map { offset, position in
+            let card = pickedCards[offset % pickedCards.count]
+            let isUpright = offset < uprightStates.count ? uprightStates[offset] : Bool.random()
+            return DrawnCard(
+                card: card,
+                isUpright: isUpright,
+                positionLabel: isZh ? position.labelZh : position.labelEn,
+                positionAspect: position.aspect
+            )
+        }
+        return buildReading(
+            drawnCards: drawnCards, spread: spread, theme: theme,
+            templates: templates, itemsText: itemsText, colorsText: colorsText, isZh: isZh
+        )
+    }
+
     /// Internal overload that accepts pre-loaded data — used by unit tests.
     static func generate(
         cardsData: TarotCardsData,
@@ -65,30 +99,29 @@ enum TarotReadingGenerator {
                 positionAspect: position.aspect
             )
         }
+        return buildReading(
+            drawnCards: drawnCards, spread: spread, theme: theme,
+            templates: templates, itemsText: itemsText, colorsText: colorsText, isZh: isZh
+        )
+    }
 
+    private static func buildReading(
+        drawnCards: [DrawnCard],
+        spread: TarotSpread,
+        theme: TarotQuestionTheme,
+        templates: ReadingTemplates,
+        itemsText: [(name: String, energy: String)],
+        colorsText: [(name: String, hex: String)],
+        isZh: Bool
+    ) -> TarotReading {
         let energyKey = assessEnergy(cards: drawnCards)
         let overallEnergy = buildOverall(
-            cards: drawnCards,
-            spread: spread,
-            theme: theme,
-            energyKey: energyKey,
-            templates: templates,
-            isZh: isZh
+            cards: drawnCards, spread: spread, theme: theme,
+            energyKey: energyKey, templates: templates, isZh: isZh
         )
-        let positionReadings = drawnCards.map {
-            buildPositionReading(card: $0, theme: theme, isZh: isZh)
-        }
-        let focusInsight = buildFocusInsight(
-            cards: drawnCards,
-            theme: theme,
-            energyKey: energyKey,
-            isZh: isZh
-        )
-        let advice = buildAdvice(
-            card: drawnCards.last ?? drawnCards[0],
-            templates: templates,
-            isZh: isZh
-        )
+        let positionReadings = drawnCards.map { buildPositionReading(card: $0, theme: theme, isZh: isZh) }
+        let focusInsight = buildFocusInsight(cards: drawnCards, theme: theme, energyKey: energyKey, isZh: isZh)
+        let advice = buildAdvice(card: drawnCards.last ?? drawnCards[0], templates: templates, isZh: isZh)
 
         let luckyItem = itemsText.randomElement() ?? (isZh ? "水晶" : "Crystal", "")
         let luckyColor = colorsText.randomElement() ?? (isZh ? "金色" : "Gold", "#C9A84C")

@@ -61,6 +61,8 @@
 		F61E50C32A4A8A6CDCD0260A /* SolarTermsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA2A3DD26CD7ED8A39BB5E /* SolarTermsEngine.swift */; };
 		F65CE4508A014FC5E1A57C23 /* AstrologyChartCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73C3DC53554A578A4E7D20 /* AstrologyChartCalculator.swift */; };
 		FB6FB6A0062F1E83E173F61A /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAEE93834BB1AE947487A4 /* Date+Utility.swift */; };
+		AA11BB22CC33DD44EE55FF66 /* MysticalCalcOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF65 /* MysticalCalcOverlay.swift */; };
+		BB11CC22DD33EE44FF550011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB11CC22DD33EE44FF550010 /* Assets.xcassets */; };
 		FEC536BA71EFCB34D38ADFEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FC0A4077D310FDE4DAE75 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +135,8 @@
 		F6181BE57FFD8B31FF617490 /* UserFacingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingError.swift; sourceTree = "<group>"; };
 		FB805092FFBE1D734CBA16B6 /* natal_chart_test_vectors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = natal_chart_test_vectors.json; sourceTree = "<group>"; };
 		FCA785AA4706B6296130A2C3 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55FF65 /* MysticalCalcOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticalCalcOverlay.swift; sourceTree = "<group>"; };
+		BB11CC22DD33EE44FF550010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA5035F9255C30D6F458146 /* TarotReadingGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotReadingGeneratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -410,6 +414,14 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
+		AA11BB22CC33DD44EE55FF67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA11BB22CC33DD44EE55FF65 /* MysticalCalcOverlay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F31A659B656781075178A8D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +431,7 @@
 				A8F842CF53F0777DA52E1DCC /* Preferences */,
 				BA31E1ADC94C045FE4C5F904 /* Services */,
 				E83680583EC9BAE23BA4DF75 /* Theme */,
+				AA11BB22CC33DD44EE55FF67 /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -435,6 +448,7 @@
 		FA20AACD745963A369B5E067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB11CC22DD33EE44FF550010 /* Assets.xcassets */,
 				B0F6A92355975B29D68DFB30 /* data */,
 				FCD9A223A7BA7C8787F964E5 /* Localizable.strings */,
 			);
@@ -528,6 +542,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB11CC22DD33EE44FF550011 /* Assets.xcassets in Resources */,
 				9F7C95BC0E9D5462EFF34439 /* Localizable.strings in Resources */,
 				0B87731B976A2A4974F1891C /* branches.json in Resources */,
 				7501D8D8118CEC0E7026D8AD /* cards.json in Resources */,
@@ -599,6 +614,7 @@
 				D9AEBAFB9B5150868DFD198C /* TarotViewModel.swift in Sources */,
 				EE22FB6A834922BD222AC695 /* UserFacingError.swift in Sources */,
 				5FACF594D1BC26038F9C7A23 /* View+Theme.swift in Sources */,
+				AA11BB22CC33DD44EE55FF66 /* MysticalCalcOverlay.swift in Sources */,
 				12D27D68A4F93F0A52E880F1 /* ZodiacSign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,7 +784,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDAE8F4368DD6A0DD7E1044 /* LocalSigning.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -793,7 +809,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDAE8F4368DD6A0DD7E1044 /* LocalSigning.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

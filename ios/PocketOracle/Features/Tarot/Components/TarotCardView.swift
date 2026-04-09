@@ -3,12 +3,13 @@ import SwiftUI
 // MARK: - Card size presets
 
 enum CardSize {
+    case tiny    // ~52 pt wide  – pick deck grid
     case small   // ~78 pt wide  – result row
     case medium  // ~100 pt wide – draw screen
     case large   // ~130 pt wide – standalone
 
     var width: CGFloat {
-        switch self { case .small: 78; case .medium: 100; case .large: 130 }
+        switch self { case .tiny: 52; case .small: 78; case .medium: 100; case .large: 130 }
     }
     var height:       CGFloat { width * 1.6 }
     var symbolSize:   CGFloat { width * 0.30 }
@@ -105,7 +106,7 @@ private struct CardFrontView: View {
 
 // MARK: - Back face
 
-private struct CardBackView: View {
+struct CardBackView: View {
     let size: CardSize
 
     var body: some View {
@@ -129,5 +130,37 @@ private struct CardBackView: View {
                 .foregroundStyle(AppColors.accentGold.opacity(0.35))
         }
         .frame(width: size.width, height: size.height)
+    }
+}
+
+// MARK: - Flip animation (back → front)
+
+/// Shows a face-down card that flips to face-up after `flipDelay` seconds.
+struct FlippingTarotCardView: View {
+    let drawn: DrawnCard
+    let size: CardSize
+    var flipDelay: Double = 0
+
+    @State private var flipped = false
+
+    var body: some View {
+        ZStack {
+            // Back face — rotates away
+            TarotCardView(isFaceDown: true, size: size)
+                .rotation3DEffect(.degrees(flipped ? 180 : 0), axis: (0, 1, 0))
+                .opacity(flipped ? 0 : 1)
+
+            // Front face — rotates in
+            TarotCardView(card: drawn.card, isUpright: drawn.isUpright, size: size)
+                .rotation3DEffect(.degrees(flipped ? 0 : -180), axis: (0, 1, 0))
+                .opacity(flipped ? 1 : 0)
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + flipDelay) {
+                withAnimation(.spring(duration: 0.55, bounce: 0.15)) {
+                    flipped = true
+                }
+            }
+        }
     }
 }

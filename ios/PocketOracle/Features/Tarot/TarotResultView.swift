@@ -3,6 +3,7 @@ import SwiftUI
 struct TarotResultView: View {
     let reading: TarotReading
     let onDone: () -> Void
+    var animateReveal: Bool = false
 
     private var isZh: Bool {
         AppLanguageOption.isChinese
@@ -90,14 +91,22 @@ struct TarotResultView: View {
 
     private func cardsSection(cardSize: CardSize, horizontalPadding: CGFloat) -> some View {
         HStack(alignment: .top, spacing: 12) {
-            ForEach(reading.drawnCards) { drawn in
+            ForEach(Array(reading.drawnCards.enumerated()), id: \.element.id) { idx, drawn in
                 VStack(spacing: 8) {
-                    TarotCardView(
-                        card: drawn.card,
-                        isUpright: drawn.isUpright,
-                        isFaceDown: false,
-                        size: cardSize
-                    )
+                    if animateReveal {
+                        FlippingTarotCardView(
+                            drawn: drawn,
+                            size: cardSize,
+                            flipDelay: Double(idx) * 0.45
+                        )
+                    } else {
+                        TarotCardView(
+                            card: drawn.card,
+                            isUpright: drawn.isUpright,
+                            isFaceDown: false,
+                            size: cardSize
+                        )
+                    }
                     Text(drawn.positionLabel)
                         .font(AppFonts.labelSmall)
                         .foregroundStyle(AppColors.textSecondary)

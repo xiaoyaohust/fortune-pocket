@@ -6,6 +6,7 @@ struct AstrologyView: View {
     @State private var viewModel = AstrologyViewModel()
     @State private var showingCityPicker = false
     @State private var citySearchText = ""
+    @State private var showRevealAnim = false
 
     @Environment(\.modelContext) private var modelContext
 
@@ -34,6 +35,20 @@ struct AstrologyView: View {
             .padding(.bottom, 32)
         }
         .fortuneBackground()
+        .overlay {
+            if showRevealAnim {
+                MysticalCalcOverlay(
+                    label: isZh ? "观星中..." : "Reading the stars...",
+                    symbols: ["♈", "♉", "♊", "♋", "♌", "♍", "♎", "♏", "♐", "♑", "♒", "♓"]
+                )
+                .transition(AnyTransition.opacity)
+                .task {
+                    try? await Task.sleep(for: .milliseconds(1900))
+                    withAnimation(.easeOut(duration: 0.3)) { showRevealAnim = false }
+                }
+            }
+        }
+        .animation(.easeInOut(duration: 0.25), value: showRevealAnim)
         .navigationTitle(String.appLocalized("home_astrology_title"))
         .navigationBarTitleDisplayMode(.inline)
         .fortuneNavigationBackButton()
@@ -160,7 +175,10 @@ struct AstrologyView: View {
                 )
             }
 
-            Button(action: viewModel.generate) {
+            Button {
+                showRevealAnim = true
+                viewModel.generate()
+            } label: {
                 HStack(spacing: 10) {
                     if viewModel.isGenerating {
                         ProgressView()

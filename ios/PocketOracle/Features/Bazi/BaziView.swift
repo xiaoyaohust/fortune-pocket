@@ -6,6 +6,7 @@ struct BaziView: View {
     @State private var vm = BaziViewModel()
     @State private var showCityPicker = false
     @State private var citySearchText = ""
+    @State private var showRevealAnim = false
     @Environment(\.modelContext) private var modelContext
 
     private var isZh: Bool { AppLanguageOption.isChinese }
@@ -99,6 +100,20 @@ struct BaziView: View {
             .padding(.bottom, 40)
         }
         .fortuneBackground()
+        .overlay {
+            if showRevealAnim {
+                MysticalCalcOverlay(
+                    label: isZh ? "排盘中..." : "Calculating chart...",
+                    symbols: ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸", "子", "丑"]
+                )
+                .transition(AnyTransition.opacity)
+                .task {
+                    try? await Task.sleep(for: .milliseconds(1800))
+                    withAnimation(.easeOut(duration: 0.3)) { showRevealAnim = false }
+                }
+            }
+        }
+        .animation(.easeInOut(duration: 0.25), value: showRevealAnim)
         .navigationTitle(isZh ? "八字排盘" : "Four Pillars")
         .navigationBarTitleDisplayMode(.inline)
         .fortuneNavigationBackButton()
@@ -317,7 +332,10 @@ struct BaziView: View {
             }
 
             // Analyze button
-            Button(action: vm.generate) {
+            Button {
+                showRevealAnim = true
+                vm.generate()
+            } label: {
                 HStack(spacing: 10) {
                     if vm.isLoading {
                         ProgressView().tint(AppColors.backgroundDeep)
