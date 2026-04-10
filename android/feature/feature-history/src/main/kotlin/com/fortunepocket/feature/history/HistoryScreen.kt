@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.fortunepocket.core.model.ReadingPresentationBuilder
 import com.fortunepocket.core.model.ReadingRecord
+import com.fortunepocket.core.model.HistoryTrajectorySnapshot
 import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -97,6 +98,11 @@ fun HistoryScreen(
                     .padding(horizontal = 20.dp, vertical = 16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+                uiState.trajectorySnapshot?.let { snapshot ->
+                    item(key = "trajectory") {
+                        HistoryTrajectoryCard(snapshot = snapshot, isZh = isZh)
+                    }
+                }
                 items(uiState.records, key = { it.id }) { record ->
                     Surface(
                         modifier = Modifier
@@ -269,6 +275,57 @@ fun HistoryScreen(
                 textContentColor = AppColors.textPrimary,
                 titleContentColor = AppColors.textPrimary
             )
+        }
+    }
+}
+
+@Composable
+private fun HistoryTrajectoryCard(snapshot: HistoryTrajectorySnapshot, isZh: Boolean) {
+    Surface(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(20.dp),
+        color = AppColors.backgroundElevated
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(
+                text = if (isZh) "成长轨迹" else "Growth Trajectory",
+                style = FortunePocketTypography.bodyMedium,
+                color = AppColors.accentGold
+            )
+            Text(
+                text = snapshot.headline,
+                style = FortunePocketTypography.headlineMedium,
+                color = AppColors.textPrimary
+            )
+            snapshot.insights.forEach { insight ->
+                Surface(
+                    shape = RoundedCornerShape(16.dp),
+                    color = AppColors.backgroundBase
+                ) {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        Text(
+                            text = insight.title,
+                            style = FortunePocketTypography.titleMedium,
+                            color = AppColors.accentGold
+                        )
+                        Text(
+                            text = insight.body,
+                            style = FortunePocketTypography.bodyMedium,
+                            color = AppColors.textSecondary
+                        )
+                    }
+                }
+            }
         }
     }
 }

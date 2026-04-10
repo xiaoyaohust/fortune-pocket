@@ -71,7 +71,11 @@ enum ReadingPresentationBuilder {
             "\(reading.birthDateText) · \(reading.birthTimeText)",
             reading.birthCityName,
             "",
-            firstParagraph(of: reading.chartSummary),
+            firstParagraph(of: reading.currentTheme),
+            "",
+            "\(isZh ? "性格主轴" : "Core Personality"): \(firstParagraph(of: reading.personalityCore))",
+            "\(isZh ? "关系模式" : "Relationship Pattern"): \(firstParagraph(of: reading.relationshipPattern))",
+            "\(isZh ? "近期主题" : "Current Theme"): \(firstParagraph(of: reading.currentTheme))",
             "",
             "\(isZh ? "行星落座" : "Placements"):",
             placementSummary,
@@ -246,6 +250,46 @@ enum ReadingPresentationBuilder {
                 )
             )
         }
+        if let personalityCore = detail.personalityCore {
+            sections.append(
+                ReadingPresentationSection(
+                    title: isZh ? "你的性格主轴" : "Your Core Personality",
+                    body: personalityCore
+                )
+            )
+        }
+        if let relationshipPattern = detail.relationshipPattern {
+            sections.append(
+                ReadingPresentationSection(
+                    title: isZh ? "关系模式" : "Relationship Pattern",
+                    body: relationshipPattern
+                )
+            )
+        }
+        if let strengths = detail.strengths {
+            sections.append(
+                ReadingPresentationSection(
+                    title: isZh ? "你最容易发光的地方" : "Where You Shine",
+                    body: strengths
+                )
+            )
+        }
+        if let growthEdge = detail.growthEdge {
+            sections.append(
+                ReadingPresentationSection(
+                    title: isZh ? "当前成长课题" : "Growth Edge",
+                    body: growthEdge
+                )
+            )
+        }
+        if let currentTheme = detail.currentTheme {
+            sections.append(
+                ReadingPresentationSection(
+                    title: isZh ? "近期主题" : "Current Theme",
+                    body: currentTheme
+                )
+            )
+        }
         sections.append(contentsOf: [
             ReadingPresentationSection(title: isZh ? "整体画像" : "Overall Profile", body: detail.overall),
             ReadingPresentationSection(title: isZh ? "感情与亲密关系" : "Love", body: detail.love),
@@ -269,6 +313,8 @@ enum ReadingPresentationBuilder {
                 [detail.date, detail.birthTime, detail.birthCityName].compactMap { $0 }.joined(separator: " · "),
                 "",
                 detail.chartSummary ?? "",
+                detail.personalityCore.map { "\(isZh ? "性格主轴" : "Core Personality"): \(firstParagraph(of: $0))" } ?? "",
+                detail.currentTheme.map { "\(isZh ? "近期主题" : "Current Theme"): \(firstParagraph(of: $0))" } ?? "",
                 "\(isZh ? "整体画像" : "Overall Profile"): \(firstParagraph(of: detail.overall))",
                 "\(isZh ? "感情" : "Love"): \(firstParagraph(of: detail.love))",
                 "\(isZh ? "事业" : "Career"): \(firstParagraph(of: detail.career))",

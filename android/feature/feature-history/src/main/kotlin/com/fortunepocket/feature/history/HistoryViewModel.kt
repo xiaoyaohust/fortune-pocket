@@ -3,6 +3,7 @@ package com.fortunepocket.feature.history
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.fortunepocket.core.data.repository.ReadingRepository
+import com.fortunepocket.core.model.HistoryTrajectoryBuilder
 import com.fortunepocket.core.model.ReadingRecord
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
@@ -12,6 +13,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 @HiltViewModel
 class HistoryViewModel @Inject constructor(
@@ -24,8 +26,13 @@ class HistoryViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             repository.observeAll().collect { records ->
+                val isZh = Locale.getDefault().language == "zh"
                 _uiState.update {
-                    it.copy(records = records, isLoading = false)
+                    it.copy(
+                        records = records,
+                        trajectorySnapshot = HistoryTrajectoryBuilder.build(records, isZh),
+                        isLoading = false
+                    )
                 }
             }
         }

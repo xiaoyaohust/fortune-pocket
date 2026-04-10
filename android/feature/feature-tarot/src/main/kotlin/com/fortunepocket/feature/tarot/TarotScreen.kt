@@ -39,6 +39,7 @@ import com.fortunepocket.core.model.DrawnCard
 import com.fortunepocket.core.model.ReadingPresentationBuilder
 import com.fortunepocket.core.model.TarotQuestionTheme
 import com.fortunepocket.core.model.TarotReading
+import com.fortunepocket.core.model.TarotSpreadStyle
 import com.fortunepocket.core.ui.share.OracleShareCardPayload
 import com.fortunepocket.core.ui.share.ShareCardExporter
 import com.fortunepocket.core.ui.theme.AppColors
@@ -74,6 +75,7 @@ fun TarotScreen(
         } ?: DrawPromptScreen(
             state = uiState,
             onThemeSelected = viewModel::onThemeSelected,
+            onSpreadSelected = viewModel::onSpreadSelected,
             onDraw = viewModel::draw
         )
     }
@@ -83,6 +85,7 @@ fun TarotScreen(
 private fun DrawPromptScreen(
     state: TarotUiState,
     onThemeSelected: (TarotQuestionTheme) -> Unit,
+    onSpreadSelected: (TarotSpreadStyle) -> Unit,
     onDraw: () -> Unit
 ) {
     val isZh = Locale.getDefault().language == "zh"
@@ -91,19 +94,20 @@ private fun DrawPromptScreen(
         modifier = Modifier
             .fillMaxSize()
             .statusBarsPadding()
-            .padding(horizontal = 20.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+            .verticalScroll(rememberScrollState())
+            .padding(horizontal = 20.dp, vertical = 20.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text("✦", style = FortunePocketTypography.titleLarge, color = AppColors.accentGold)
         Spacer(Modifier.height(10.dp))
         Text(
-            text = state.selectedTheme.localizedSpreadName(isZh),
+            text = state.selectedTheme.localizedEntryTitle(isZh),
             style = FortunePocketTypography.headlineLarge,
-            color = AppColors.textPrimary
+            color = AppColors.textPrimary,
+            textAlign = TextAlign.Center
         )
         Text(
-            text = state.selectedTheme.localizedSpreadSubtitle(isZh),
+            text = state.selectedTheme.localizedEntrySubtitle(isZh),
             style = FortunePocketTypography.bodyMedium,
             color = AppColors.textSecondary,
             textAlign = TextAlign.Center
@@ -132,21 +136,45 @@ private fun DrawPromptScreen(
             onThemeSelected = onThemeSelected
         )
 
-        Spacer(Modifier.height(34.dp))
+        Spacer(Modifier.height(20.dp))
+
+        Text(
+            text = if (isZh) "选择牌阵" else "Choose a spread",
+            style = FortunePocketTypography.titleMedium,
+            color = AppColors.textPrimary,
+            modifier = Modifier.fillMaxWidth()
+        )
+        Spacer(Modifier.height(10.dp))
+        SpreadRow(
+            spreads = state.selectedTheme.availableSpreadStyles(),
+            selectedSpread = state.selectedSpreadStyle,
+            isZh = isZh,
+            onSpreadSelected = onSpreadSelected
+        )
+        Spacer(Modifier.height(10.dp))
+        Text(
+            text = state.selectedSpreadStyle.localizedDescription(isZh),
+            style = FortunePocketTypography.bodyMedium,
+            color = AppColors.textSecondary,
+            textAlign = TextAlign.Start,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(Modifier.height(28.dp))
 
         Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            repeat(3) {
+            repeat(state.selectedSpreadStyle.cardCount()) {
                 TarotCardView(faceDown = true, size = CardSize.MEDIUM)
             }
         }
 
-        Spacer(Modifier.height(44.dp))
+        Spacer(Modifier.height(32.dp))
 
         Text(
             text = if (isZh)
-                "先确认你想询问的主题，再静心抽出三张牌。\n结果会围绕牌阵位置与主题本身来展开。"
+                "先确认主题与牌阵，再安静抽牌。\n这次会抽出 ${state.selectedSpreadStyle.cardCount()} 张牌，结果会更贴近你现在想问的事。"
             else
-                "Choose your focus first, then draw three cards.\nThe reading will follow the spread positions and your selected theme.",
+                "Choose your focus and spread first, then draw.\nThis ritual uses ${state.selectedSpreadStyle.cardCount()} card(s) so the reading stays close to what you want to ask.",
             style = FortunePocketTypography.bodyMedium,
             color = AppColors.textSecondary,
             textAlign = TextAlign.Center
@@ -181,6 +209,55 @@ private fun DrawPromptScreen(
                 color = AppColors.textSecondary,
                 textAlign = TextAlign.Center
             )
+        }
+    }
+}
+
+@Composable
+private fun SpreadRow(
+    spreads: List<TarotSpreadStyle>,
+    selectedSpread: TarotSpreadStyle,
+    isZh: Boolean,
+    onSpreadSelected: (TarotSpreadStyle) -> Unit
+) {
+    Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        spreads.chunked(2).forEach { row ->
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                row.forEach { spread ->
+                    val selected = spread == selectedSpread
+                    Button(
+                        onClick = { onSpreadSelected(spread) },
+                        shape = RoundedCornerShape(16.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = if (selected) AppColors.accentGold else AppColors.backgroundElevated
+                        ),
+                        modifier = Modifier
+                            .weight(1f)
+                            .height(76.dp)
+                    ) {
+                        Column(horizontalAlignment = Alignment.Start) {
+                            Text(
+                                text = spread.localizedName(isZh),
+                                style = FortunePocketTypography.bodyMedium,
+                                color = if (selected) AppColors.backgroundDeep else AppColors.textPrimary
+                            )
+                            Spacer(Modifier.height(4.dp))
+                            Text(
+                                text = spread.localizedSubtitle(isZh),
+                                style = FortunePocketTypography.bodySmall,
+                                color = if (selected) AppColors.backgroundDeep else AppColors.textSecondary,
+                                maxLines = 2
+                            )
+                        }
+                    }
+                }
+                if (row.size == 1) {
+                    Spacer(Modifier.weight(1f))
+                }
+            }
         }
     }
 }

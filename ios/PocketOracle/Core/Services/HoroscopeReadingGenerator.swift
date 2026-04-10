@@ -23,6 +23,7 @@ enum HoroscopeReadingGenerator {
             ? "太阳\(chart.sunSign.nameZh) · 月亮\(chart.moonSign.nameZh) · 上升\(chart.risingSign.nameZh)"
             : "Sun \(chart.sunSign.nameEn) · Moon \(chart.moonSign.nameEn) · Rising \(chart.risingSign.nameEn)"
         let chartSummary = buildChartSummary(chart: chart)
+        let insightBundle = AstrologyInsightBuilder.build(chart: chart)
 
         let overall = overallText(
             chart: chart,
@@ -68,6 +69,11 @@ enum HoroscopeReadingGenerator {
             timeZoneId: chart.timeZoneId,
             chartSummary: chartSummary,
             chartSignature: chartSignature,
+            personalityCore: insightBundle.personalityCore,
+            relationshipPattern: insightBundle.relationshipPattern,
+            strengths: insightBundle.strengths,
+            growthEdge: insightBundle.growthEdge,
+            currentTheme: insightBundle.currentTheme,
             overall: overall,
             love: love,
             career: career,

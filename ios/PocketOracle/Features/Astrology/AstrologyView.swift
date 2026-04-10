@@ -235,6 +235,12 @@ private struct AstrologyResultView: View {
                 ]
             )
 
+            AstrologySectionCard(title: isZh ? "你的性格主轴" : "Your Core Personality", content: reading.personalityCore)
+            AstrologySectionCard(title: isZh ? "关系模式" : "Relationship Pattern", content: reading.relationshipPattern)
+            AstrologySectionCard(title: isZh ? "你最容易发光的地方" : "Where You Shine", content: reading.strengths)
+            AstrologySectionCard(title: isZh ? "当前成长课题" : "Growth Edge", content: reading.growthEdge)
+            AstrologySectionCard(title: isZh ? "近期主题" : "Current Theme", content: reading.currentTheme)
+
             if !reading.planetPlacements.isEmpty {
                 VStack(alignment: .leading, spacing: 12) {
                     Text(isZh ? "行星落座与宫位" : "Planet Placements")
@@ -334,7 +340,7 @@ private struct AstrologyResultView: View {
 
     private var resultHero: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(isZh ? "这张盘最醒目的签名" : "The clearest signature in this chart")
+            Text(isZh ? "这张盘最像你的地方" : "The clearest signature in this chart")
                 .font(AppFonts.labelSmall)
                 .foregroundStyle(AppColors.accentGold)
                 .tracking(2)
@@ -352,7 +358,7 @@ private struct AstrologyResultView: View {
                 .font(AppFonts.caption)
                 .foregroundStyle(AppColors.accentGold)
 
-            Text(firstParagraph(of: reading.chartSummary))
+            Text(firstParagraph(of: reading.currentTheme))
                 .font(AppFonts.bodyMedium)
                 .foregroundStyle(AppColors.textSecondary)
                 .fixedSize(horizontal: false, vertical: true)

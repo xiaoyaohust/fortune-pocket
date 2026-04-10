@@ -66,32 +66,34 @@ enum class TarotQuestionTheme {
     @SerialName("career") CAREER,
     @SerialName("wealth") WEALTH;
 
-    fun spreadId(): String = when (this) {
-        GENERAL -> "three_card"
-        LOVE -> "love_three_card"
-        CAREER -> "career_three_card"
-        WEALTH -> "wealth_three_card"
+    fun defaultSpreadStyle(): TarotSpreadStyle = when (this) {
+        GENERAL -> TarotSpreadStyle.PATH_SPREAD
+        LOVE -> TarotSpreadStyle.RELATIONSHIP_SPREAD
+        CAREER -> TarotSpreadStyle.CAREER_SPREAD
+        WEALTH -> TarotSpreadStyle.WEALTH_SPREAD
     }
+
+    fun availableSpreadStyles(): List<TarotSpreadStyle> = TarotSpreadStyle.availableFor(this)
 
     fun localizedName(isZh: Boolean): String = when (this) {
         GENERAL -> if (isZh) "综合主题" else "General Focus"
-        LOVE -> if (isZh) "爱情主题" else "Love Focus"
+        LOVE -> if (isZh) "关系主题" else "Relationship Focus"
         CAREER -> if (isZh) "事业主题" else "Career Focus"
         WEALTH -> if (isZh) "财富主题" else "Wealth Focus"
     }
 
-    fun localizedSpreadName(isZh: Boolean): String = when (this) {
-        GENERAL -> if (isZh) "路径三牌阵" else "Path Spread"
-        LOVE -> if (isZh) "爱情镜像阵" else "Love Mirror Spread"
-        CAREER -> if (isZh) "事业路径阵" else "Career Path Spread"
-        WEALTH -> if (isZh) "财富流动阵" else "Wealth Flow Spread"
+    fun localizedEntryTitle(isZh: Boolean): String = when (this) {
+        GENERAL -> if (isZh) "今晚适合先看整体脉络" else "Tonight is best for reading the whole path"
+        LOVE -> if (isZh) "今晚适合看关系里的真实流动" else "Tonight is best for reading relationship currents"
+        CAREER -> if (isZh) "今晚适合看事业节奏与机会" else "Tonight is best for reading career momentum"
+        WEALTH -> if (isZh) "今晚适合看资源与金钱节奏" else "Tonight is best for reading money and resources"
     }
 
-    fun localizedSpreadSubtitle(isZh: Boolean): String = when (this) {
-        GENERAL -> if (isZh) "过去 · 现在 · 下一步" else "Past · Present · Next Step"
-        LOVE -> if (isZh) "我在关系里 · 关系流动 · 温柔建议" else "My Place in Love · Connection Energy · Gentle Advice"
-        CAREER -> if (isZh) "当前路径 · 隐藏阻力 · 机会入口" else "Current Path · Hidden Block · Opportunity"
-        WEALTH -> if (isZh) "当前流动 · 资源模式 · 下一步动作" else "Current Flow · Resource Pattern · Next Move"
+    fun localizedEntrySubtitle(isZh: Boolean): String = when (this) {
+        GENERAL -> if (isZh) "先抽一张得到方向，或用三张牌看清整段过程。" else "Start with a single card for direction, or use three cards to see the whole arc."
+        LOVE -> if (isZh) "适合关系、暧昧、靠近与疏离，也适合照见自己在关系中的位置。" else "For romance, attachment, distance, and the role you are playing in a connection."
+        CAREER -> if (isZh) "适合工作推进、学业压力、卡点和机会窗口。" else "For work momentum, study pressure, friction, and the opening ahead."
+        WEALTH -> if (isZh) "适合看资源流动、消费冲动和下一步更稳的选择。" else "For resource flow, spending impulses, and the steadier next move."
     }
 
     fun localizedPromptDescription(isZh: Boolean): String = when (this) {
@@ -115,9 +117,87 @@ enum class TarotQuestionTheme {
 
     fun localizedFocusTitle(isZh: Boolean): String = when (this) {
         GENERAL -> if (isZh) "牌阵总览" else "Spread Synthesis"
-        LOVE -> if (isZh) "爱情聚焦" else "Love Focus"
+        LOVE -> if (isZh) "关系聚焦" else "Relationship Focus"
         CAREER -> if (isZh) "事业聚焦" else "Career Focus"
         WEALTH -> if (isZh) "财富聚焦" else "Wealth Focus"
+    }
+}
+
+@Serializable
+enum class TarotSpreadStyle {
+    @SerialName("single_card") SINGLE_CARD,
+    @SerialName("three_card") PATH_SPREAD,
+    @SerialName("love_three_card") RELATIONSHIP_SPREAD,
+    @SerialName("career_three_card") CAREER_SPREAD,
+    @SerialName("wealth_three_card") WEALTH_SPREAD,
+    @SerialName("mind_body_spirit") MIND_BODY_SPIRIT;
+
+    fun spreadId(): String = when (this) {
+        SINGLE_CARD -> "single_card"
+        PATH_SPREAD -> "three_card"
+        RELATIONSHIP_SPREAD -> "love_three_card"
+        CAREER_SPREAD -> "career_three_card"
+        WEALTH_SPREAD -> "wealth_three_card"
+        MIND_BODY_SPIRIT -> "mind_body_spirit"
+    }
+
+    fun cardCount(): Int = when (this) {
+        SINGLE_CARD -> 1
+        else -> 3
+    }
+
+    fun localizedName(isZh: Boolean): String = when (this) {
+        SINGLE_CARD -> if (isZh) "单张指引" else "Single Card"
+        PATH_SPREAD -> if (isZh) "路径三牌阵" else "Path Spread"
+        RELATIONSHIP_SPREAD -> if (isZh) "关系镜像阵" else "Relationship Mirror"
+        CAREER_SPREAD -> if (isZh) "事业路径阵" else "Career Path"
+        WEALTH_SPREAD -> if (isZh) "财富流动阵" else "Wealth Flow"
+        MIND_BODY_SPIRIT -> if (isZh) "身心灵三牌阵" else "Mind Body Spirit"
+    }
+
+    fun localizedSubtitle(isZh: Boolean): String = when (this) {
+        SINGLE_CARD -> if (isZh) "一张牌，给今晚一个清晰方向" else "One card for tonight's clearest direction"
+        PATH_SPREAD -> if (isZh) "过去 · 现在 · 下一步" else "Past · Present · Next Step"
+        RELATIONSHIP_SPREAD -> if (isZh) "我在关系里 · 关系流动 · 温柔建议" else "My Place · Connection · Gentle Advice"
+        CAREER_SPREAD -> if (isZh) "当前路径 · 隐藏阻力 · 机会入口" else "Current Path · Hidden Block · Opportunity"
+        WEALTH_SPREAD -> if (isZh) "当前流动 · 资源模式 · 下一步动作" else "Current Flow · Resource Pattern · Next Move"
+        MIND_BODY_SPIRIT -> if (isZh) "身体 · 心绪 · 灵魂讯号" else "Body · Mind · Spirit"
+    }
+
+    fun localizedDescription(isZh: Boolean): String = when (this) {
+        SINGLE_CARD -> if (isZh)
+            "适合当下只想要一个方向感、不想被太多信息淹没的时候。"
+        else
+            "Best when you want one clear direction without being overwhelmed."
+        PATH_SPREAD -> if (isZh)
+            "适合梳理你一路走来的情绪脉络、现状位置和下一步动作。"
+        else
+            "Best for understanding the arc from what shaped you to what comes next."
+        RELATIONSHIP_SPREAD -> if (isZh)
+            "适合关系主题，帮助你同时看见自己、关系流动和最温柔的回应方式。"
+        else
+            "Best for relationship questions, showing you, the connection, and the gentlest response."
+        CAREER_SPREAD -> if (isZh)
+            "适合工作与学业，帮你看清正在发生的节奏、阻力和机会入口。"
+        else
+            "Best for work and study, revealing momentum, friction, and the opening ahead."
+        WEALTH_SPREAD -> if (isZh)
+            "适合资源与金钱问题，看见流向、惯性和更稳的下一步。"
+        else
+            "Best for money and resources, showing flow, habits, and a steadier next move."
+        MIND_BODY_SPIRIT -> if (isZh)
+            "适合想听见更深层状态时，看看身体、心绪与灵魂当前分别在说什么。"
+        else
+            "Best when you want a deeper scan of what body, mind, and spirit are each saying."
+    }
+
+    companion object {
+        fun availableFor(theme: TarotQuestionTheme): List<TarotSpreadStyle> = when (theme) {
+            TarotQuestionTheme.GENERAL -> listOf(SINGLE_CARD, PATH_SPREAD, MIND_BODY_SPIRIT)
+            TarotQuestionTheme.LOVE -> listOf(SINGLE_CARD, RELATIONSHIP_SPREAD)
+            TarotQuestionTheme.CAREER -> listOf(SINGLE_CARD, CAREER_SPREAD)
+            TarotQuestionTheme.WEALTH -> listOf(SINGLE_CARD, WEALTH_SPREAD)
+        }
     }
 }
 

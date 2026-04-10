@@ -8,6 +8,7 @@ import com.fortunepocket.core.model.ReadingRecord
 import com.fortunepocket.core.model.ReadingType
 import com.fortunepocket.core.model.TarotQuestionTheme
 import com.fortunepocket.core.model.TarotReading
+import com.fortunepocket.core.model.TarotSpreadStyle
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -32,7 +33,25 @@ class TarotViewModel @Inject constructor(
 
     fun onThemeSelected(theme: TarotQuestionTheme) {
         _uiState.update {
-            it.copy(selectedTheme = theme, reading = null, errorMessage = null, isGenerating = false)
+            val nextSpread = it.selectedSpreadStyle.takeIf { style -> theme.availableSpreadStyles().contains(style) }
+                ?: theme.defaultSpreadStyle()
+            it.copy(
+                selectedTheme = theme,
+                selectedSpreadStyle = nextSpread,
+                reading = null,
+                errorMessage = null,
+                isGenerating = false
+            )
+        }
+    }
+
+    fun onSpreadSelected(spreadStyle: TarotSpreadStyle) {
+        _uiState.update { state ->
+            if (!state.selectedTheme.availableSpreadStyles().contains(spreadStyle)) {
+                state
+            } else {
+                state.copy(selectedSpreadStyle = spreadStyle, reading = null, errorMessage = null)
+            }
         }
     }
 
@@ -42,7 +61,7 @@ class TarotViewModel @Inject constructor(
         _uiState.update { it.copy(isGenerating = true, errorMessage = null, reading = null) }
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val reading = generator.generate(state.selectedTheme)
+                val reading = generator.generate(state.selectedTheme, state.selectedSpreadStyle)
                 _uiState.update { it.copy(isGenerating = false, reading = reading, errorMessage = null) }
             } catch (e: Exception) {
                 _uiState.update { it.copy(isGenerating = false, errorMessage = e.message ?: "Unknown error") }
@@ -79,7 +98,11 @@ class TarotViewModel @Inject constructor(
                 id            = UUID.randomUUID().toString(),
                 type          = ReadingType.TAROT,
                 createdAt     = System.currentTimeMillis(),
-                title         = if (isZh) "塔罗 · ${reading.theme.localizedName(true)}" else "Tarot · ${reading.theme.localizedName(false)}",
+                title         = if (isZh) {
+                    "塔罗 · ${reading.theme.localizedName(true)} · ${reading.spreadName}"
+                } else {
+                    "Tarot · ${reading.theme.localizedName(false)} · ${reading.spreadName}"
+                },
                 summary       = cardNames,
                 detailJson    = detailJson,
                 schemaVersion = 1,

@@ -8,6 +8,7 @@ import com.fortunepocket.core.model.TarotQuestionTheme
 import com.fortunepocket.core.model.TarotReading
 import com.fortunepocket.core.model.TarotReadingDetail
 import com.fortunepocket.core.model.TarotSpread
+import com.fortunepocket.core.model.TarotSpreadStyle
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
@@ -23,14 +24,18 @@ class TarotReadingGenerator @Inject constructor(
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    fun generate(theme: TarotQuestionTheme = TarotQuestionTheme.GENERAL): TarotReading =
+    fun generate(
+        theme: TarotQuestionTheme = TarotQuestionTheme.GENERAL,
+        spreadStyle: TarotSpreadStyle? = null
+    ): TarotReading =
         buildTarotReading(
             cardsData = contentLoader.loadTarotCards(),
             spreadsData = contentLoader.loadSpreads(),
             readingTemplatesRaw = contentLoader.loadReadingTemplatesRaw(),
             luckyItemsRaw = contentLoader.loadLuckyItemsRaw(),
             luckyColorsRaw = contentLoader.loadLuckyColorsRaw(),
-            theme = theme
+            theme = theme,
+            spreadStyle = spreadStyle
         )
 
     fun toDetailJson(reading: TarotReading): String =
@@ -49,8 +54,18 @@ internal fun toTarotDetail(reading: TarotReading): TarotReadingDetail {
     return TarotReadingDetail(
         spreadId = reading.spreadId,
         themeId = reading.theme.name.lowercase(Locale.US),
-        themeNameZh = null,
-        themeNameEn = null,
+        themeNameZh = when (reading.theme) {
+            TarotQuestionTheme.GENERAL -> "综合主题"
+            TarotQuestionTheme.LOVE -> "关系主题"
+            TarotQuestionTheme.CAREER -> "事业主题"
+            TarotQuestionTheme.WEALTH -> "财富主题"
+        },
+        themeNameEn = when (reading.theme) {
+            TarotQuestionTheme.GENERAL -> "General Focus"
+            TarotQuestionTheme.LOVE -> "Relationship Focus"
+            TarotQuestionTheme.CAREER -> "Career Focus"
+            TarotQuestionTheme.WEALTH -> "Wealth Focus"
+        },
         spreadDescription = reading.spreadDescription,
         drawnCards = reading.drawnCards.map { drawn ->
             DrawnCardDetail(
@@ -85,12 +100,15 @@ internal fun buildTarotReading(
     readingTemplatesRaw: String,
     luckyItemsRaw: String,
     luckyColorsRaw: String,
-    theme: TarotQuestionTheme = TarotQuestionTheme.GENERAL
+    theme: TarotQuestionTheme = TarotQuestionTheme.GENERAL,
+    spreadStyle: TarotSpreadStyle? = null
 ): TarotReading {
     val json = Json { ignoreUnknownKeys = true }
     val isZh = Locale.getDefault().language == "zh"
 
-    val spread = spreadsData.spreads.firstOrNull { it.id == theme.spreadId() }
+    val spread = spreadsData.spreads.firstOrNull {
+        it.id == (spreadStyle ?: theme.defaultSpreadStyle()).spreadId()
+    }
         ?: spreadsData.spreads.firstOrNull { it.id == "three_card" }
         ?: spreadsData.spreads.first()
 

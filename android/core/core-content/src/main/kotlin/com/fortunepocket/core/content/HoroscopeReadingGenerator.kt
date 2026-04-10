@@ -37,6 +37,7 @@ class HoroscopeReadingGenerator @Inject constructor(
         } else {
             "Sun ${chart.sunSign.nameEn} · Moon ${chart.moonSign.nameEn} · Rising ${chart.risingSign.nameEn}"
         }
+        val insightBundle = AstrologyInsightBuilder.build(chart, isZh)
         val dominantElement = chart.elementBalance.localizedDominantElement(isZh)
         val leadingHouse = chart.houseFocus.firstOrNull()
         val emotionalAspect = aspect(setOf(AstrologyPlanetID.MOON, AstrologyPlanetID.VENUS), chart.majorAspects)
@@ -100,6 +101,11 @@ class HoroscopeReadingGenerator @Inject constructor(
             timeZoneId = chart.timeZoneId,
             chartSummary = chartSummary,
             chartSignature = chartSignature,
+            personalityCore = insightBundle.personalityCore,
+            relationshipPattern = insightBundle.relationshipPattern,
+            strengths = insightBundle.strengths,
+            growthEdge = insightBundle.growthEdge,
+            currentTheme = insightBundle.currentTheme,
             overall = overall,
             love = love,
             career = career,

@@ -19,7 +19,10 @@ struct TarotReading {
 
 enum TarotReadingGenerator {
 
-    static func generate(theme: TarotQuestionTheme = .general) throws -> TarotReading {
+    static func generate(
+        theme: TarotQuestionTheme = .general,
+        spreadStyle: TarotSpreadStyle? = nil
+    ) throws -> TarotReading {
         let loader = ContentLoader.shared
         let cardsData = try loader.loadTarotCards()
         let spreadsData = try loader.loadSpreads()
@@ -32,7 +35,8 @@ enum TarotReadingGenerator {
             templatesData: templatesData,
             luckyItemsData: luckyItemsData,
             luckyColorsData: luckyColorsData,
-            theme: theme
+            theme: theme,
+            spreadStyle: spreadStyle
         )
     }
 
@@ -40,7 +44,8 @@ enum TarotReadingGenerator {
     static func generate(
         pickedCards: [TarotCard],
         uprightStates: [Bool],
-        theme: TarotQuestionTheme = .general
+        theme: TarotQuestionTheme = .general,
+        spreadStyle: TarotSpreadStyle? = nil
     ) throws -> TarotReading {
         let loader = ContentLoader.shared
         let spreadsData = try loader.loadSpreads()
@@ -49,7 +54,8 @@ enum TarotReadingGenerator {
         let colorsText = try parseLuckyColors(data: try loadLuckyColorsData())
         let isZh = Locale.isZh
 
-        let spread = spreadsData.spreads.first(where: { $0.id == theme.spreadID })
+        let spreadIdentifier = spreadStyle?.spreadID ?? theme.defaultSpreadStyle.spreadID
+        let spread = spreadsData.spreads.first(where: { $0.id == spreadIdentifier })
             ?? spreadsData.spreads.first(where: { $0.id == "three_card" })
             ?? spreadsData.spreads[0]
 
@@ -77,14 +83,16 @@ enum TarotReadingGenerator {
         templatesData: Data,
         luckyItemsData: Data,
         luckyColorsData: Data,
-        theme: TarotQuestionTheme = .general
+        theme: TarotQuestionTheme = .general,
+        spreadStyle: TarotSpreadStyle? = nil
     ) throws -> TarotReading {
         let templates = try JSONDecoder().decode(ReadingTemplates.self, from: templatesData)
         let itemsText = try parseLuckyItems(data: luckyItemsData)
         let colorsText = try parseLuckyColors(data: luckyColorsData)
         let isZh = Locale.isZh
 
-        let spread = spreadsData.spreads.first(where: { $0.id == theme.spreadID })
+        let spreadIdentifier = spreadStyle?.spreadID ?? theme.defaultSpreadStyle.spreadID
+        let spread = spreadsData.spreads.first(where: { $0.id == spreadIdentifier })
             ?? spreadsData.spreads.first(where: { $0.id == "three_card" })
             ?? spreadsData.spreads[0]
 
@@ -149,8 +157,18 @@ enum TarotReadingGenerator {
         TarotReadingDetail(
             spreadId: reading.spreadId,
             themeId: reading.theme.rawValue,
-            themeNameZh: nil,
-            themeNameEn: nil,
+            themeNameZh: [
+                .general: "综合主题",
+                .love: "关系主题",
+                .career: "事业主题",
+                .wealth: "财富主题"
+            ][reading.theme],
+            themeNameEn: [
+                .general: "General Focus",
+                .love: "Relationship Focus",
+                .career: "Career Focus",
+                .wealth: "Wealth Focus"
+            ][reading.theme],
             spreadDescription: reading.spreadDescription,
             drawnCards: reading.drawnCards.map { drawn in
                 DrawnCardDetail(

@@ -6,6 +6,10 @@ struct HistoryView: View {
     private var records: [ReadingRecord]
     @Environment(\.modelContext) private var modelContext
 
+    private var trajectorySnapshot: HistoryTrajectorySnapshot? {
+        HistoryTrajectoryBuilder.build(records: records)
+    }
+
     var body: some View {
         Group {
             if records.isEmpty {
@@ -21,25 +25,39 @@ struct HistoryView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(AppColors.gradientBackground.ignoresSafeArea())
             } else {
-                List {
-                    ForEach(records) { record in
-                        NavigationLink {
-                            HistoryDetailView(record: record)
-                        } label: {
-                            HistoryRecordRow(record: record)
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 16) {
+                        if let trajectorySnapshot {
+                            HistoryTrajectoryCard(snapshot: trajectorySnapshot)
                         }
-                        .listRowBackground(AppColors.backgroundElevated)
-                        .swipeActions(edge: .trailing) {
-                            Button(role: .destructive) {
-                                delete(record)
-                            } label: {
-                                Text(String.appLocalized("history_delete"))
+
+                        ForEach(records) { record in
+                            HStack(spacing: 12) {
+                                NavigationLink {
+                                    HistoryDetailView(record: record)
+                                } label: {
+                                    HistoryRecordRow(record: record)
+                                }
+                                .buttonStyle(.plain)
+
+                                Button(role: .destructive) {
+                                    delete(record)
+                                } label: {
+                                    Image(systemName: "trash")
+                                        .font(.system(size: 14, weight: .semibold))
+                                        .foregroundStyle(AppColors.error)
+                                        .frame(width: 40, height: 40)
+                                        .background(AppColors.backgroundElevated)
+                                        .clipShape(Circle())
+                                }
+                                .buttonStyle(.plain)
                             }
                         }
                     }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 20)
+                    .padding(.bottom, 32)
                 }
-                .listStyle(.plain)
-                .scrollContentBackground(.hidden)
                 .background(AppColors.gradientBackground.ignoresSafeArea())
             }
         }
@@ -76,7 +94,43 @@ private struct HistoryRecordRow: View {
                 .foregroundStyle(AppColors.textSecondary)
                 .lineLimit(2)
         }
-        .padding(.vertical, 8)
+        .padding(16)
+        .fortuneCard(background: AppColors.backgroundElevated, cornerRadius: 20)
+    }
+}
+
+private struct HistoryTrajectoryCard: View {
+    let snapshot: HistoryTrajectorySnapshot
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(AppLanguageOption.isChinese ? "成长轨迹" : "Growth Trajectory")
+                .font(AppFonts.labelSmall)
+                .foregroundStyle(AppColors.accentGold)
+                .tracking(2)
+
+            Text(snapshot.headline)
+                .font(AppFonts.headlineMedium)
+                .foregroundStyle(AppColors.textPrimary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            ForEach(snapshot.insights) { insight in
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(insight.title)
+                        .font(AppFonts.titleMedium)
+                        .foregroundStyle(AppColors.accentGold)
+                    Text(insight.body)
+                        .font(AppFonts.bodyMedium)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(14)
+                .background(AppColors.backgroundBase)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+        }
+        .padding(20)
+        .fortuneCard(background: AppColors.backgroundElevated, cornerRadius: 22)
     }
 }
 

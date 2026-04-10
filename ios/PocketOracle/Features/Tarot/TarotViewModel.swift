@@ -13,10 +13,15 @@ final class TarotViewModel {
 
     var phase: Phase = .idle
     var selectedTheme: TarotQuestionTheme = .general
+    var selectedSpreadStyle: TarotSpreadStyle = .pathSpread
     var pickedIndices: [Int] = []
     var pickedUprights: [Bool] = []
     var isGenerating = false
     var errorMessage: String? = nil
+
+    var requiredPickCount: Int {
+        selectedSpreadStyle.cardCount
+    }
 
     // Stable ID for animation transitions
     var phaseIndex: Int {
@@ -32,6 +37,16 @@ final class TarotViewModel {
 
     func setTheme(_ theme: TarotQuestionTheme) {
         selectedTheme = theme
+        if !theme.availableSpreadStyles.contains(selectedSpreadStyle) {
+            selectedSpreadStyle = theme.defaultSpreadStyle
+        }
+        errorMessage = nil
+        if case .result = phase { phase = .idle }
+    }
+
+    func setSpreadStyle(_ style: TarotSpreadStyle) {
+        guard selectedTheme.availableSpreadStyles.contains(style) else { return }
+        selectedSpreadStyle = style
         errorMessage = nil
         if case .result = phase { phase = .idle }
     }
@@ -62,14 +77,14 @@ final class TarotViewModel {
         if let pos = pickedIndices.firstIndex(of: index) {
             pickedIndices.remove(at: pos)
             pickedUprights.remove(at: pos)
-        } else if pickedIndices.count < 3 {
+        } else if pickedIndices.count < requiredPickCount {
             pickedIndices.append(index)
             pickedUprights.append(Bool.random())
         }
     }
 
     func reveal() {
-        guard case .picking(let deck) = phase, pickedIndices.count == 3 else { return }
+        guard case .picking(let deck) = phase, pickedIndices.count == requiredPickCount else { return }
         guard !isGenerating else { return }
         isGenerating = true
         errorMessage = nil
@@ -78,7 +93,8 @@ final class TarotViewModel {
             let reading = try TarotReadingGenerator.generate(
                 pickedCards: cards,
                 uprightStates: pickedUprights,
-                theme: selectedTheme
+                theme: selectedTheme,
+                spreadStyle: selectedSpreadStyle
             )
             phase = .result(reading)
         } catch {
@@ -102,7 +118,9 @@ final class TarotViewModel {
 
         context.insert(ReadingRecord(
             type:       .tarot,
-            title:      isZh ? "塔罗 · \(reading.theme.localizedName)" : "Tarot · \(reading.theme.localizedName)",
+            title:      isZh
+                ? "塔罗 · \(reading.theme.localizedName) · \(selectedSpreadStyle.localizedName())"
+                : "Tarot · \(reading.theme.localizedName) · \(selectedSpreadStyle.localizedName())",
             summary:    cardNames,
             detailJSON: jsonStr
         ))

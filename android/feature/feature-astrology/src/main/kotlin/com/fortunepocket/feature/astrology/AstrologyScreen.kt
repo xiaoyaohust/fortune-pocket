@@ -279,7 +279,7 @@ fun AstrologyScreen(
                     )
                     Spacer(Modifier.height(10.dp))
                     Text(
-                        text = reading.chartSummary,
+                        text = reading.currentTheme,
                         style = FortunePocketTypography.bodyMedium,
                         color = AppColors.textSecondary
                     )
@@ -292,6 +292,17 @@ fun AstrologyScreen(
                             (if (isZh) "上升" else "Rising") to "${reading.risingSign?.symbol ?: "↑"} ${reading.risingSign?.localizedName(isZh).orEmpty()}"
                         )
                     )
+
+                    Spacer(Modifier.height(16.dp))
+                    AstrologySection(title = if (isZh) "你的性格主轴" else "Your Core Personality", content = reading.personalityCore)
+                    Spacer(Modifier.height(12.dp))
+                    AstrologySection(title = if (isZh) "关系模式" else "Relationship Pattern", content = reading.relationshipPattern)
+                    Spacer(Modifier.height(12.dp))
+                    AstrologySection(title = if (isZh) "你最容易发光的地方" else "Where You Shine", content = reading.strengths)
+                    Spacer(Modifier.height(12.dp))
+                    AstrologySection(title = if (isZh) "当前成长课题" else "Growth Edge", content = reading.growthEdge)
+                    Spacer(Modifier.height(12.dp))
+                    AstrologySection(title = if (isZh) "近期主题" else "Current Theme", content = reading.currentTheme)
 
                     if (reading.planetPlacements.isNotEmpty()) {
                         Spacer(Modifier.height(16.dp))

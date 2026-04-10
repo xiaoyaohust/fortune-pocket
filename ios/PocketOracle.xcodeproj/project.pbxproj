@@ -13,6 +13,7 @@
 		12D27D68A4F93F0A52E880F1 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788F217849F0BF22B0EDD023 /* ZodiacSign.swift */; };
 		1DC5F1B36924C94D6896DCC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237FDA44EB1C41090F090B7F /* Assets.xcassets */; };
 		1ECDEDFEEFC5EB4AB911C6B8 /* BaziCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502FC06C6A1E0F282CB6A67 /* BaziCalculatorTests.swift */; };
+		25671B96FBDF6B67F51A8D91 /* HistoryTrajectoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2A6FD797677ED241C2BF9 /* HistoryTrajectoryBuilder.swift */; };
 		25BFBFDE255C77D038385A98 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347205A8DA3BFB6186AA150 /* HistoryView.swift */; };
 		2642F017F6C09085AF6CCC81 /* hidden_stems.json in Resources */ = {isa = PBXBuildFile; fileRef = A798AF76A099CC82554798B8 /* hidden_stems.json */; };
 		26757E4E6C6009B5AE82E2BF /* FortunePocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9231C8B72B388BB92DD8DF /* FortunePocketApp.swift */; };
@@ -56,6 +57,7 @@
 		CD797954F3F87F49D69B184D /* DailyRitualBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F8A3BAD7C9CD4496AFD85 /* DailyRitualBuilder.swift */; };
 		CE036D335E00E2BB16B91F53 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF6146BBAAA419E9EC3867 /* HomeViewModel.swift */; };
 		CE61C89DB7B44D65C577BC34 /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 0960969B051F1A6D25B884E9 /* numbers.json */; };
+		D39CA7ED645F965623BBA77C /* AstrologyInsightBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2AFBCDFA9AD0B5E8487FB /* AstrologyInsightBuilder.swift */; };
 		D614C18965BC485C377929AF /* spreads.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AB91904FEA7A30850C6B577 /* spreads.json */; };
 		D9AEBAFB9B5150868DFD198C /* TarotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B9F522A3FEEE2270767C9 /* TarotViewModel.swift */; };
 		E0D4F5A195E882A66CED7828 /* TarotResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C9064E38A3B760911342E /* TarotResultView.swift */; };
@@ -101,6 +103,8 @@
 		45409C194598D8D2F914691B /* ReadingRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRecord.swift; sourceTree = "<group>"; };
 		466EA1762D53A5E39D3358ED /* AstrologyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyView.swift; sourceTree = "<group>"; };
 		4C414E06A45DF5580CD88F06 /* LocalNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationScheduler.swift; sourceTree = "<group>"; };
+		4EC2A6FD797677ED241C2BF9 /* HistoryTrajectoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTrajectoryBuilder.swift; sourceTree = "<group>"; };
+		4FB2AFBCDFA9AD0B5E8487FB /* AstrologyInsightBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyInsightBuilder.swift; sourceTree = "<group>"; };
 		5502FC06C6A1E0F282CB6A67 /* BaziCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaziCalculatorTests.swift; sourceTree = "<group>"; };
 		55E172C822F52AB936F73558 /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		56B2F3698FBDCCD61B9B996E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -370,7 +374,9 @@
 		BA31E1ADC94C045FE4C5F904 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4FB2AFBCDFA9AD0B5E8487FB /* AstrologyInsightBuilder.swift */,
 				6A442EED1D15423B10A85C27 /* BaziReadingGenerator.swift */,
+				4EC2A6FD797677ED241C2BF9 /* HistoryTrajectoryBuilder.swift */,
 				A28CD7046EBA3ADE5E43EE52 /* HoroscopeReadingGenerator.swift */,
 				B394FB896573BA43A92C4FE2 /* ReadingPresentationBuilder.swift */,
 				746C45590100CBADF9EC2106 /* TarotReadingGenerator.swift */,
@@ -608,6 +614,7 @@
 				26D7DE9E6C4EF24F21164FD8 /* AppPreferences.swift in Sources */,
 				55FA7F051054EEAFD756206E /* AstrologyChart.swift in Sources */,
 				F65CE4508A014FC5E1A57C23 /* AstrologyChartCalculator.swift in Sources */,
+				D39CA7ED645F965623BBA77C /* AstrologyInsightBuilder.swift in Sources */,
 				50B51C60D2433641E3A4A95F /* AstrologyView.swift in Sources */,
 				AC808FBBCEFA57B3D4634CF0 /* AstrologyViewModel.swift in Sources */,
 				41D828B64A7817D4E0B4BCCC /* BaziCalculator.swift in Sources */,
@@ -623,6 +630,7 @@
 				FB8E43AA7BA353080094AAE6 /* DailyRitualView.swift in Sources */,
 				FB6FB6A0062F1E83E173F61A /* Date+Utility.swift in Sources */,
 				26757E4E6C6009B5AE82E2BF /* FortunePocketApp.swift in Sources */,
+				25671B96FBDF6B67F51A8D91 /* HistoryTrajectoryBuilder.swift in Sources */,
 				25BFBFDE255C77D038385A98 /* HistoryView.swift in Sources */,
 				7FED79BB3E840F619CB4D4F4 /* HomeView.swift in Sources */,
 				CE036D335E00E2BB16B91F53 /* HomeViewModel.swift in Sources */,

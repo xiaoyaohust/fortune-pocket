@@ -31,10 +31,10 @@ struct TarotView: View {
                     TarotPickDeckView(vm: vm, deck: deck)
                         .transition(.opacity)
                 case .result(let reading):
-                    TarotResultView(reading: reading, animateReveal: true) {
+                    TarotResultView(reading: reading, onDone: {
                         vm.saveToHistory(context: modelContext)
                         withAnimation { vm.reset() }
-                    }
+                    }, animateReveal: true)
                     .transition(.opacity)
                 }
             }
@@ -108,12 +108,12 @@ private struct TarotIdleView: View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 0) {
                 // Spread info
-                VStack(spacing: 8) {
-                    Text(vm.selectedTheme.localizedSpreadName)
+                VStack(spacing: 10) {
+                    Text(vm.selectedTheme.localizedEntryTitle)
                         .font(AppFonts.headlineMedium)
                         .foregroundStyle(AppColors.textPrimary)
                         .multilineTextAlignment(.center)
-                    Text(vm.selectedTheme.localizedSpreadSubtitle)
+                    Text(vm.selectedTheme.localizedEntrySubtitle)
                         .font(AppFonts.bodySmall)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
@@ -159,9 +159,66 @@ private struct TarotIdleView: View {
                 }
                 .padding(.top, 18)
 
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(isZh ? "选择牌阵" : "Choose a spread")
+                        .font(AppFonts.titleMedium)
+                        .foregroundStyle(AppColors.textPrimary)
+
+                    LazyVGrid(
+                        columns: [GridItem(.flexible()), GridItem(.flexible())],
+                        spacing: 10
+                    ) {
+                        ForEach(vm.selectedTheme.availableSpreadStyles) { style in
+                            Button { vm.setSpreadStyle(style) } label: {
+                                VStack(alignment: .leading, spacing: 6) {
+                                    Text(style.localizedName())
+                                        .font(AppFonts.bodySmall)
+                                        .foregroundStyle(
+                                            vm.selectedSpreadStyle == style
+                                                ? AppColors.backgroundDeep : AppColors.textPrimary
+                                        )
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                                    Text(style.localizedSubtitle())
+                                        .font(AppFonts.caption)
+                                        .foregroundStyle(
+                                            vm.selectedSpreadStyle == style
+                                                ? AppColors.backgroundDeep.opacity(0.82)
+                                                : AppColors.textSecondary
+                                        )
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .lineLimit(2)
+                                }
+                                .padding(.horizontal, 14)
+                                .padding(.vertical, 12)
+                                .frame(maxWidth: .infinity, minHeight: 78, alignment: .leading)
+                                .background(
+                                    vm.selectedSpreadStyle == style
+                                        ? AppColors.accentGold : AppColors.backgroundElevated
+                                )
+                                .clipShape(RoundedRectangle(cornerRadius: 16))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 16).stroke(
+                                        vm.selectedSpreadStyle == style
+                                            ? AppColors.accentGold : AppColors.accentGold.opacity(0.15),
+                                        lineWidth: 1
+                                    )
+                                )
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+
+                    Text(vm.selectedSpreadStyle.localizedDescription())
+                        .font(AppFonts.bodySmall)
+                        .foregroundStyle(AppColors.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(.top, 18)
+
                 // Face-down cards preview
                 HStack(spacing: 12) {
-                    ForEach(0..<3, id: \.self) { _ in
+                    ForEach(0..<vm.requiredPickCount, id: \.self) { _ in
                         TarotCardView(isFaceDown: true, size: .small)
                     }
                 }
@@ -171,8 +228,8 @@ private struct TarotIdleView: View {
                 // Instruction
                 VStack(spacing: 6) {
                     Text(isZh
-                         ? "先确认你想询问的主题，再静心洗牌抽出三张牌。"
-                         : "Choose your focus first, then shuffle and draw three cards.")
+                         ? "先确认主题与牌阵，再静心洗牌。你会抽出 \(vm.requiredPickCount) 张牌，得到更贴近问题的回答。"
+                         : "Choose your focus and spread first, then shuffle. You'll draw \(vm.requiredPickCount) card(s) for a clearer answer.")
                         .font(AppFonts.bodyMedium)
                         .foregroundStyle(AppColors.textSecondary)
                         .multilineTextAlignment(.center)
@@ -310,13 +367,17 @@ private struct TarotPickDeckView: View {
         VStack(spacing: 0) {
             // Header
             VStack(spacing: 4) {
-                Text(isZh ? "从牌海中，选出三张" : "Choose three cards from the spread")
+                Text(
+                    isZh
+                        ? "从牌海中，选出\(vm.requiredPickCount == 1 ? "一张" : "\(vm.requiredPickCount)张")"
+                        : "Choose \(vm.requiredPickCount) card\(vm.requiredPickCount == 1 ? "" : "s") from the spread"
+                )
                     .font(AppFonts.bodyMedium)
                     .foregroundStyle(AppColors.textSecondary)
                     .multilineTextAlignment(.center)
                 Text(isZh
-                     ? "已选 \(vm.pickedIndices.count) / 3"
-                     : "\(vm.pickedIndices.count) of 3 selected")
+                     ? "已选 \(vm.pickedIndices.count) / \(vm.requiredPickCount)"
+                     : "\(vm.pickedIndices.count) of \(vm.requiredPickCount) selected")
                     .font(AppFonts.titleMedium)
                     .foregroundStyle(AppColors.accentGold)
                     .contentTransition(.numericText())
@@ -359,8 +420,8 @@ private struct TarotPickDeckView: View {
                 }
             }
 
-            // Reveal button (slides in when 3 cards selected)
-            if vm.pickedIndices.count == 3 {
+            // Reveal button (slides in once the full spread is selected)
+            if vm.pickedIndices.count == vm.requiredPickCount {
                 Button {
                     vm.reveal()
                 } label: {
@@ -368,7 +429,11 @@ private struct TarotPickDeckView: View {
                         if vm.isGenerating {
                             ProgressView().tint(AppColors.backgroundDeep)
                         }
-                        Text(isZh ? "翻牌" : "Reveal Cards")
+                        Text(
+                            isZh
+                                ? (vm.requiredPickCount == 1 ? "揭示这一张牌" : "翻开这组牌")
+                                : (vm.requiredPickCount == 1 ? "Reveal Card" : "Reveal Spread")
+                        )
                             .font(AppFonts.titleMedium)
                             .foregroundStyle(AppColors.backgroundDeep)
                     }

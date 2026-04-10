@@ -114,6 +114,11 @@ struct HoroscopeReadingDetail: Codable {
     let risingSignNameEn: String?
     let chartSignature: String?
     let chartSummary: String?
+    let personalityCore: String?
+    let relationshipPattern: String?
+    let strengths: String?
+    let growthEdge: String?
+    let currentTheme: String?
     let overall: String
     let love: String
     let career: String

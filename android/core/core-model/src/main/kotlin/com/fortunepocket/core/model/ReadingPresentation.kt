@@ -74,7 +74,11 @@ object ReadingPresentationBuilder {
             "${reading.birthDateText} · ${reading.birthTimeText}",
             reading.birthCityName,
             "",
-            firstParagraph(reading.chartSummary),
+            firstParagraph(reading.currentTheme),
+            "",
+            "${if (isZh) "性格主轴" else "Core Personality"}: ${firstParagraph(reading.personalityCore)}",
+            "${if (isZh) "关系模式" else "Relationship Pattern"}: ${firstParagraph(reading.relationshipPattern)}",
+            "${if (isZh) "近期主题" else "Current Theme"}: ${firstParagraph(reading.currentTheme)}",
             "",
             "${if (isZh) "行星落座" else "Placements"}:",
             placementSummary,
@@ -212,6 +216,21 @@ object ReadingPresentationBuilder {
             detail.chartSummary?.let {
                 add(ReadingPresentationSection(if (isZh) "图谱摘要" else "Chart Summary", it))
             }
+            detail.personalityCore?.let {
+                add(ReadingPresentationSection(if (isZh) "你的性格主轴" else "Your Core Personality", it))
+            }
+            detail.relationshipPattern?.let {
+                add(ReadingPresentationSection(if (isZh) "关系模式" else "Relationship Pattern", it))
+            }
+            detail.strengths?.let {
+                add(ReadingPresentationSection(if (isZh) "你最容易发光的地方" else "Where You Shine", it))
+            }
+            detail.growthEdge?.let {
+                add(ReadingPresentationSection(if (isZh) "当前成长课题" else "Growth Edge", it))
+            }
+            detail.currentTheme?.let {
+                add(ReadingPresentationSection(if (isZh) "近期主题" else "Current Theme", it))
+            }
             add(ReadingPresentationSection(if (isZh) "核心星位" else "Core Signs", coreSigns))
             if (!placementText.isNullOrEmpty()) {
                 add(ReadingPresentationSection(if (isZh) "行星落座" else "Placements", placementText))
@@ -238,6 +257,8 @@ object ReadingPresentationBuilder {
                 listOfNotNull(detail.date, detail.birthTime, detail.birthCityName).joinToString(" · "),
                 "",
                 detail.chartSummary.orEmpty(),
+                detail.personalityCore?.let { "${if (isZh) "性格主轴" else "Core Personality"}: ${firstParagraph(it)}" }.orEmpty(),
+                detail.currentTheme?.let { "${if (isZh) "近期主题" else "Current Theme"}: ${firstParagraph(it)}" }.orEmpty(),
                 "${if (isZh) "整体画像" else "Overall Profile"}: ${firstParagraph(detail.overall)}",
                 "${if (isZh) "感情" else "Love"}: ${firstParagraph(detail.love)}",
                 "${if (isZh) "事业" else "Career"}: ${firstParagraph(detail.career)}",

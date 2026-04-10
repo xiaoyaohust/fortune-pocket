@@ -131,41 +131,45 @@ enum TarotQuestionTheme: String, Codable, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
-    var spreadID: String {
+    private var isZh: Bool { AppLanguageOption.isChinese }
+
+    var defaultSpreadStyle: TarotSpreadStyle {
         switch self {
-        case .general: return "three_card"
-        case .love: return "love_three_card"
-        case .career: return "career_three_card"
-        case .wealth: return "wealth_three_card"
+        case .general: return .pathSpread
+        case .love: return .relationshipSpread
+        case .career: return .careerSpread
+        case .wealth: return .wealthSpread
         }
     }
 
-    private var isZh: Bool { AppLanguageOption.isChinese }
+    var availableSpreadStyles: [TarotSpreadStyle] {
+        TarotSpreadStyle.available(for: self)
+    }
 
     var localizedName: String {
         switch self {
         case .general: return isZh ? "综合主题" : "General Focus"
-        case .love: return isZh ? "爱情主题" : "Love Focus"
+        case .love: return isZh ? "关系主题" : "Relationship Focus"
         case .career: return isZh ? "事业主题" : "Career Focus"
         case .wealth: return isZh ? "财富主题" : "Wealth Focus"
         }
     }
 
-    var localizedSpreadName: String {
+    var localizedEntryTitle: String {
         switch self {
-        case .general: return isZh ? "路径三牌阵" : "Path Spread"
-        case .love: return isZh ? "爱情镜像阵" : "Love Mirror Spread"
-        case .career: return isZh ? "事业路径阵" : "Career Path Spread"
-        case .wealth: return isZh ? "财富流动阵" : "Wealth Flow Spread"
+        case .general: return isZh ? "今晚适合先看整体脉络" : "Tonight is best for reading the whole path"
+        case .love: return isZh ? "今晚适合看关系里的真实流动" : "Tonight is best for reading relationship currents"
+        case .career: return isZh ? "今晚适合看事业节奏与机会" : "Tonight is best for reading career momentum"
+        case .wealth: return isZh ? "今晚适合看资源与金钱节奏" : "Tonight is best for reading money and resources"
         }
     }
 
-    var localizedSpreadSubtitle: String {
+    var localizedEntrySubtitle: String {
         switch self {
-        case .general: return isZh ? "过去 · 现在 · 下一步" : "Past · Present · Next Step"
-        case .love: return isZh ? "我在关系里 · 关系流动 · 温柔建议" : "My Place in Love · Connection Energy · Gentle Advice"
-        case .career: return isZh ? "当前路径 · 隐藏阻力 · 机会入口" : "Current Path · Hidden Block · Opportunity"
-        case .wealth: return isZh ? "当前流动 · 资源模式 · 下一步动作" : "Current Flow · Resource Pattern · Next Move"
+        case .general: return isZh ? "先抽一张得到方向，或用三张牌看清整段过程。" : "Start with a single card for direction, or use three cards to see the whole arc."
+        case .love: return isZh ? "适合关系、暧昧、靠近与疏离，也适合照见自己在关系中的位置。" : "For romance, attachment, distance, and the role you are playing in a connection."
+        case .career: return isZh ? "适合工作推进、学业压力、卡点和机会窗口。" : "For work momentum, study pressure, friction, and the opening ahead."
+        case .wealth: return isZh ? "适合看资源流动、消费冲动和下一步更稳的选择。" : "For resource flow, spending impulses, and the steadier next move."
         }
     }
 
@@ -193,9 +197,99 @@ enum TarotQuestionTheme: String, Codable, CaseIterable, Identifiable {
     var localizedFocusTitle: String {
         switch self {
         case .general: return isZh ? "牌阵总览" : "Spread Synthesis"
-        case .love: return isZh ? "爱情聚焦" : "Love Focus"
+        case .love: return isZh ? "关系聚焦" : "Relationship Focus"
         case .career: return isZh ? "事业聚焦" : "Career Focus"
         case .wealth: return isZh ? "财富聚焦" : "Wealth Focus"
+        }
+    }
+}
+
+enum TarotSpreadStyle: String, Codable, CaseIterable, Identifiable {
+    case singleCard = "single_card"
+    case pathSpread = "three_card"
+    case relationshipSpread = "love_three_card"
+    case careerSpread = "career_three_card"
+    case wealthSpread = "wealth_three_card"
+    case mindBodySpirit = "mind_body_spirit"
+
+    var id: String { rawValue }
+
+    var spreadID: String { rawValue }
+
+    var cardCount: Int {
+        switch self {
+        case .singleCard: return 1
+        case .pathSpread, .relationshipSpread, .careerSpread, .wealthSpread, .mindBodySpirit: return 3
+        }
+    }
+
+    static func available(for theme: TarotQuestionTheme) -> [TarotSpreadStyle] {
+        switch theme {
+        case .general:
+            return [.singleCard, .pathSpread, .mindBodySpirit]
+        case .love:
+            return [.singleCard, .relationshipSpread]
+        case .career:
+            return [.singleCard, .careerSpread]
+        case .wealth:
+            return [.singleCard, .wealthSpread]
+        }
+    }
+
+    func localizedName(isZh: Bool = AppLanguageOption.isChinese) -> String {
+        switch self {
+        case .singleCard: return isZh ? "单张指引" : "Single Card"
+        case .pathSpread: return isZh ? "路径三牌阵" : "Path Spread"
+        case .relationshipSpread: return isZh ? "关系镜像阵" : "Relationship Mirror"
+        case .careerSpread: return isZh ? "事业路径阵" : "Career Path"
+        case .wealthSpread: return isZh ? "财富流动阵" : "Wealth Flow"
+        case .mindBodySpirit: return isZh ? "身心灵三牌阵" : "Mind Body Spirit"
+        }
+    }
+
+    func localizedSubtitle(isZh: Bool = AppLanguageOption.isChinese) -> String {
+        switch self {
+        case .singleCard:
+            return isZh ? "一张牌，给今晚一个清晰方向" : "One card for tonight's clearest direction"
+        case .pathSpread:
+            return isZh ? "过去 · 现在 · 下一步" : "Past · Present · Next Step"
+        case .relationshipSpread:
+            return isZh ? "我在关系里 · 关系流动 · 温柔建议" : "My Place · Connection · Gentle Advice"
+        case .careerSpread:
+            return isZh ? "当前路径 · 隐藏阻力 · 机会入口" : "Current Path · Hidden Block · Opportunity"
+        case .wealthSpread:
+            return isZh ? "当前流动 · 资源模式 · 下一步动作" : "Current Flow · Resource Pattern · Next Move"
+        case .mindBodySpirit:
+            return isZh ? "身体 · 心绪 · 灵魂讯号" : "Body · Mind · Spirit"
+        }
+    }
+
+    func localizedDescription(isZh: Bool = AppLanguageOption.isChinese) -> String {
+        switch self {
+        case .singleCard:
+            return isZh
+                ? "适合当下只想要一个方向感、不想被太多信息淹没的时候。"
+                : "Best when you want one clear direction without being overwhelmed."
+        case .pathSpread:
+            return isZh
+                ? "适合梳理你一路走来的情绪脉络、现状位置和下一步动作。"
+                : "Best for understanding the arc from what shaped you to what comes next."
+        case .relationshipSpread:
+            return isZh
+                ? "适合关系主题，帮助你同时看见自己、关系流动和最温柔的回应方式。"
+                : "Best for relationship questions, showing you, the connection, and the gentlest response."
+        case .careerSpread:
+            return isZh
+                ? "适合工作与学业，帮你看清正在发生的节奏、阻力和机会入口。"
+                : "Best for work and study, revealing momentum, friction, and the opening ahead."
+        case .wealthSpread:
+            return isZh
+                ? "适合资源与金钱问题，看见流向、惯性和更稳的下一步。"
+                : "Best for money and resources, showing flow, habits, and a steadier next move."
+        case .mindBodySpirit:
+            return isZh
+                ? "适合想听见更深层状态时，看看身体、心绪与灵魂当前分别在说什么。"
+                : "Best when you want a deeper scan of what body, mind, and spirit are each saying."
         }
     }
 }
