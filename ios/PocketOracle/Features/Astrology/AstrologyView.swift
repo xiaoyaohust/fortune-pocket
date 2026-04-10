@@ -206,10 +206,18 @@ private struct AstrologyResultView: View {
     let hasSaved: Bool
     let onSave: () -> Void
 
+    private let shareText: String
     private let columns = [
         GridItem(.flexible(), spacing: 12),
         GridItem(.flexible(), spacing: 12)
     ]
+
+    init(reading: HoroscopeReading, hasSaved: Bool, onSave: @escaping () -> Void) {
+        self.reading = reading
+        self.hasSaved = hasSaved
+        self.onSave = onSave
+        self.shareText = ReadingPresentationBuilder.shareText(for: reading)
+    }
 
     private var isZh: Bool { AppLanguageOption.isChinese }
 
@@ -303,7 +311,7 @@ private struct AstrologyResultView: View {
             )
 
             HStack(spacing: 12) {
-                ShareLink(item: ReadingPresentationBuilder.shareText(for: reading)) {
+                ShareLink(item: shareText) {
                     Label(String.appLocalized("share"), systemImage: "square.and.arrow.up")
                         .font(AppFonts.titleMedium)
                         .foregroundStyle(AppColors.textPrimary)

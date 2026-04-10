@@ -83,8 +83,12 @@ private struct HistoryRecordRow: View {
 private struct HistoryDetailView: View {
     let record: ReadingRecord
 
-    private var presentation: ReadingPresentation? {
-        ReadingPresentationBuilder.presentation(for: record)
+    // Decoded once on init — avoids repeated JSON parsing on every render
+    private let presentation: ReadingPresentation?
+
+    init(record: ReadingRecord) {
+        self.record = record
+        self.presentation = ReadingPresentationBuilder.presentation(for: record)
     }
 
     var body: some View {

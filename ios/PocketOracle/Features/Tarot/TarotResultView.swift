@@ -5,6 +5,16 @@ struct TarotResultView: View {
     let onDone: () -> Void
     var animateReveal: Bool = false
 
+    // Pre-computed once — avoids rebuilding on every render
+    private let shareText: String
+
+    init(reading: TarotReading, onDone: @escaping () -> Void, animateReveal: Bool = false) {
+        self.reading = reading
+        self.onDone = onDone
+        self.animateReveal = animateReveal
+        self.shareText = ReadingPresentationBuilder.shareText(for: reading)
+    }
+
     private var isZh: Bool {
         AppLanguageOption.isChinese
     }
@@ -179,7 +189,7 @@ struct TarotResultView: View {
 
     private func actionButtons(horizontalPadding: CGFloat) -> some View {
         HStack(spacing: 12) {
-            ShareLink(item: ReadingPresentationBuilder.shareText(for: reading)) {
+            ShareLink(item: shareText) {
                 Label(String.appLocalized("share"), systemImage: "square.and.arrow.up")
                     .font(AppFonts.titleMedium)
                     .foregroundStyle(AppColors.textPrimary)
