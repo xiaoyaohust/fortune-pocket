@@ -6,11 +6,12 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
 import androidx.compose.material3.Icon
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
@@ -20,6 +21,8 @@ import androidx.navigation.compose.rememberNavController
 import com.fortunepocket.core.ui.theme.AppColors
 import com.fortunepocket.feature.astrology.AstrologyScreen
 import com.fortunepocket.feature.bazi.BaziScreen
+import com.fortunepocket.feature.home.DailyRitualDestination
+import com.fortunepocket.feature.home.DailyRitualScreen
 import com.fortunepocket.feature.history.HistoryScreen
 import com.fortunepocket.feature.home.HomeScreen
 import com.fortunepocket.feature.settings.SettingsScreen
@@ -27,15 +30,27 @@ import com.fortunepocket.feature.tarot.TarotScreen
 
 // Sub-routes used inside features (not top-level tabs)
 object AppRoutes {
+    const val DAILY_RITUAL = "daily_ritual"
     const val TAROT = "tarot"
     const val ASTROLOGY = "astrology"
     const val BAZI = "bazi"
 }
 
 @Composable
-fun AppNavigation(modifier: Modifier = Modifier) {
+fun AppNavigation(
+    pendingDestinationRoute: String? = null,
+    onPendingDestinationConsumed: () -> Unit = {},
+    modifier: Modifier = Modifier
+) {
     val navController = rememberNavController()
     val topLevelDestinations = TopLevelDestination.entries
+
+    LaunchedEffect(pendingDestinationRoute) {
+        if (pendingDestinationRoute != null) {
+            navController.navigate(pendingDestinationRoute)
+            onPendingDestinationConsumed()
+        }
+    }
 
     Scaffold(
         modifier = modifier,
@@ -48,38 +63,40 @@ fun AppNavigation(modifier: Modifier = Modifier) {
             val showBottomBar = isTopLevelRoute ||
                 currentDestination?.route in listOf(AppRoutes.TAROT, AppRoutes.ASTROLOGY, AppRoutes.BAZI)
 
-            NavigationBar(
-                containerColor = AppColors.backgroundBase,
-                contentColor = AppColors.textPrimary
-            ) {
-                topLevelDestinations.forEach { destination ->
-                    val selected = currentDestination?.hierarchy?.any { it.route == destination.route } == true
-                    NavigationBarItem(
-                        selected = selected,
-                        onClick = {
-                            navController.navigate(destination.route) {
-                                popUpTo(navController.graph.findStartDestination().id) {
-                                    saveState = true
+            if (showBottomBar) {
+                NavigationBar(
+                    containerColor = AppColors.backgroundBase,
+                    contentColor = AppColors.textPrimary
+                ) {
+                    topLevelDestinations.forEach { destination ->
+                        val selected = currentDestination?.hierarchy?.any { it.route == destination.route } == true
+                        NavigationBarItem(
+                            selected = selected,
+                            onClick = {
+                                navController.navigate(destination.route) {
+                                    popUpTo(navController.graph.findStartDestination().id) {
+                                        saveState = true
+                                    }
+                                    launchSingleTop = true
+                                    restoreState = true
                                 }
-                                launchSingleTop = true
-                                restoreState = true
-                            }
-                        },
-                        icon = {
-                            Icon(
-                                imageVector = destination.icon,
-                                contentDescription = stringResource(destination.titleResId)
+                            },
+                            icon = {
+                                Icon(
+                                    imageVector = destination.icon,
+                                    contentDescription = stringResource(destination.titleResId)
+                                )
+                            },
+                            label = { Text(stringResource(destination.titleResId)) },
+                            colors = NavigationBarItemDefaults.colors(
+                                selectedIconColor = AppColors.accentGold,
+                                selectedTextColor = AppColors.accentGold,
+                                unselectedIconColor = AppColors.textSecondary,
+                                unselectedTextColor = AppColors.textSecondary,
+                                indicatorColor = AppColors.backgroundElevated
                             )
-                        },
-                        label = { Text(stringResource(destination.titleResId)) },
-                        colors = NavigationBarItemDefaults.colors(
-                            selectedIconColor = AppColors.accentGold,
-                            selectedTextColor = AppColors.accentGold,
-                            unselectedIconColor = AppColors.textSecondary,
-                            unselectedTextColor = AppColors.textSecondary,
-                            indicatorColor = AppColors.backgroundElevated
                         )
-                    )
+                    }
                 }
             }
         }
@@ -91,9 +108,23 @@ fun AppNavigation(modifier: Modifier = Modifier) {
         ) {
             composable(TopLevelDestination.HOME.route) {
                 HomeScreen(
+                    onOpenDailyRitual = { navController.navigate(AppRoutes.DAILY_RITUAL) },
                     onNavigateToTarot = { navController.navigate(AppRoutes.TAROT) },
                     onNavigateToAstrology = { navController.navigate(AppRoutes.ASTROLOGY) },
                     onNavigateToBazi = { navController.navigate(AppRoutes.BAZI) }
+                )
+            }
+            composable(AppRoutes.DAILY_RITUAL) {
+                DailyRitualScreen(
+                    onBack = { navController.popBackStack() },
+                    onContinue = { destination ->
+                        navController.popBackStack()
+                        when (destination) {
+                            DailyRitualDestination.TAROT -> navController.navigate(AppRoutes.TAROT)
+                            DailyRitualDestination.ASTROLOGY -> navController.navigate(AppRoutes.ASTROLOGY)
+                            DailyRitualDestination.BAZI -> navController.navigate(AppRoutes.BAZI)
+                        }
+                    }
                 )
             }
             composable(AppRoutes.TAROT) {

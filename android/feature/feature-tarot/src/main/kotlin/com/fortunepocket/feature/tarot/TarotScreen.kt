@@ -39,6 +39,8 @@ import com.fortunepocket.core.model.DrawnCard
 import com.fortunepocket.core.model.ReadingPresentationBuilder
 import com.fortunepocket.core.model.TarotQuestionTheme
 import com.fortunepocket.core.model.TarotReading
+import com.fortunepocket.core.ui.share.OracleShareCardPayload
+import com.fortunepocket.core.ui.share.ShareCardExporter
 import com.fortunepocket.core.ui.theme.AppColors
 import com.fortunepocket.core.ui.theme.FortunePocketTypography
 import com.fortunepocket.feature.tarot.components.CardSize
@@ -222,6 +224,7 @@ private fun ResultScreen(reading: TarotReading, onSaveAndClose: () -> Unit) {
     val context = LocalContext.current
     val isZh = Locale.getDefault().language == "zh"
     val dateStr = DateFormat.getDateInstance(DateFormat.LONG, Locale.getDefault()).format(Date(reading.timestamp))
+    val shareText = ReadingPresentationBuilder.shareText(reading, isZh)
 
     Column(
         modifier = Modifier
@@ -229,26 +232,46 @@ private fun ResultScreen(reading: TarotReading, onSaveAndClose: () -> Unit) {
             .statusBarsPadding()
             .verticalScroll(rememberScrollState())
     ) {
-        Column(
+        androidx.compose.material3.Surface(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 24.dp, start = 20.dp, end = 20.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            shape = RoundedCornerShape(24.dp),
+            color = AppColors.backgroundElevated
         ) {
-            Text("✦", style = FortunePocketTypography.titleLarge, color = AppColors.accentGold)
-            Spacer(Modifier.height(8.dp))
-            Text(reading.spreadName, style = FortunePocketTypography.headlineLarge, color = AppColors.textPrimary)
-            Text(reading.theme.localizedName(isZh), style = FortunePocketTypography.bodyMedium, color = AppColors.accentGold)
-            Text(dateStr, style = FortunePocketTypography.bodyMedium, color = AppColors.textSecondary)
-            Spacer(Modifier.height(8.dp))
-            Text(
-                text = reading.spreadDescription,
-                style = FortunePocketTypography.bodyMedium,
-                color = AppColors.textSecondary,
-                textAlign = TextAlign.Center
-            )
-            Spacer(Modifier.height(28.dp))
+            Column(
+                modifier = Modifier.padding(horizontal = 20.dp, vertical = 22.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text("✦", style = FortunePocketTypography.titleLarge, color = AppColors.accentGold)
+                Spacer(Modifier.height(8.dp))
+                Text(reading.spreadName, style = FortunePocketTypography.headlineLarge, color = AppColors.textPrimary)
+                Text(reading.theme.localizedName(isZh), style = FortunePocketTypography.bodyMedium, color = AppColors.accentGold)
+                Text(dateStr, style = FortunePocketTypography.bodySmall, color = AppColors.textSecondary)
+                Spacer(Modifier.height(12.dp))
+                Text(
+                    text = if (isZh) "这一轮最响亮的讯号" else "The loudest note in this draw",
+                    style = FortunePocketTypography.labelSmall,
+                    color = AppColors.textSecondary
+                )
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    text = reading.focusInsight,
+                    style = FortunePocketTypography.titleMedium,
+                    color = AppColors.textPrimary,
+                    textAlign = TextAlign.Center
+                )
+                Spacer(Modifier.height(10.dp))
+                Text(
+                    text = reading.spreadDescription,
+                    style = FortunePocketTypography.bodyMedium,
+                    color = AppColors.textSecondary,
+                    textAlign = TextAlign.Center
+                )
+            }
         }
+
+        Spacer(Modifier.height(24.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
@@ -286,13 +309,16 @@ private fun ResultScreen(reading: TarotReading, onSaveAndClose: () -> Unit) {
         ) {
             Button(
                 onClick = {
+                    val shareUri = ShareCardExporter.export(
+                        context = context,
+                        payload = tarotSharePayload(reading = reading, isZh = isZh, date = dateStr),
+                        fileName = "tarot-${reading.timestamp}"
+                    )
                     context.startActivity(
-                        Intent.createChooser(
-                            Intent(Intent.ACTION_SEND).apply {
-                                type = "text/plain"
-                                putExtra(Intent.EXTRA_TEXT, ReadingPresentationBuilder.shareText(reading, isZh))
-                            },
-                            if (isZh) "分享占卜结果" else "Share Reading"
+                        ShareCardExporter.shareIntent(
+                            uri = shareUri,
+                            chooserTitle = if (isZh) "分享占卜结果" else "Share Reading",
+                            shareText = shareText
                         )
                     )
                 },
@@ -322,6 +348,21 @@ private fun ResultScreen(reading: TarotReading, onSaveAndClose: () -> Unit) {
         }
         Spacer(Modifier.height(40.dp))
     }
+}
+
+private fun tarotSharePayload(reading: TarotReading, isZh: Boolean, date: String): OracleShareCardPayload {
+    return OracleShareCardPayload(
+        eyebrow = if (isZh) "FORTUNE POCKET · 塔罗" else "FORTUNE POCKET · TAROT",
+        title = reading.spreadName,
+        subtitle = listOf(reading.theme.localizedName(isZh), date).joinToString(" · "),
+        headline = reading.focusInsight,
+        summary = reading.overallEnergy,
+        guidance = reading.advice,
+        footer = if (isZh)
+            "幸运提示：${reading.luckyItemName} · ${reading.luckyColorName} · ${reading.luckyNumber}"
+        else
+            "Lucky hint: ${reading.luckyItemName} · ${reading.luckyColorName} · ${reading.luckyNumber}"
+    )
 }
 
 @Composable

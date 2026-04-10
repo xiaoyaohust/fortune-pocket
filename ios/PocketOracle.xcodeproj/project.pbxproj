@@ -11,6 +11,7 @@
 		0DE0F10CC36FCECF0DCE8511 /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA785AA4706B6296130A2C3 /* ContentLoader.swift */; };
 		11D2AD36D20EF066E453DF9A /* HoroscopeReadingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28CD7046EBA3ADE5E43EE52 /* HoroscopeReadingGenerator.swift */; };
 		12D27D68A4F93F0A52E880F1 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788F217849F0BF22B0EDD023 /* ZodiacSign.swift */; };
+		1DC5F1B36924C94D6896DCC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237FDA44EB1C41090F090B7F /* Assets.xcassets */; };
 		1ECDEDFEEFC5EB4AB911C6B8 /* BaziCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502FC06C6A1E0F282CB6A67 /* BaziCalculatorTests.swift */; };
 		25BFBFDE255C77D038385A98 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347205A8DA3BFB6186AA150 /* HistoryView.swift */; };
 		2642F017F6C09085AF6CCC81 /* hidden_stems.json in Resources */ = {isa = PBXBuildFile; fileRef = A798AF76A099CC82554798B8 /* hidden_stems.json */; };
@@ -27,6 +28,7 @@
 		5B4CCD23F71C6E526A1F97D3 /* ReadingPresentationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B394FB896573BA43A92C4FE2 /* ReadingPresentationBuilder.swift */; };
 		5BF8107B5EDA32B12DEA70D2 /* TarotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52813E6B403F4F1C270DBB5 /* TarotView.swift */; };
 		5C5BC45D421E650066EE1E7E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40B6C03407D6544CEBA1C2 /* AppColors.swift */; };
+		5F0353E1539C680DBC50791E /* DailyRitualModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3603035CCF42B871FBAA4CBB /* DailyRitualModels.swift */; };
 		5F8344F26643004B2B09E803 /* BaziTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB60184EB2375026A98A52 /* BaziTypes.swift */; };
 		5FACF594D1BC26038F9C7A23 /* View+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC0664551F415D34F01FF13 /* View+Theme.swift */; };
 		634A3911F5AF14A0D22918B9 /* natal_chart_test_vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = FB805092FFBE1D734CBA16B6 /* natal_chart_test_vectors.json */; };
@@ -40,14 +42,18 @@
 		7A414F55E4957675C5DD59E8 /* TarotCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADA64E2B91B665DC828906 /* TarotCardView.swift */; };
 		7FED79BB3E840F619CB4D4F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFB9672D3CF9AB265AA5C3E /* HomeView.swift */; };
 		8782D52A454A36DDE7F79105 /* personality-templates.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DF520AA065D3B2AAEA02BCF /* personality-templates.json */; };
+		895950C5A2AB245B70B95A23 /* NotificationAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD1B6F1117A42942C6E166 /* NotificationAppDelegate.swift */; };
 		9356831BCBF6422CF5174DBA /* signs.json in Resources */ = {isa = PBXBuildFile; fileRef = 7451F1A159CE8346511A1297 /* signs.json */; };
 		9DA6BD4279AF1A236EE21FF3 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BEBC37F7D06B325BF29F955 /* cities.json */; };
 		9F7C95BC0E9D5462EFF34439 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCD9A223A7BA7C8787F964E5 /* Localizable.strings */; };
 		9FB8CC8A5200CBBEB6636112 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 55E172C822F52AB936F73558 /* colors.json */; };
+		A8D12D3870F7F904EC278378 /* ShareCardExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA98D734E9C662158B8DB7B /* ShareCardExporter.swift */; };
 		AC808FBBCEFA57B3D4634CF0 /* AstrologyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B753252D57E922D088385968 /* AstrologyViewModel.swift */; };
 		AD5977F2E19EDB8363818DEB /* reading-templates.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F9787FE492F398D535CBA67 /* reading-templates.json */; };
 		B1A39DAB39164269242D0C65 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB719757BD6C3713AF368 /* items.json */; };
 		CC2F4E174587DBFDF84934FF /* TarotReadingGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5035F9255C30D6F458146 /* TarotReadingGeneratorTests.swift */; };
+		CD75D0CECCB6285378A24C81 /* MysticalCalcOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F144E84255A9BC1DEF9E8B7 /* MysticalCalcOverlay.swift */; };
+		CD797954F3F87F49D69B184D /* DailyRitualBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F8A3BAD7C9CD4496AFD85 /* DailyRitualBuilder.swift */; };
 		CE036D335E00E2BB16B91F53 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF6146BBAAA419E9EC3867 /* HomeViewModel.swift */; };
 		CE61C89DB7B44D65C577BC34 /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 0960969B051F1A6D25B884E9 /* numbers.json */; };
 		D614C18965BC485C377929AF /* spreads.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AB91904FEA7A30850C6B577 /* spreads.json */; };
@@ -61,8 +67,7 @@
 		F61E50C32A4A8A6CDCD0260A /* SolarTermsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA2A3DD26CD7ED8A39BB5E /* SolarTermsEngine.swift */; };
 		F65CE4508A014FC5E1A57C23 /* AstrologyChartCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB73C3DC53554A578A4E7D20 /* AstrologyChartCalculator.swift */; };
 		FB6FB6A0062F1E83E173F61A /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAEE93834BB1AE947487A4 /* Date+Utility.swift */; };
-		AA11BB22CC33DD44EE55FF66 /* MysticalCalcOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF65 /* MysticalCalcOverlay.swift */; };
-		BB11CC22DD33EE44FF550011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB11CC22DD33EE44FF550010 /* Assets.xcassets */; };
+		FB8E43AA7BA353080094AAE6 /* DailyRitualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E8CF4A5DAA090673D9D82 /* DailyRitualView.swift */; };
 		FEC536BA71EFCB34D38ADFEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FC0A4077D310FDE4DAE75 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +90,10 @@
 		1EC0664551F415D34F01FF13 /* View+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Theme.swift"; sourceTree = "<group>"; };
 		21594DB2B24BB2806AEE7261 /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 		22CB60184EB2375026A98A52 /* BaziTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaziTypes.swift; sourceTree = "<group>"; };
+		237FDA44EB1C41090F090B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23DDB5373D414F5B33EB5259 /* BaziViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaziViewModel.swift; sourceTree = "<group>"; };
+		323E8CF4A5DAA090673D9D82 /* DailyRitualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRitualView.swift; sourceTree = "<group>"; };
+		3603035CCF42B871FBAA4CBB /* DailyRitualModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRitualModels.swift; sourceTree = "<group>"; };
 		3D4B9F522A3FEEE2270767C9 /* TarotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotViewModel.swift; sourceTree = "<group>"; };
 		3F4DB719757BD6C3713AF368 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		4347205A8DA3BFB6186AA150 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 		7C9231C8B72B388BB92DD8DF /* FortunePocketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunePocketApp.swift; sourceTree = "<group>"; };
 		844C12712EADE9474BB4A82B /* AstrologyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyChart.swift; sourceTree = "<group>"; };
 		8BEBC37F7D06B325BF29F955 /* cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		8F144E84255A9BC1DEF9E8B7 /* MysticalCalcOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticalCalcOverlay.swift; sourceTree = "<group>"; };
 		97D8C5A69B7C6DC4EBB0BF72 /* AstrologyChartCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyChartCalculatorTests.swift; sourceTree = "<group>"; };
 		A28CD7046EBA3ADE5E43EE52 /* HoroscopeReadingGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeReadingGenerator.swift; sourceTree = "<group>"; };
 		A52813E6B403F4F1C270DBB5 /* TarotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotView.swift; sourceTree = "<group>"; };
@@ -124,19 +133,20 @@
 		BCDAE8F4368DD6A0DD7E1044 /* LocalSigning.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LocalSigning.xcconfig; sourceTree = "<group>"; };
 		BE11B91E0ADDB3E6C4ACA20E /* daily-templates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "daily-templates.json"; sourceTree = "<group>"; };
 		C89C9064E38A3B760911342E /* TarotResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotResultView.swift; sourceTree = "<group>"; };
+		CAA98D734E9C662158B8DB7B /* ShareCardExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardExporter.swift; sourceTree = "<group>"; };
 		CBFB9672D3CF9AB265AA5C3E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D7DAEE93834BB1AE947487A4 /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
 		D8F8218B083094CD2AD10C3C /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		DAC4163C8AFA086DC2A87014 /* daily-quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "daily-quotes.json"; sourceTree = "<group>"; };
+		DEAD1B6F1117A42942C6E166 /* NotificationAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAppDelegate.swift; sourceTree = "<group>"; };
 		E60EE95D29BAA3382D83B21A /* branches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = branches.json; sourceTree = "<group>"; };
 		E7735F2056D396C9E33DD08A /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		EA2F8A3BAD7C9CD4496AFD85 /* DailyRitualBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRitualBuilder.swift; sourceTree = "<group>"; };
 		EDAF6146BBAAA419E9EC3867 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F41FC0A4077D310FDE4DAE75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6181BE57FFD8B31FF617490 /* UserFacingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingError.swift; sourceTree = "<group>"; };
 		FB805092FFBE1D734CBA16B6 /* natal_chart_test_vectors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = natal_chart_test_vectors.json; sourceTree = "<group>"; };
 		FCA785AA4706B6296130A2C3 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
-		AA11BB22CC33DD44EE55FF65 /* MysticalCalcOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysticalCalcOverlay.swift; sourceTree = "<group>"; };
-		BB11CC22DD33EE44FF550010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA5035F9255C30D6F458146 /* TarotReadingGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotReadingGeneratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +222,9 @@
 		5AEA6BF4AA4CA470C8104F4C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EA2F8A3BAD7C9CD4496AFD85 /* DailyRitualBuilder.swift */,
+				3603035CCF42B871FBAA4CBB /* DailyRitualModels.swift */,
+				323E8CF4A5DAA090673D9D82 /* DailyRitualView.swift */,
 				CBFB9672D3CF9AB265AA5C3E /* HomeView.swift */,
 				EDAF6146BBAAA419E9EC3867 /* HomeViewModel.swift */,
 			);
@@ -222,8 +235,17 @@
 			isa = PBXGroup;
 			children = (
 				4C414E06A45DF5580CD88F06 /* LocalNotificationScheduler.swift */,
+				DEAD1B6F1117A42942C6E166 /* NotificationAppDelegate.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		76B150472AF33EB9CFA0197C /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				CAA98D734E9C662158B8DB7B /* ShareCardExporter.swift */,
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 		793FA6CACE2560CB037A7238 /* Products */ = {
@@ -233,6 +255,14 @@
 				AB12FF401FCC10C2C2CE4099 /* PocketOracleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7FBE6A6600D2525A712BF26E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F144E84255A9BC1DEF9E8B7 /* MysticalCalcOverlay.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9113489DBECD9D32AC474170 /* Bazi */ = {
@@ -414,14 +444,6 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
-		AA11BB22CC33DD44EE55FF67 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AA11BB22CC33DD44EE55FF65 /* MysticalCalcOverlay.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F31A659B656781075178A8D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,8 +452,9 @@
 				714F64C9CF90590776234D24 /* Notifications */,
 				A8F842CF53F0777DA52E1DCC /* Preferences */,
 				BA31E1ADC94C045FE4C5F904 /* Services */,
+				76B150472AF33EB9CFA0197C /* Share */,
 				E83680583EC9BAE23BA4DF75 /* Theme */,
-				AA11BB22CC33DD44EE55FF67 /* Views */,
+				7FBE6A6600D2525A712BF26E /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -448,7 +471,7 @@
 		FA20AACD745963A369B5E067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB11CC22DD33EE44FF550010 /* Assets.xcassets */,
+				237FDA44EB1C41090F090B7F /* Assets.xcassets */,
 				B0F6A92355975B29D68DFB30 /* data */,
 				FCD9A223A7BA7C8787F964E5 /* Localizable.strings */,
 			);
@@ -542,7 +565,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB11CC22DD33EE44FF550011 /* Assets.xcassets in Resources */,
+				1DC5F1B36924C94D6896DCC5 /* Assets.xcassets in Resources */,
 				9F7C95BC0E9D5462EFF34439 /* Localizable.strings in Resources */,
 				0B87731B976A2A4974F1891C /* branches.json in Resources */,
 				7501D8D8118CEC0E7026D8AD /* cards.json in Resources */,
@@ -595,6 +618,9 @@
 				505D474CF2D360D4638EBEDA /* BaziViewModel.swift in Sources */,
 				0DE0F10CC36FCECF0DCE8511 /* ContentLoader.swift in Sources */,
 				FEC536BA71EFCB34D38ADFEE /* ContentView.swift in Sources */,
+				CD797954F3F87F49D69B184D /* DailyRitualBuilder.swift in Sources */,
+				5F0353E1539C680DBC50791E /* DailyRitualModels.swift in Sources */,
+				FB8E43AA7BA353080094AAE6 /* DailyRitualView.swift in Sources */,
 				FB6FB6A0062F1E83E173F61A /* Date+Utility.swift in Sources */,
 				26757E4E6C6009B5AE82E2BF /* FortunePocketApp.swift in Sources */,
 				25BFBFDE255C77D038385A98 /* HistoryView.swift in Sources */,
@@ -602,9 +628,12 @@
 				CE036D335E00E2BB16B91F53 /* HomeViewModel.swift in Sources */,
 				11D2AD36D20EF066E453DF9A /* HoroscopeReadingGenerator.swift in Sources */,
 				772A2297AFAEDA7A1D0BEBE5 /* LocalNotificationScheduler.swift in Sources */,
+				CD75D0CECCB6285378A24C81 /* MysticalCalcOverlay.swift in Sources */,
+				895950C5A2AB245B70B95A23 /* NotificationAppDelegate.swift in Sources */,
 				5B4CCD23F71C6E526A1F97D3 /* ReadingPresentationBuilder.swift in Sources */,
 				6C5A6BC3DC1D38AB4A9AD6F8 /* ReadingRecord.swift in Sources */,
 				68CEBE525A302197B9AD2260 /* SettingsView.swift in Sources */,
+				A8D12D3870F7F904EC278378 /* ShareCardExporter.swift in Sources */,
 				F61E50C32A4A8A6CDCD0260A /* SolarTermsEngine.swift in Sources */,
 				3801106E859650B27E02DA41 /* TarotCard.swift in Sources */,
 				7A414F55E4957675C5DD59E8 /* TarotCardView.swift in Sources */,
@@ -614,7 +643,6 @@
 				D9AEBAFB9B5150868DFD198C /* TarotViewModel.swift in Sources */,
 				EE22FB6A834922BD222AC695 /* UserFacingError.swift in Sources */,
 				5FACF594D1BC26038F9C7A23 /* View+Theme.swift in Sources */,
-				AA11BB22CC33DD44EE55FF66 /* MysticalCalcOverlay.swift in Sources */,
 				12D27D68A4F93F0A52E880F1 /* ZodiacSign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

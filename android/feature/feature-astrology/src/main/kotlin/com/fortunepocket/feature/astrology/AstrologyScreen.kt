@@ -52,6 +52,8 @@ import com.fortunepocket.core.model.AstrologyHouseFocus
 import com.fortunepocket.core.model.AstrologyPlanetPlacement
 import com.fortunepocket.core.model.ReadingPresentationBuilder
 import com.fortunepocket.core.model.ZodiacSign
+import com.fortunepocket.core.ui.share.OracleShareCardPayload
+import com.fortunepocket.core.ui.share.ShareCardExporter
 import com.fortunepocket.core.ui.theme.AppColors
 import com.fortunepocket.core.ui.theme.FortunePocketTypography
 import com.fortunepocket.feature.astrology.R
@@ -379,11 +381,19 @@ fun AstrologyScreen(
                     ) {
                         OutlinedButton(
                             onClick = {
-                                val shareIntent = Intent(Intent.ACTION_SEND).apply {
-                                    putExtra(Intent.EXTRA_TEXT, ReadingPresentationBuilder.shareText(reading, isZh))
-                                    type = "text/plain"
-                                }
-                                context.startActivity(Intent.createChooser(shareIntent, shareChooserText))
+                                val shareText = ReadingPresentationBuilder.shareText(reading, isZh)
+                                val shareUri = ShareCardExporter.export(
+                                    context = context,
+                                    payload = astrologySharePayload(reading = reading, isZh = isZh),
+                                    fileName = "natal-${reading.birthDateText.hashCode()}-${reading.birthTimeText.hashCode()}"
+                                )
+                                context.startActivity(
+                                    ShareCardExporter.shareIntent(
+                                        uri = shareUri,
+                                        chooserTitle = shareChooserText,
+                                        shareText = shareText
+                                    )
+                                )
                             },
                             modifier = Modifier.weight(1f).height(56.dp)
                         ) {
@@ -415,6 +425,24 @@ fun AstrologyScreen(
             }
         }
     }
+}
+
+private fun astrologySharePayload(
+    reading: com.fortunepocket.core.model.HoroscopeReading,
+    isZh: Boolean
+): OracleShareCardPayload {
+    return OracleShareCardPayload(
+        eyebrow = if (isZh) "FORTUNE POCKET · 本命盘" else "FORTUNE POCKET · NATAL CHART",
+        title = reading.chartSignature,
+        subtitle = listOf(reading.birthDateText, reading.birthTimeText, reading.birthCityName).joinToString(" · "),
+        headline = reading.chartSummary,
+        summary = reading.overall,
+        guidance = reading.advice,
+        footer = if (isZh)
+            "幸运提示：${reading.luckyColor} · ${reading.luckyNumber}"
+        else
+            "Lucky hint: ${reading.luckyColor} · ${reading.luckyNumber}"
+    )
 }
 
 @Composable

@@ -205,6 +205,8 @@ private struct AstrologyResultView: View {
     let reading: HoroscopeReading
     let hasSaved: Bool
     let onSave: () -> Void
+    @State private var shareItems: [Any] = []
+    @State private var showingShareSheet = false
 
     private let shareText: String
     private let columns = [
@@ -223,24 +225,7 @@ private struct AstrologyResultView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
-            VStack(alignment: .leading, spacing: 8) {
-                Text(reading.chartSignature)
-                    .font(AppFonts.headlineLarge)
-                    .foregroundStyle(AppColors.textPrimary)
-
-                Text("\(reading.birthDateText) · \(reading.birthTimeText) · \(reading.birthCityName)")
-                    .font(AppFonts.bodySmall)
-                    .foregroundStyle(AppColors.textSecondary)
-
-                Text(reading.timeZoneId)
-                    .font(AppFonts.caption)
-                    .foregroundStyle(AppColors.accentGold)
-
-                Text(reading.chartSummary)
-                    .font(AppFonts.bodyMedium)
-                    .foregroundStyle(AppColors.textSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
+            resultHero
 
             AstroBadgeRow(
                 badges: [
@@ -311,7 +296,7 @@ private struct AstrologyResultView: View {
             )
 
             HStack(spacing: 12) {
-                ShareLink(item: shareText) {
+                Button(action: exportShareCard) {
                     Label(String.appLocalized("share"), systemImage: "square.and.arrow.up")
                         .font(AppFonts.titleMedium)
                         .foregroundStyle(AppColors.textPrimary)
@@ -342,6 +327,68 @@ private struct AstrologyResultView: View {
         }
         .padding(20)
         .fortuneCard(background: AppColors.backgroundElevated, cornerRadius: 20)
+        .sheet(isPresented: $showingShareSheet) {
+            ActivityShareSheet(activityItems: shareItems)
+        }
+    }
+
+    private var resultHero: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(isZh ? "这张盘最醒目的签名" : "The clearest signature in this chart")
+                .font(AppFonts.labelSmall)
+                .foregroundStyle(AppColors.accentGold)
+                .tracking(2)
+
+            Text(reading.chartSignature)
+                .font(AppFonts.headlineLarge)
+                .foregroundStyle(AppColors.textPrimary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            Text("\(reading.birthDateText) · \(reading.birthTimeText) · \(reading.birthCityName)")
+                .font(AppFonts.bodySmall)
+                .foregroundStyle(AppColors.textSecondary)
+
+            Text(reading.timeZoneId)
+                .font(AppFonts.caption)
+                .foregroundStyle(AppColors.accentGold)
+
+            Text(firstParagraph(of: reading.chartSummary))
+                .font(AppFonts.bodyMedium)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(20)
+        .background(
+            RoundedRectangle(cornerRadius: 22)
+                .fill(AppColors.backgroundBase)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 22)
+                        .stroke(AppColors.accentGold.opacity(0.18), lineWidth: 1)
+                )
+        )
+    }
+
+    @MainActor
+    private func exportShareCard() {
+        let payload = OracleShareCardBuilder.payload(for: reading)
+        if let url = try? ShareCardExporter.export(
+            payload: payload,
+            fileName: "natal-\(reading.birthDateText.replacingOccurrences(of: " ", with: "-"))"
+        ) {
+            shareItems = [url, shareText]
+        } else {
+            shareItems = [shareText]
+        }
+        showingShareSheet = true
+    }
+
+    private func firstParagraph(of text: String) -> String {
+        for separator in ["\n\n", "。", ". ", "！", "？"] {
+            if let range = text.range(of: separator) {
+                return String(text[..<range.upperBound]).trimmingCharacters(in: .whitespacesAndNewlines)
+            }
+        }
+        return text
     }
 
     private func aspectTitle(_ item: AstrologyAspect, isZh: Bool) -> String {

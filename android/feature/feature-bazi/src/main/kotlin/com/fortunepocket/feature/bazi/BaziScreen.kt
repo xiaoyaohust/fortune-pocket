@@ -67,6 +67,8 @@ import com.fortunepocket.core.content.bazi.Pillar
 import com.fortunepocket.core.content.bazi.StemElements
 import com.fortunepocket.core.content.bazi.StemNames
 import com.fortunepocket.core.content.bazi.TenGodEntry
+import com.fortunepocket.core.ui.share.OracleShareCardPayload
+import com.fortunepocket.core.ui.share.ShareCardExporter
 import com.fortunepocket.core.ui.theme.AppColors
 import com.fortunepocket.core.ui.theme.FortunePocketTypography
 import java.text.DateFormat
@@ -471,7 +473,41 @@ fun BaziScreen(
 private fun BaziChartCard(
     chart: BaziChart, isZh: Boolean, hasSaved: Boolean, onSave: () -> Unit
 ) {
+    val context = LocalContext.current
+    val insightSections = buildBaziInsightSections(chart = chart, isZh = isZh)
+
     BaziCard {
+        Surface(
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(18.dp),
+            color = AppColors.backgroundBase
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Text(
+                    text = if (isZh) "命盘第一眼" else "First Look",
+                    style = FortunePocketTypography.labelSmall,
+                    color = AppColors.accentGold
+                )
+                Text(
+                    text = insightSections.firstOrNull()?.title ?: if (isZh) "先看日主主轴" else "Start With the Day Master",
+                    style = FortunePocketTypography.titleMedium,
+                    color = AppColors.textPrimary
+                )
+                Text(
+                    text = insightSections.firstOrNull()?.body.orEmpty(),
+                    style = FortunePocketTypography.bodyMedium,
+                    color = AppColors.textSecondary
+                )
+            }
+        }
+
+        Spacer(Modifier.height(18.dp))
+        GoldDivider()
+        Spacer(Modifier.height(16.dp))
+
         // Four pillars
         Text(
             text = if (isZh) "四柱命盘" else "Four Pillars Chart",
@@ -634,19 +670,46 @@ private fun BaziChartCard(
         GoldDivider()
         Spacer(Modifier.height(16.dp))
 
-        // Save button
-        Button(
-            onClick = onSave,
-            enabled = !hasSaved,
-            modifier = Modifier.fillMaxWidth().height(52.dp),
-            shape = RoundedCornerShape(14.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = AppColors.accentGold)
-        ) {
-            Text(
-                text = if (hasSaved) (if (isZh) "已保存" else "Saved")
-                       else (if (isZh) "保存记录" else "Save"),
-                style = FortunePocketTypography.titleMedium, color = AppColors.backgroundDeep
-            )
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            OutlinedButton(
+                onClick = {
+                    val shareText = buildBaziShareText(chart = chart, insightSections = insightSections, isZh = isZh)
+                    val shareUri = ShareCardExporter.export(
+                        context = context,
+                        payload = baziSharePayload(chart = chart, insightSections = insightSections, isZh = isZh),
+                        fileName = "bazi-${chart.startingAge}-${chart.dayPillar.nameEn.lowercase(Locale.US)}"
+                    )
+                    context.startActivity(
+                        ShareCardExporter.shareIntent(
+                            uri = shareUri,
+                            chooserTitle = if (isZh) "分享命盘结果" else "Share Chart",
+                            shareText = shareText
+                        )
+                    )
+                },
+                modifier = Modifier.weight(1f).height(52.dp),
+                shape = RoundedCornerShape(14.dp)
+            ) {
+                Text(
+                    text = if (isZh) "分享结果" else "Share",
+                    style = FortunePocketTypography.titleMedium,
+                    color = AppColors.textPrimary
+                )
+            }
+
+            Button(
+                onClick = onSave,
+                enabled = !hasSaved,
+                modifier = Modifier.weight(1f).height(52.dp),
+                shape = RoundedCornerShape(14.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = AppColors.accentGold)
+            ) {
+                Text(
+                    text = if (hasSaved) (if (isZh) "已保存" else "Saved")
+                           else (if (isZh) "保存记录" else "Save"),
+                    style = FortunePocketTypography.titleMedium, color = AppColors.backgroundDeep
+                )
+            }
         }
     }
 }
@@ -1317,4 +1380,57 @@ private fun tenGodDescription(god: TenGodEntry, isZh: Boolean): String {
         "正印" -> if (isZh) "它常和学习、支持、修复感与被滋养的经验有关。" else "It is often tied to learning, support, repair, and the feeling of being resourced."
         else -> if (isZh) "它是相对于日主的一种关系名称。" else "It is one relationship label relative to the day master."
     }
+}
+
+private fun baziSharePayload(
+    chart: BaziChart,
+    insightSections: List<BaziInsightSection>,
+    isZh: Boolean
+): OracleShareCardPayload {
+    val title = if (isZh) {
+        "${chart.dayPillar.stemZh}日主 · ${chart.dayPillar.nameZh}"
+    } else {
+        "${chart.dayPillar.stemEn} Day Master · ${chart.dayPillar.nameEn}"
+    }
+    val date = DateFormat.getDateInstance(DateFormat.LONG, Locale.getDefault()).format(
+        Calendar.getInstance().apply {
+            set(chart.input.birthYear, chart.input.birthMonth - 1, chart.input.birthDay, 0, 0, 0)
+            set(Calendar.MILLISECOND, 0)
+        }.time
+    )
+    return OracleShareCardPayload(
+        eyebrow = if (isZh) "FORTUNE POCKET · 八字" else "FORTUNE POCKET · BAZI",
+        title = title,
+        subtitle = if (chart.hourPillar == null) {
+            if (isZh) "$date · 三柱估算" else "$date · Three-pillar estimate"
+        } else {
+            if (isZh) "$date · 四柱完整盘" else "$date · Full four-pillar chart"
+        },
+        headline = insightSections.firstOrNull()?.title ?: title,
+        summary = insightSections.firstOrNull()?.body.orEmpty(),
+        guidance = insightSections.getOrNull(2)?.body ?: insightSections.lastOrNull()?.body.orEmpty(),
+        footer = if (isZh) "大运起于 ${chart.startingAge} 岁 · ${chart.cycleDirection}" else "Major cycles start at age ${chart.startingAge} · ${chart.cycleDirection}"
+    )
+}
+
+private fun buildBaziShareText(
+    chart: BaziChart,
+    insightSections: List<BaziInsightSection>,
+    isZh: Boolean
+): String {
+    val title = if (isZh) "Fortune Pocket · 八字排盘" else "Fortune Pocket · Four Pillars Chart"
+    val date = DateFormat.getDateInstance(DateFormat.LONG, Locale.getDefault()).format(
+        Calendar.getInstance().apply {
+            set(chart.input.birthYear, chart.input.birthMonth - 1, chart.input.birthDay, 0, 0, 0)
+            set(Calendar.MILLISECOND, 0)
+        }.time
+    )
+    return listOf(
+        title,
+        date,
+        if (isZh) "四柱：${chart.yearPillar.nameZh} / ${chart.monthPillar.nameZh} / ${chart.dayPillar.nameZh} / ${chart.hourPillar?.nameZh ?: "—"}"
+        else "Pillars: ${chart.yearPillar.nameEn} / ${chart.monthPillar.nameEn} / ${chart.dayPillar.nameEn} / ${chart.hourPillar?.nameEn ?: "—"}",
+        "",
+        insightSections.joinToString("\n\n") { "${it.title}\n${it.body}" }
+    ).joinToString("\n")
 }

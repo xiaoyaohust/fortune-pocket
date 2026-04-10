@@ -4,6 +4,8 @@ struct TarotResultView: View {
     let reading: TarotReading
     let onDone: () -> Void
     var animateReveal: Bool = false
+    @State private var shareItems: [Any] = []
+    @State private var showingShareSheet = false
 
     // Pre-computed once — avoids rebuilding on every render
     private let shareText: String
@@ -32,6 +34,7 @@ struct TarotResultView: View {
             ScrollView {
                 VStack(spacing: 0) {
                     headerSection(topPadding: 10)
+                    heroInsightCard(horizontalPadding: horizontalPadding)
                     cardsSection(cardSize: cardSize, horizontalPadding: horizontalPadding)
                     if hasReversedCards {
                         orientationHintSection(horizontalPadding: horizontalPadding)
@@ -72,6 +75,9 @@ struct TarotResultView: View {
                 .padding(.bottom, bottomPadding)
             }
             .scrollIndicators(.hidden)
+            .sheet(isPresented: $showingShareSheet) {
+                ActivityShareSheet(activityItems: shareItems)
+            }
         }
     }
 
@@ -96,6 +102,49 @@ struct TarotResultView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 28)
         }
+        .padding(.bottom, 16)
+    }
+
+    private func heroInsightCard(horizontalPadding: CGFloat) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(isZh ? "这一轮最响亮的讯号" : "The loudest note in this draw")
+                .font(AppFonts.labelSmall)
+                .foregroundStyle(AppColors.accentGold)
+                .tracking(2)
+
+            Text(firstParagraph(of: reading.overallEnergy))
+                .font(AppFonts.headlineLarge)
+                .foregroundStyle(AppColors.textPrimary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            Text(firstParagraph(of: reading.focusInsight))
+                .font(AppFonts.bodyMedium)
+                .foregroundStyle(AppColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            HStack(spacing: 8) {
+                ForEach(Array(reading.drawnCards.prefix(3).map { $0.card.localizedName }), id: \.self) { item in
+                    Text(item)
+                        .font(AppFonts.caption)
+                        .foregroundStyle(AppColors.accentGold)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background(AppColors.backgroundBase)
+                        .clipShape(Capsule())
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(20)
+        .background(
+            RoundedRectangle(cornerRadius: 24)
+                .fill(AppColors.backgroundElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 24)
+                        .stroke(AppColors.accentGold.opacity(0.22), lineWidth: 1)
+                )
+        )
+        .padding(.horizontal, horizontalPadding)
         .padding(.bottom, 20)
     }
 
@@ -189,7 +238,7 @@ struct TarotResultView: View {
 
     private func actionButtons(horizontalPadding: CGFloat) -> some View {
         HStack(spacing: 12) {
-            ShareLink(item: shareText) {
+            Button(action: exportShareCard) {
                 Label(String.appLocalized("share"), systemImage: "square.and.arrow.up")
                     .font(AppFonts.titleMedium)
                     .foregroundStyle(AppColors.textPrimary)
@@ -215,6 +264,26 @@ struct TarotResultView: View {
         }
         .padding(.horizontal, horizontalPadding)
         .padding(.top, 20)
+    }
+
+    @MainActor
+    private func exportShareCard() {
+        let payload = OracleShareCardBuilder.payload(for: reading)
+        if let url = try? ShareCardExporter.export(payload: payload, fileName: "tarot-\(Int(reading.date.timeIntervalSince1970))") {
+            shareItems = [url, shareText]
+        } else {
+            shareItems = [shareText]
+        }
+        showingShareSheet = true
+    }
+
+    private func firstParagraph(of text: String) -> String {
+        for separator in ["\n\n", "。", ". ", "！", "？"] {
+            if let range = text.range(of: separator) {
+                return String(text[..<range.upperBound]).trimmingCharacters(in: .whitespacesAndNewlines)
+            }
+        }
+        return text
     }
 
     private func goldDivider(_ horizontalPadding: CGFloat) -> some View {

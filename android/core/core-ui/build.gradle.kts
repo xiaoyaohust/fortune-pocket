@@ -17,6 +17,7 @@ android {
 }
 
 dependencies {
+    api(libs.androidx.core.ktx)
     api(platform(libs.androidx.compose.bom))
     api(libs.androidx.ui)
     api(libs.androidx.ui.graphics)

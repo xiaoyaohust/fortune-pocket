@@ -19,7 +19,10 @@ class DailyReminderReceiver : BroadcastReceiver() {
         // Tap notification → open app
         val launchIntent = context.packageManager
             .getLaunchIntentForPackage(context.packageName)
-            ?.apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK }
+            ?.apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                putExtra("destination", "daily_ritual")
+            }
 
         val pendingIntent = PendingIntent.getActivity(
             context, 0,

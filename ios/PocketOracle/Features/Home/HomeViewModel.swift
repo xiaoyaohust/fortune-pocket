@@ -5,24 +5,26 @@ import Observation
 final class HomeViewModel {
 
     // MARK: - State
-    var dailyQuote: DailyQuote?
+    var dailyRitual: DailyRitual?
     var isLoading: Bool = true
     var errorMessage: String?
-
-    // MARK: - Private
-    private let contentLoader = ContentLoader.shared
+    private var loadedDayKey: Int?
 
     // MARK: - Init
     init() { load() }
 
     // MARK: - Load
-    func load() {
+    func load(force: Bool = false) {
+        let dayKey = Calendar.current.component(.year, from: Date()) * 1000 + Date().dayOfYear
+        if !force, loadedDayKey == dayKey, dailyRitual != nil {
+            return
+        }
+
         isLoading = true
         errorMessage = nil
         do {
-            let quotesData = try contentLoader.loadDailyQuotes()
-            let index = (Date().dayOfYear - 1) % quotesData.quotes.count
-            dailyQuote = quotesData.quotes[index]
+            dailyRitual = try DailyRitualBuilder.build()
+            loadedDayKey = dayKey
         } catch {
             UserFacingErrorMapper.log(error, context: .home)
             errorMessage = UserFacingErrorMapper.message(for: error, context: .home)

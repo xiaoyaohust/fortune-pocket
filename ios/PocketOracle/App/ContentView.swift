@@ -6,6 +6,8 @@ struct ContentView: View {
 
     @State private var selectedTab: AppTab = .home
     @State private var isTabBarHidden = false
+    @State private var homeViewModel = HomeViewModel()
+    @State private var showDailyRitual = false
 
     var body: some View {
         ZStack {
@@ -17,6 +19,17 @@ struct ContentView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .tint(AppColors.accentGold)
+        .sheet(isPresented: $showDailyRitual) {
+            if let ritual = homeViewModel.dailyRitual {
+                DailyRitualView(ritual: ritual) {
+                    showDailyRitual = false
+                }
+            } else {
+                ProgressView()
+                    .presentationDetents([.medium])
+                    .task { homeViewModel.load(force: true) }
+            }
+        }
         .overlay(alignment: .bottom) {
             if !isTabBarHidden {
                 GeometryReader { proxy in
@@ -32,6 +45,11 @@ struct ContentView: View {
             }
         }
         .onPreferenceChange(FortuneTabBarHiddenPreferenceKey.self) { isTabBarHidden = $0 }
+        .onReceive(NotificationCenter.default.publisher(for: .openDailyRitual)) { _ in
+            selectedTab = .home
+            homeViewModel.load(force: true)
+            showDailyRitual = true
+        }
     }
 
     @ViewBuilder
@@ -39,7 +57,13 @@ struct ContentView: View {
         switch selectedTab {
         case .home:
             NavigationStack {
-                HomeView()
+                HomeView(
+                    viewModel: homeViewModel,
+                    onOpenDailyRitual: {
+                        homeViewModel.load(force: true)
+                        showDailyRitual = true
+                    }
+                )
             }
         case .history:
             NavigationStack {

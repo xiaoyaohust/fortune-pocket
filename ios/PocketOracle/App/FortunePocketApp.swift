@@ -3,6 +3,7 @@ import SwiftData
 
 @main
 struct FortunePocketApp: App {
+    @UIApplicationDelegateAdaptor(NotificationAppDelegate.self) private var notificationAppDelegate
     @AppStorage(AppPreferenceKeys.appLanguage) private var appLanguage = AppLanguageOption.system.rawValue
 
     var body: some Scene {

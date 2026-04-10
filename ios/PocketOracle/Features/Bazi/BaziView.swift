@@ -385,6 +385,8 @@ private struct BaziChartView: View {
     let chart:    BaziChart
     let hasSaved: Bool
     let onSave:   () -> Void
+    @State private var shareItems: [Any] = []
+    @State private var showingShareSheet = false
 
     private var isZh: Bool { AppLanguageOption.isChinese }
 
@@ -404,6 +406,9 @@ private struct BaziChartView: View {
         }
         .padding(20)
         .fortuneCard(background: AppColors.backgroundElevated, cornerRadius: 20)
+        .sheet(isPresented: $showingShareSheet) {
+            ActivityShareSheet(activityItems: shareItems)
+        }
     }
 
     // MARK: Pillars grid
@@ -581,6 +586,19 @@ private struct BaziChartView: View {
 
     private var actionButtons: some View {
         HStack(spacing: 12) {
+            Button(action: exportShareCard) {
+                Label(String.appLocalized("share"), systemImage: "square.and.arrow.up")
+                    .font(AppFonts.titleMedium)
+                    .foregroundStyle(AppColors.textPrimary)
+                    .frame(maxWidth: .infinity).frame(height: 52)
+                    .background(AppColors.backgroundBase)
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14)
+                            .stroke(AppColors.accentGold.opacity(0.28), lineWidth: 1)
+                    )
+            }
+
             Button(action: onSave) {
                 Text(hasSaved
                      ? (isZh ? "已保存" : "Saved")
@@ -594,6 +612,25 @@ private struct BaziChartView: View {
             .disabled(hasSaved)
             .opacity(hasSaved ? 0.7 : 1)
         }
+    }
+
+    @MainActor
+    private func exportShareCard() {
+        let payload = OracleShareCardBuilder.payload(for: chart)
+        let shareText = [
+            isZh ? "Fortune Pocket · 八字排盘" : "Fortune Pocket · Four Pillars Chart",
+            payload.subtitle,
+            payload.headline,
+            payload.summary,
+            payload.guidance
+        ].joined(separator: "\n")
+
+        if let url = try? ShareCardExporter.export(payload: payload, fileName: "bazi-\(chart.startingAge)") {
+            shareItems = [url, shareText]
+        } else {
+            shareItems = [shareText]
+        }
+        showingShareSheet = true
     }
 }
 

@@ -27,6 +27,7 @@ final class LocalNotificationScheduler {
         content.title = String.appLocalized("notification_title")
         content.body = String.appLocalized("notification_body")
         content.sound = .default
+        content.userInfo = ["destination": "daily_ritual"]
 
         var dateComponents = DateComponents()
         dateComponents.hour = hour

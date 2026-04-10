@@ -8,6 +8,7 @@ enum AppFonts {
     // MARK: - Display (large titles, hero text)
     static let displayLarge  = Font.system(size: 34, weight: .light, design: .default)
     static let displayMedium = Font.system(size: 28, weight: .light, design: .default)
+    static let displaySmall  = Font.system(size: 24, weight: .light, design: .default)
 
     // MARK: - Headline (section headers)
     static let headlineLarge  = Font.system(size: 24, weight: .regular, design: .default)
